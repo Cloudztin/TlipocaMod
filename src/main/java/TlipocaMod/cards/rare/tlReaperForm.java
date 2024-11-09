@@ -1,6 +1,6 @@
 package TlipocaMod.cards.rare;
 
-import TlipocaMod.action.ReverseFateAction;
+
 import TlipocaMod.cards.AbstractTlipocaCard;
 import TlipocaMod.powers.ReaperPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;

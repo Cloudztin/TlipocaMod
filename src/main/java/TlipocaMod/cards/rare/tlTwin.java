@@ -1,17 +1,12 @@
 package TlipocaMod.cards.rare;
 
-import TlipocaMod.action.DeckToTopAction;
 import TlipocaMod.action.TwinAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
-import TlipocaMod.patches.CardPatch;
-import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 
 import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
 

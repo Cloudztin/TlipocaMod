@@ -1,6 +1,6 @@
 package TlipocaMod.cards.rare;
 
-import TlipocaMod.action.BloodRitesAction;
+
 import TlipocaMod.action.RendAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
 import TlipocaMod.powers.BleedingPower;

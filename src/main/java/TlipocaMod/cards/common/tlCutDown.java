@@ -1,11 +1,9 @@
 package TlipocaMod.cards.common;
 
-import TlipocaMod.action.ReduceHandCostAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
 import TlipocaMod.patches.CardPatch;
 import TlipocaMod.powers.BleedingPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;

@@ -1,9 +1,7 @@
 package TlipocaMod.cards.rare;
 
-import TlipocaMod.action.DeckToTopAction;
 import TlipocaMod.action.PowerUnleashAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
-import TlipocaMod.patches.CardPatch;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
