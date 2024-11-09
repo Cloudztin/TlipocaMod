@@ -1,0 +1,88 @@
+{
+  "TlipocaMod:Unleash": {
+    "NAME": "觉醒",
+    "DESCRIPTIONS": [
+      "你每失去 [E] [E] [E] ，就抽 #b",
+      " 张牌。( 还差 #b",
+      " 张牌。( 还差 #b",
+      " 点能量。)"
+    ]
+  },
+  "TlipocaMod:Reaper": {
+    "NAME": "收割形态",
+    "DESCRIPTIONS": [
+      "当一名非爪牙敌人彻底死亡后，增加 #b",
+      " 点最大生命值。"
+    ]
+  },
+  "TlipocaMod:BrokenTime": {
+    "NAME": "破碎的时间",
+    "DESCRIPTIONS": [
+      "本回合中，所有牌的耗能增加 #b",
+      " 。"
+    ]
+  },
+  "TlipocaMod:Samsara": {
+    "NAME": "轮回",
+    "DESCRIPTIONS": [
+      "你的下个回合内，所有牌的耗能都会增加。"
+    ]
+  },
+  "TlipocaMod:Dark": {
+    "NAME": "至暗",
+    "DESCRIPTIONS": [
+      "你每抽1张牌，就获得 ",
+      "[E] ",
+      "。"
+    ]
+  },
+  "TlipocaMod:Godhead": {
+    "NAME": "神性",
+    "DESCRIPTIONS": [
+      "每回合打出首张耗能大于1的牌后，获得消耗的能量。",
+      "每回合打出前 #b",
+      " 张耗能大于1的牌后，获得其消耗的能量。",
+      "（本回合已打出 #b1 张）",
+      "（本回合已打出 #b",
+      " 张）",
+      "（本回合还未打出过）"
+    ]
+  },
+  "TlipocaMod:Bleeding": {
+    "NAME": "流血",
+    "DESCRIPTIONS": [
+      "受到未被格挡的攻击伤害时，失去 #r",
+      " 点生命并叠加 #b1 层 #y流血 。回合开始时， 失去 #r",
+      " 点生命，然后 #y流血 的层数减半。"
+    ]
+  },
+  "TlipocaMod:GrievousWounds": {
+    "NAME": "重伤",
+    "DESCRIPTIONS": [
+      "当你造成未被格挡的 #y攻击 伤害时，给予 #r",
+      " 层 #y流血 。"
+    ]
+  },
+  "TlipocaMod:Collapse": {
+    "NAME": "崩坏",
+    "DESCRIPTIONS": [
+      "回合开始时， #r流血 的层数将不再减少。"
+    ]
+  },
+  "TlipocaMod:Maintenance": {
+    "NAME": "整备",
+    "DESCRIPTIONS": [
+      "你的下个回合开始后，获得 [E] 并抽 #y2 张牌。",
+      "你的下 #b",
+      " 回合开始后，获得 [E] 并抽 #y2 张牌。"
+    ]
+  },
+  "TlipocaMod:UpMaintenance": {
+    "NAME": "整备",
+    "DESCRIPTIONS": [
+      "你的下个回合开始后，获得 [E] 并抽满手牌。",
+      "你的下 #b",
+      " 回合开始后，获得 [E] 并抽满手牌。"
+    ]
+  }
+}

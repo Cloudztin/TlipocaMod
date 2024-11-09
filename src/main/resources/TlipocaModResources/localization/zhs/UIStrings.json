@@ -1,0 +1,77 @@
+{
+  "Tlipoca": {
+    "TEXT": [
+      "特莉波卡",
+      "背负着未知的过去的见习死神，为了收割灵魂还清死神塔的债务来到尖塔。",
+      "你睁开所有的眼睛，看着心脏砰砰地跳动。“是时候了。”你举起了镰刀。"
+    ]
+  },
+  "IncreaseHandCost": {
+    "TEXT": [
+      "增加耗能"
+    ]
+  },
+  "ReduceHandCost": {
+    "TEXT": [
+      "降低耗能"
+    ]
+  },
+  "BloodRites": {
+    "TEXT": [
+      "选择一张牌变化"
+    ]
+  },
+  "DeckToTop": {
+    "TEXT": [
+      "将一张牌放到抽牌堆顶部。"
+    ]
+  },
+  "TwinAction": {
+    "TEXT": [
+      " 双生 。",
+      "赋予双生"
+    ]
+  },
+  "TlipocaModifier": {
+    "TEXT": [
+      "双生",
+      "须臾",
+      "永恒",
+      " ",
+      ", ",
+      " 。",
+      "#y",
+      "NL ",
+      "临时特质",
+      "本场战斗： ",
+      "仅本回合： ",
+      "共鸣"
+    ]
+  },
+  "ReverseFateAction": {
+    "TEXT": [
+      "放到抽牌堆顶 （午夜）"
+    ]
+  },
+  "ParcloseAction": {
+    "TEXT": [
+      "放到抽牌堆顶 （屏障）"
+    ]
+  },
+  "MeteorAction": {
+    "TEXT": [
+      "消耗"
+    ]
+  },
+  "InnateModify": {
+    "TEXT": [
+      " 固有 。"
+    ]
+  },
+  "AstrologyAction": {
+    "TEXT": [
+      "选择一张牌抽到手中。"
+    ]
+  }
+
+}

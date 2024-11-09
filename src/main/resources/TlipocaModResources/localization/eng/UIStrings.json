@@ -1,0 +1,76 @@
+{
+  "Tlipoca": {
+    "TEXT": [
+      "Tlipoca",
+      "Death in noviciate, who comes to the Spire to collect souls.",
+      "As the heart beating, you open the Death's Eye, time is up."
+    ]
+  },
+  "IncreaseHandCost": {
+    "TEXT": [
+      "increase cost"
+    ]
+  },
+  "ReduceHandCost": {
+    "TEXT": [
+      "reduce cost"
+    ]
+  },
+  "BloodRites": {
+    "TEXT": [
+      "Choose a card to transform"
+    ]
+  },
+  "DeckToTop": {
+    "TEXT": [
+      "Choose a Card to the Top of the Draw Pile. "
+    ]
+  },
+  "TwinAction": {
+    "TEXT": [
+      " Twincast. ",
+      "apply twincast"
+    ]
+  },
+  "TlipocaModifier": {
+    "TEXT": [
+      "Twincast",
+      "Ephemeral",
+      "Eternity",
+      " ",
+      ", ",
+      ".",
+      "#y",
+      "NL ",
+      "Modifies",
+      "In this combat: ",
+      "In this turn: ",
+      "Resonate"
+    ]
+  },
+  "ReverseFateAction": {
+    "TEXT": [
+      "put on the top of the draw pile (Midnight)"
+    ]
+  },
+  "ParcloseAction": {
+    "TEXT": [
+      "put on the top of the draw pile (Parclose)"
+    ]
+  },
+  "MeteorAction": {
+    "TEXT": [
+      "Exhaust"
+    ]
+  },
+  "InnateModify": {
+    "TEXT": [
+      "Innate. "
+    ]
+  },
+  "AstrologyAction": {
+    "TEXT": [
+      "Choose a Card to Draw. "
+    ]
+  }
+}

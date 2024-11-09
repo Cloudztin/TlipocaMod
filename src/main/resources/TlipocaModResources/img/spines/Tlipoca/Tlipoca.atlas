@@ -1,0 +1,125 @@
+
+Tlipoca.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Flower
+  rotate: false
+  xy: 342, 28
+  size: 56, 86
+  orig: 56, 86
+  offset: 0, 0
+  index: -1
+Flower2
+  rotate: true
+  xy: 859, 34
+  size: 48, 79
+  orig: 48, 79
+  offset: 0, 0
+  index: -1
+L-hair
+  rotate: true
+  xy: 737, 70
+  size: 77, 120
+  orig: 77, 120
+  offset: 0, 0
+  index: -1
+L-hand
+  rotate: false
+  xy: 973, 107
+  size: 49, 68
+  orig: 49, 68
+  offset: 0, 0
+  index: -1
+R-hair
+  rotate: true
+  xy: 871, 124
+  size: 51, 100
+  orig: 51, 100
+  offset: 0, 0
+  index: -1
+R-hand
+  rotate: true
+  xy: 486, 71
+  size: 28, 52
+  orig: 28, 52
+  offset: 0, 0
+  index: -1
+bed
+  rotate: false
+  xy: 2, 88
+  size: 224, 147
+  orig: 224, 147
+  offset: 0, 0
+  index: -1
+clothes
+  rotate: true
+  xy: 595, 109
+  size: 126, 140
+  orig: 126, 140
+  offset: 0, 0
+  index: -1
+eyes
+  rotate: false
+  xy: 859, 84
+  size: 99, 38
+  orig: 99, 38
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 228, 26
+  size: 112, 88
+  orig: 112, 88
+  offset: 0, 0
+  index: -1
+foot
+  rotate: true
+  xy: 434, 67
+  size: 32, 50
+  orig: 32, 50
+  offset: 0, 0
+  index: -1
+foot2
+  rotate: false
+  xy: 400, 62
+  size: 32, 52
+  orig: 32, 52
+  offset: 0, 0
+  index: -1
+hair1
+  rotate: true
+  xy: 228, 116
+  size: 119, 212
+  orig: 119, 212
+  offset: 0, 0
+  index: -1
+hair2
+  rotate: true
+  xy: 2, 2
+  size: 84, 201
+  orig: 84, 201
+  offset: 0, 0
+  index: -1
+hair3
+  rotate: true
+  xy: 737, 149
+  size: 86, 132
+  orig: 86, 132
+  offset: 0, 0
+  index: -1
+hair4
+  rotate: true
+  xy: 871, 177
+  size: 58, 145
+  orig: 58, 145
+  offset: 0, 0
+  index: -1
+hair5
+  rotate: true
+  xy: 442, 101
+  size: 134, 151
+  orig: 134, 151
+  offset: 0, 0
+  index: -1

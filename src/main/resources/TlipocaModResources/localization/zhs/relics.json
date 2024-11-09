@@ -1,0 +1,30 @@
+{
+  "TlipocaMod:LittleRed": {
+    "NAME": "小红",
+    "FLAVOR": "见习死神的第一柄镰刀。",
+    "DESCRIPTIONS": [
+      "敌人死亡时，收割 #b1 点灵魂。你的回合开始时，消耗 #b1 点灵魂以获得 [E] 。"
+    ]
+  },
+  "TlipocaMod:Revelation": {
+    "NAME": "启示录",
+    "FLAVOR": "一本不知道来自哪里的书，谁在乎呢？",
+    "DESCRIPTIONS": [
+      "拾起时，获得一张 #b固有 的 #y神化+ 。"
+    ]
+  },
+  "TlipocaMod:NightCrown": {
+    "NAME": "夜之冠冕",
+    "FLAVOR": "夜之主的王冠。只有大死神才能够佩戴。",
+    "DESCRIPTIONS": [
+      "在每回合开始时获得 [E] ，然后将一张手牌本回合打出前的耗能加 #b1 。"
+    ]
+  },
+  "TlipocaMod:BloodyHarvest": {
+    "NAME": "血色收割",
+    "FLAVOR": "死与恶衔接黑暗之环，生与善敲响末日之钟；我手持镰刀将万物收割，繁荣国度终将归于虚空。",
+    "DESCRIPTIONS": [
+      "替换 #r小红 并继承灵魂。 非爪牙敌人彻底死亡时，收割 #b2 点灵魂。你的回合开始时，消耗 #b1 点灵魂，获得 [E] ，抽 #b2 张牌。"
+    ]
+  }
+}

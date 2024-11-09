@@ -1,0 +1,236 @@
+{
+  "TlipocaMod:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "TlipocaMod:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! block."
+  },
+  "TlipocaMod:Deterrent": {
+    "NAME": "Deterrent",
+    "DESCRIPTION": " Ephemeral. Apply 1 Weak and !M! Vulnerable."
+  },
+  "TlipocaMod:Execution": {
+    "NAME": "Execution",
+    "DESCRIPTION": " Ephemeral. Deal !D! damage. If no card in your hand costs higher, it crits: deal !M! times damage. If Fatal, critical hits deal an additional 1× damage in this run."
+  },
+  "TlipocaMod:SoulStrike": {
+    "NAME": "Soul Strike",
+    "DESCRIPTION": " Resonate. Deal !D! damage !M! times."
+  },
+  "TlipocaMod:Scarlet": {
+    "NAME": "Scarlet",
+    "DESCRIPTION": "Deal !D! damage. Randomly increase the cost in this turn of a card in your hand by !M! .",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Increase the cost in this turn of a card in your hand by !M! ."
+  },
+  "TlipocaMod:Pale": {
+    "NAME": "Pale",
+    "DESCRIPTION": "Gain !B! block. Reduce a card's cost in this turn by !M! ."
+  },
+  "TlipocaMod:BloodRites": {
+    "NAME": "Blood Rite",
+    "DESCRIPTION": "Deal !D! damage. If Fatal, Transform a card in your deck. Exhaust."
+  },
+  "TlipocaMod:Leech": {
+    "NAME": "Leech",
+    "DESCRIPTION": "Enemy loses X Strength, gain X Strength. Exhaust.",
+    "UPGRADE_DESCRIPTION":"Enemy loses X+1 Strength, gain X+1 Strength. Exhaust."
+  },
+  "TlipocaMod:Justitia": {
+    "NAME": "\"Justitia\"",
+    "DESCRIPTION": "Immediately kill whoever has !M! or more Strength. Exhaust.",
+    "UPGRADE_DESCRIPTION": "\"Justitia+\""
+  },
+  "TlipocaMod:SoulFragment": {
+    "NAME": "Soul Fragment",
+    "DESCRIPTION": "Increase the cost of a random card in your hand by 1 in this combat. Gain [E] [E] [E] .",
+    "UPGRADE_DESCRIPTION": "Increase the cost of a card in your hand by 1 in this combat. Gain [E] [E] [E] ."
+  },
+  "TlipocaMod:DeathEye": {
+    "NAME": "Eye Of The Death",
+    "DESCRIPTION": "Eternity .Successively put !M! cards in the draw pile to the top of the pile. Exhaust.",
+    "UPGRADE_DESCRIPTION":"Innate. Eternity. Successively put !M! cards in the draw pile to the top of the pile. Exhaust."
+  },
+  "TlipocaMod:Twin": {
+    "NAME": "Twin",
+    "DESCRIPTION": "In this battle, increase the cost of a card in your hand by 1 and cast it twice when played. Exhaust."
+  },
+  "TlipocaMod:Solidify": {
+    "NAME": "Solidify",
+    "DESCRIPTION": "Gain !B! block. Double its base block for each [E] increase in this card's cost." 
+  },
+  "TlipocaMod:PowerUnleash": {
+    "NAME": "Power Unleash",
+    "DESCRIPTION": "Gain energy equal to the sum of the cost of your hand. Exhaust.",
+    "UPGRADE_DESCRIPTION":" Retain. Gain energy equal to the sum of the cost of your hand. Exhaust."
+  },
+  "TlipocaMod:Midnight": {
+    "NAME": "Midnight",
+    "DESCRIPTION": "Randomly play a card with the highest cost in your hand. If it's not removed from the combat, put it on the top of the draw pile.",
+    "UPGRADE_DESCRIPTION":"Play a card with the highest cost in your hand. If it's not removed from the combat, put it on the top of the draw pile. "
+  },
+  "TlipocaMod:Summon": {
+    "NAME": "Summon",
+    "DESCRIPTION": "Draw till the card draw costs the greatest in your hand. Exhaust.",
+    "UPGRADE_DESCRIPTION":"Draw till the card draw costs the greatest in your hand."
+  },
+  "TlipocaMod:ReaperForm": {
+    "NAME": "Reaper Form",
+    "DESCRIPTION": "Raise your max HP by !M! when a non-Minion enemy dies thoroughly."
+  },
+  "TlipocaMod:Samsara": {
+    "NAME": "Samsara",
+    "DESCRIPTION": "Eternity. End your turn. Take an extra turn in which all cards' cost is raised by !M! after this turn. Exhaust."
+  },
+  "TlipocaMod:Dust": {
+    "NAME": "Dust",
+    "DESCRIPTION": "Eternity. Deal !D! damage. Gain !B! block. Draw !M! card."
+  },
+  "TlipocaMod:Annihilate": {
+    "NAME": "Annihilate",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Lose 1 Strength .Strength affect this card !M! times."
+  },
+  "TlipocaMod:Parclose": {
+    "NAME": "Parclose",
+    "DESCRIPTION": "Draw !M! cards, then put a card in your hand to the top of the draw pile. Gain !B! block for each cost of that card."
+  },
+  "TlipocaMod:Meteor": {
+    "NAME": "Meteor",
+    "DESCRIPTION": "Look at the top !M! cards of your draw pile. Exhaust one of them. Deal damage to all enemies equal to twice the squared cost of the exhausted card."
+  },
+  "TlipocaMod:DarkestHour": {
+    "NAME": "Darkest Hour",
+    "DESCRIPTION": "Increase ALL your cards' cost by !M! for the rest of combat, whenever you draw 1 card, gain [E] . Reshuffle ALL your cards into your draw pile. Draw cards as many as your hand."
+  },
+  "TlipocaMod:Awaken": {
+    "NAME": "Awaken",
+    "DESCRIPTION": "Whenever you lose [E] [E] [E] ,draw !M! card."
+  },
+  "TlipocaMod:Blades": {
+    "NAME": "Blades",
+    "DESCRIPTION": "Deal X damage to ALL enemies X times.",
+    "UPGRADE_DESCRIPTION": "Deal X+1 damage to ALL enemies X+1 times.",
+    "EXTENDED_DESCRIPTION":[
+      " NL (Deal !D! damage.)"
+    ]
+  },
+  "TlipocaMod:Slaughter": {
+    "NAME": "Slaughter",
+    "DESCRIPTION": "Deal !D! damage to a random enemy X times."
+  },
+  "TlipocaMod:Godhead": {
+    "NAME": "Godhead",
+    "DESCRIPTION": "After playing the first card with cost more than 1 each turn, gain energy equal to the cost."
+  },
+  "TlipocaMod:Inspiration": {
+    "NAME": "Inspiration",
+    "DESCRIPTION": "Choose 1 of 3 X-cost cards of any color to add into your hand. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 upgraded X-cost cards of any color to add into your hand. Exhaust."
+  },
+  "TlipocaMod:Misery": {
+    "NAME": "Misery",
+    "DESCRIPTION": "Apply !M! Weak, Vulnerable and Bleeding. Exhaust."
+  },
+  "TlipocaMod:CutDown": {
+    "NAME": "Cut Down",
+    "DESCRIPTION": "Ephemeral. Apply !M! Bleeding."
+  },
+  "TlipocaMod:HeartPierceStrike": {
+    "NAME": "Heart Pierce Strike",
+    "DESCRIPTION": "Deal !D! damage. Apply Bleeding equal to the unblocked damage."
+  },
+  "TlipocaMod:Erosion": {
+    "NAME": "Erosion",
+    "DESCRIPTION": "ALL enemies lose !M! Strength this turn. Apply !M! Bleeding to ALL enemies. Exhaust."
+  },
+  "TlipocaMod:Contagion": {
+    "NAME": "Contagion",
+    "DESCRIPTION": "Apply !M! Weak and Vulnerable to ALL enemies Bleeding. Exhaust."
+  },
+  "TlipocaMod:GrievousWounds": {
+    "NAME": "Grievous Wounds",
+    "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply !M! Bleeding."
+  },
+  "TlipocaMod:Collapse": {
+    "NAME": "Collapse",
+    "DESCRIPTION": " Ethereal. Bleeding will not be reduced at the start of turn now.",
+    "UPGRADE_DESCRIPTION": " Bleeding will not be reduced at the start of turn now."
+  },
+  "TlipocaMod:Present": {
+    "NAME": "Present",
+    "DESCRIPTION": "Apply Eternity to ALL cards in your hand in this combat. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. Apply Eternity to ALL cards in your hand in this combat. Exhaust."
+  },
+  "TlipocaMod:Maintenance": {
+    "NAME": "Maintenance",
+    "DESCRIPTION": "At the start of your next X turns, gain [E] and draw 2 cards. Exhaust.",
+    "UPGRADE_DESCRIPTION": "At the start of your next X turns, gain [E] and draw until your hand is full. Exhaust."
+  },
+  "TlipocaMod:Recycle": {
+    "NAME": "Recycle",
+    "DESCRIPTION": " Exhaust a card, gain energy equal to its cost."
+  },
+  "TlipocaMod:Contract": {
+    "NAME": "Contract",
+    "DESCRIPTION": "Draw !M! cards. Increase a card's cost in this turn by !M! ."
+  },
+  "TlipocaMod:Torrent": {
+    "NAME": "Torrent",
+    "DESCRIPTION": "Deal !D! damage for each [E] you now have."
+  },
+  "TlipocaMod:Mystery": {
+    "NAME": "Mystery",
+    "DESCRIPTION": " Ephemeral. Draw a card. Gain [E] . Can be Upgraded any number of times. Exhaust.",
+    "UPGRADE_DESCRIPTION": " Ephemeral. Draw a card. Gain !M! [E] . Can be Upgraded any number of times. Exhaust.",
+    "EXTENDED_DESCRIPTION":[
+      " Ephemeral. Draw a card. Gain [E] ",
+      "[E] ",
+      ". Can be Upgraded any number of times. Exhaust."
+    ]
+  },
+  "TlipocaMod:Serenade": {
+    "NAME": "Serenade",
+    "DESCRIPTION": "Deal !D! damage. Reduce ALL cards' cost this turn in your hand to 0 and apply Ephemeral to them in this turn."
+  },
+  "TlipocaMod:Rend": {
+    "NAME": "Rend",
+    "DESCRIPTION": "Deal !D! damage. If target is Bleeding, deal double damage. If unblocked damage was dealt, apply !M! Bleeding. If both, apply !M! Vulnerable."
+  },
+  "TlipocaMod:Echo": {
+    "NAME": "Echo",
+    "DESCRIPTION": "Apply Resonate to ALL cards in your hand for the rest of combat. Exhaust."
+  },
+  "TlipocaMod:TwistedMind": {
+    "NAME": "Twisted Mind",
+    "DESCRIPTION": "Deal !D! damage. If the card's cost is not 2 when played, gain [E] [E] ."
+  },
+  "TlipocaMod:Coronate": {
+    "NAME": "Coronate",
+    "DESCRIPTION": "Gain Strength equal to !M! times X."
+  },
+  "TlipocaMod:Astrology": {
+    "NAME": "Astrology",
+    "DESCRIPTION": "Retain. Deal !D! damage. Look at the !M! cards at the bottom of your draw pile, put one of them into your hand."
+  },
+  "TlipocaMod:Edge": {
+    "NAME": "Edge",
+    "DESCRIPTION": "Draw !M! cards. Put a card in your hand to the top of the draw pile. Add *Shivs equal to its cost into your hand."
+  },
+  "TlipocaMod:DeathKnell": {
+    "NAME": "Death Knell",
+    "DESCRIPTION": " Retain. Deal !D! damage. Increase its cost by !M! and double its basic damage for the rest of this combat. Shuffle this card into your draw pile."
+  },
+  "TlipocaMod:Eliminate": {
+    "NAME": "Eliminate",
+    "DESCRIPTION": "Deal !D! damage. Only ONCE for each combat: If Fatal, heal !M! HP."
+  },
+  "TlipocaMod:Gaze": {
+    "NAME": "Gaze",
+    "DESCRIPTION": "Deal !D! damage. Gain [E] equal to the top card's cost of the draw pile. When in your hand, you can see the top card of the draw pile. "
+  },
+  "TlipocaMod:RustyBlade": {
+    "NAME": "Rusty Blade",
+    "DESCRIPTION": "Deal !D! damage. If break an enemy's Block, apply !M! Bleeding. Draw a card."
+  }
+}

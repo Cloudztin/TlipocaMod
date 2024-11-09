@@ -1,0 +1,15 @@
+{
+  "modid": "TlipocaMod",
+  "name": "Tlipoca (sp)",
+  "author_list": [
+    "de Fina",
+    "Tushan Susu"
+  ],
+  "description": "添加了一个新角色：特莉波卡，目前仍处于测试阶段。",
+  "dependencies": [
+    "basemod",
+    "stslib"
+  ],
+  "version": "0.1.0",
+  "sts_version": "12-18-2022"
+}

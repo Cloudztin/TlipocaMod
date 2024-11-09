@@ -1,0 +1,88 @@
+{
+  "TlipocaMod:Unleash": {
+    "NAME": "Awakened",
+    "DESCRIPTIONS": [
+      "Whenever you lose [E] [E] [E] ,draw #b",
+      " card. ( #b",
+      " cards.( #b",
+      " [E] to go.)"
+    ]
+  },
+  "TlipocaMod:Reaper": {
+    "NAME": "Reaper Form",
+    "DESCRIPTIONS": [
+      "Raise your max HP by #b",
+      " when a non-Minion enemy dies thoroughly."
+    ]
+  },
+  "TlipocaMod:BrokenTime": {
+    "NAME": "Broken Time",
+    "DESCRIPTIONS": [
+      "During this turn, raise the cost of all cards by #b",
+      " ."
+    ]
+  },
+  "TlipocaMod:Samsara": {
+    "NAME": "Samsara",
+    "DESCRIPTIONS": [
+      "All cards' cost will be raised in your next turn."
+    ]
+  },
+  "TlipocaMod:Dark": {
+    "NAME": "Dark",
+    "DESCRIPTIONS": [
+      "Whenever you draw 1 card, gain ",
+      "[E] ",
+      "."
+    ]
+  },
+  "TlipocaMod:Godhead": {
+    "NAME": "Godhead",
+    "DESCRIPTIONS": [
+      "After playing the first card costs more than 1 each turn, gain energy equal to its cost.",
+      "After playing the first #b",
+      " cards cost more than 1 each turn, gain energy equal to the cost.",
+      "( #b1 card played this turn.)",
+      "( #b",
+      " cards played this turn.)",
+      "( no card played this this turn.)"
+    ]
+  },
+  "TlipocaMod:Bleeding": {
+    "NAME": "Bleeding",
+    "DESCRIPTIONS": [
+      "Upon receiving unblocked attack damage, lose #r",
+      " HP and stack #b1 #yBleeding . At the start of turn, lose #r",
+      " HP and half the stack."
+    ]
+  },
+  "TlipocaMod:GrievousWounds": {
+    "NAME": "Grievous Wounds",
+    "DESCRIPTIONS": [
+      "Whenever your Attacks deal unblocked damage, apply #r",
+      " #yBleeding."
+    ]
+  },
+  "TlipocaMod:Collapse": {
+    "NAME": "Collapse",
+    "DESCRIPTIONS": [
+      "#rBleeding will not reduce at the start of turn."
+    ]
+  },
+  "TlipocaMod:Maintenance": {
+    "NAME": "Maintenance",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, gain [E] and draw #y2 cards.",
+      "At the start of your next #b",
+      " turns, gain [E] and draw #y2 cards."
+    ]
+  },
+  "TlipocaMod:UpMaintenance": {
+    "NAME": "Maintenance",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, gain [E] and draw until your hand is full.",
+      "At the start of your next #b",
+      " turns, gain [E] and draw until your hand is full."
+    ]
+  }
+}

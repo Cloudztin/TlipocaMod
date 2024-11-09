@@ -1,0 +1,30 @@
+{
+  "TlipocaMod:LittleRed": {
+    "NAME": "Little Red",
+    "FLAVOR": "The first scythe of the Death in novitiate.",
+    "DESCRIPTIONS": [
+      "Harvest #b1 soul when enemy dies. At the start of your turn, consume #b1 soul to gain [E] ."
+    ]
+  },
+  "TlipocaMod:Revelation": {
+    "NAME": "Revelation",
+    "FLAVOR": "A book form heaven or hell, who cares?",
+    "DESCRIPTIONS": [
+      "Upon pickup, obtain an #bInnate #yApotheosis+ ."
+    ]
+  },
+  "TlipocaMod:NightCrown": {
+    "NAME": "Night Crown",
+    "FLAVOR": "The crown of the Death. ",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain [E] , then increase the cost of a card in your hand by #b1 until it's played in this turn."
+    ]
+  },
+  "TlipocaMod:BloodyHarvest": {
+    "NAME": "Bloody Harvest",
+    "FLAVOR": "Death entwines with evil, life harmonizes with virtue. My scythe doth reap the world's bounty, with each swing decisive and true. ",
+    "DESCRIPTIONS": [
+      "Replace #rLittle #rRed and inherits its soul. Harvest #b2 soul when a non-minion enemy thoroughly dies. At the start of your turn, consume #b1 soul to gain [E] and draw #b2 cards."
+    ]
+  }
+}
