@@ -2,7 +2,6 @@ package TlipocaMod.cards.uncommon;
 
 import TlipocaMod.action.EliminateAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
