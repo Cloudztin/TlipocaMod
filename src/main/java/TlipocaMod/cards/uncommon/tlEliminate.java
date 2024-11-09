@@ -60,6 +60,14 @@ public class tlEliminate extends AbstractTlipocaCard {
     }
 
     @Override
+    public void triggerOnGlowCheck() {
+        if(this.misc==0)
+            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
+        else
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+    }
+
+    @Override
     public AbstractCard makeStatEquivalentCopy() {
         AbstractCard c=super.makeStatEquivalentCopy();
         c.misc=0;
