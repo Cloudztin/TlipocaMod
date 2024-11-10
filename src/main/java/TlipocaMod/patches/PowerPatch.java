@@ -1,11 +1,18 @@
 package TlipocaMod.patches;
 
+import TlipocaMod.TlipocaMod.CostForTurnModifier;
 import TlipocaMod.powers.AbstractTlipocaPower;
+import basemod.abstracts.AbstractCardModifier;
+import basemod.helpers.CardModifierManager;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.ConfusionPower;
+
+import java.util.ArrayList;
 
 
 public class PowerPatch {
@@ -17,6 +24,17 @@ public class PowerPatch {
             for(AbstractPower p: AbstractDungeon.player.powers)
                 if(p instanceof AbstractTlipocaPower)
                     ((AbstractTlipocaPower)p).onMonsterDeath(mo);
+        }
+    }
+
+    @SpirePatch(clz= ConfusionPower.class, method="onCardDraw")
+    public static class ConfusionPatch{
+        @SpireInsertPatch(rloc=5, localvars = {"newCost"})
+        public static void Insert(AbstractPower power, AbstractCard card, int newCost) {
+            ArrayList<AbstractCardModifier> mods = CardModifierManager.getModifiers(card, CostForTurnModifier.ID);
+            if(!mods.isEmpty() && mods.get(0) instanceof CostForTurnModifier)
+                if(((CostForTurnModifier) mods.get(0)).trueCost >=0)
+                    ((CostForTurnModifier) mods.get(0)).trueCost = newCost;
         }
     }
 }

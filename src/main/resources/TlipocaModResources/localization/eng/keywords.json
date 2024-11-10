@@ -5,7 +5,7 @@
       "NAMES": [
         "ephemeral"
       ],
-      "DESCRIPTION": "If this card is in your hand, each card played increases its cost in this turn by #b1 ."
+      "DESCRIPTION": "If this card is in your hand, each card played increases its cost #yTemporarily by #b1 . Temporary cost modifies will last till the end of turn."
     },
     {
       "NAMES": [
@@ -17,7 +17,7 @@
       "NAMES": [
         "resonate"
       ],
-      "DESCRIPTION": "If this card is in your hand, each time you play a card costs no more than this card, reduce its cost in this turn by #b1 ."
+      "DESCRIPTION": "If this card is in your hand, each time you play a card costs no more than this card, reduce its cost #yTemporarily by #b1 . Temporary cost modifies will last till the end of turn."
     },
     {
       "NAMES": [
@@ -30,7 +30,16 @@
         "bleeding"
       ],
       "DESCRIPTION": "#rBleeding creatures lose HP and gain #b1 additional #rBleeding when taking unblocked #yAttack damage. At the start of their turn, they lose HP and half the #rBleeding stack."
+    },
+    {
+      "NAMES": [
+        "temporary",
+        "temporarily"
+      ],
+      "DESCRIPTION": "Temporary cost modifies will last till the end of turn."
     }
+
+
 
   ]
 }

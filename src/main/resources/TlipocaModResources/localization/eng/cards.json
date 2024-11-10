@@ -21,12 +21,12 @@
   },
   "TlipocaMod:Scarlet": {
     "NAME": "Scarlet",
-    "DESCRIPTION": "Deal !D! damage. Randomly increase the cost in this turn of a card in your hand by !M! .",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Increase the cost in this turn of a card in your hand by !M! ."
+    "DESCRIPTION": "Deal !D! damage. Randomly increase the cost of a card in your hand Temporarily by !M! .",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Temporarily increase the cost of a card in your hand by !M! ."
   },
   "TlipocaMod:Pale": {
     "NAME": "Pale",
-    "DESCRIPTION": "Gain !B! block. Reduce a card's cost in this turn by !M! ."
+    "DESCRIPTION": "Gain !B! block. Temporarily reduce a card's cost by !M! ."
   },
   "TlipocaMod:BloodRites": {
     "NAME": "Blood Rite",
@@ -81,7 +81,7 @@
   },
   "TlipocaMod:Samsara": {
     "NAME": "Samsara",
-    "DESCRIPTION": "Eternity. End your turn. Take an extra turn in which all cards' cost is raised by !M! after this turn. Exhaust."
+    "DESCRIPTION": "Eternity. End your turn. After this turn, take an extra turn in which all cards' cost is raised Temporarily by !M! . Exhaust."
   },
   "TlipocaMod:Dust": {
     "NAME": "Dust",
@@ -173,7 +173,7 @@
   },
   "TlipocaMod:Contract": {
     "NAME": "Contract",
-    "DESCRIPTION": "Draw !M! cards. Increase a card's cost in this turn by !M! ."
+    "DESCRIPTION": "Draw !M! cards. Temporarily increase a card's cost in this turn by !M! ."
   },
   "TlipocaMod:Torrent": {
     "NAME": "Torrent",
@@ -232,5 +232,9 @@
   "TlipocaMod:RustyBlade": {
     "NAME": "Rusty Blade",
     "DESCRIPTION": "Deal !D! damage. If break an enemy's Block, apply !M! Bleeding. Draw a card."
+  },
+  "TlipocaMod:Destiny": {
+    "NAME": "Destiny",
+    "DESCRIPTION": "Gain !B! Block. Put a random card with the highest cost in the draw pile into your hand."
   }
 }

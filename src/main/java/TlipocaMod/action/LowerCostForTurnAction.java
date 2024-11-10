@@ -6,17 +6,17 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 
-public class IncreaseCostForTurnAction extends AbstractGameAction {
+public class LowerCostForTurnAction extends AbstractGameAction {
+
     private final AbstractCard targetCard;
 
-    public IncreaseCostForTurnAction(AbstractCard card, int amt) {
+    public LowerCostForTurnAction(AbstractCard card, int amt) {
         this.targetCard = card;
         this.amount = amt;
     }
 
     public void update() {
-        CardModifierManager.addModifier(this.targetCard, new CostForTurnModifier(this.amount));
+        CardModifierManager.addModifier(this.targetCard, new CostForTurnModifier(-this.amount));
         this.isDone = true;
     }
-
 }

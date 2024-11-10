@@ -21,12 +21,12 @@
   },
   "TlipocaMod:Scarlet": {
     "NAME": "猩红",
-    "DESCRIPTION": "造成 !D! 点伤害。使你的一张随机手牌本回合耗能增加 !M! 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。使你的一张手牌本回合耗能增加 !M! 。"
+    "DESCRIPTION": "造成 !D! 点伤害。使你的一张随机手牌的耗能 暂时 增加 !M! 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。使你的一张手牌的耗能 暂时 增加 !M! 。"
   },
   "TlipocaMod:Pale": {
     "NAME": "苍白",
-    "DESCRIPTION": "获得 !B! 点 格挡 。将一张手牌本回合的耗能减 !M! ."
+    "DESCRIPTION": "获得 !B! 点 格挡 。将一张手牌本回合的耗能 暂时 减 !M! ."
   },
   "TlipocaMod:BloodRites": {
     "NAME": "血祭",
@@ -81,7 +81,7 @@
   },
   "TlipocaMod:Samsara": {
     "NAME": "轮回",
-    "DESCRIPTION": " 永恒 。结束你的回合。获得一个新的回合，此回合中所有牌的耗能增加 !M! 。 消耗 。"
+    "DESCRIPTION": " 永恒 。结束你的回合。获得一个新的回合，此回合中所有牌的耗能 暂时 增加 !M! 。 消耗 。"
   },
   "TlipocaMod:Dust": {
     "NAME": "尘埃",
@@ -173,7 +173,7 @@
   },
   "TlipocaMod:Contract": {
     "NAME": "契约",
-    "DESCRIPTION": "抽 !M! 张牌。将一张手牌本回合的耗能增加 !M! 。"
+    "DESCRIPTION": "抽 !M! 张牌。将一张手牌耗能 暂时 增加 !M! 。"
   },
   "TlipocaMod:Torrent": {
     "NAME": "倾泻",
@@ -232,5 +232,9 @@
   "TlipocaMod:RustyBlade": {
     "NAME": "锈刃",
     "DESCRIPTION": "造成 !D! 点伤害。如果突破了敌人的 格挡 ，则给予 !M! 层 流血 。抽一张牌。"
+  },
+  "TlipocaMod:Destiny": {
+    "NAME": "命运",
+    "DESCRIPTION": "获得 !B! 点格挡。抽取抽牌堆中耗能最高的一张牌。"
   }
 }

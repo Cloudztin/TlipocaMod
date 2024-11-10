@@ -123,7 +123,7 @@ public class TlipocaModifier extends AbstractCardModifier {
             description.append(TEXT[11]);
             description.append(TEXT[5]);
         }
-        }
+    }
 
     public String modifyDescription(String rawDescription, final AbstractCard card){
         final StringBuilder thingsToAdd = new StringBuilder();

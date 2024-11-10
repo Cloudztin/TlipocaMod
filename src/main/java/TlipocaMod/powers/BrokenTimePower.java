@@ -1,6 +1,7 @@
 package TlipocaMod.powers;
 
-import TlipocaMod.action.RecoverAction;
+import TlipocaMod.TlipocaMod.CostForTurnModifier;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -42,35 +43,28 @@ public class BrokenTimePower extends AbstractTlipocaPower {
         super.update(slot);
         for(AbstractCard c: AbstractDungeon.player.hand.group)
             if(c.cost>=0) if(!this.cardsDone.contains(c)){
-                c.updateCost(this.amount);
+                CardModifierManager.addModifier(c, new CostForTurnModifier(this.amount));
                 cardsDone.add(c);
             }
 
         for(AbstractCard c: AbstractDungeon.player.drawPile.group)
             if(c.cost>=0) if(!this.cardsDone.contains(c)){
-                c.updateCost(this.amount);
+                CardModifierManager.addModifier(c, new CostForTurnModifier(this.amount));
                 cardsDone.add(c);
             }
 
         for(AbstractCard c: AbstractDungeon.player.discardPile.group)
             if(c.cost>=0) if(!this.cardsDone.contains(c)){
-                c.updateCost(this.amount);
+                CardModifierManager.addModifier(c, new CostForTurnModifier(this.amount));
                 cardsDone.add(c);
             }
 
     }
 
-    @Override
-    public void onRemove() {
-        addToTop(new RecoverAction(this.cardsDone, this.amount));
-    }
 
-    @Override
     public void atEndOfTurn(boolean isPlayer) {
-        super.atEndOfTurn(isPlayer);
-        if(isPlayer){
+        if(isPlayer)
             addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, ID));
-        }
     }
 
 }

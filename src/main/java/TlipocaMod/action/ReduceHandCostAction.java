@@ -1,5 +1,7 @@
 package TlipocaMod.action;
 
+import TlipocaMod.TlipocaMod.CostForTurnModifier;
+import basemod.helpers.CardModifierManager;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -32,7 +34,7 @@ public class ReduceHandCostAction extends AbstractGameAction {
 
             if(this.p.hand.size()-this.cannotReduce.size()<=amount){
                 for(AbstractCard c: this.p.hand.group)
-                    if(c.cost>0 && c.costForTurn>0) c.setCostForTurn(c.costForTurn-this.cost);
+                    if(c.cost>0 && c.costForTurn>0) CardModifierManager.addModifier(c, new CostForTurnModifier(-this.cost));
                 this.isDone=true;
                 tickDuration();
                 return;
@@ -43,7 +45,7 @@ public class ReduceHandCostAction extends AbstractGameAction {
 
                 if(this.p.hand.size()<=amount){
                     for(AbstractCard c: this.p.hand.group)
-                        c.setCostForTurn(c.costForTurn-this.cost);
+                        CardModifierManager.addModifier(c, new CostForTurnModifier(-this.cost));
                     returnCards();
                     this.isDone=true;
                     tickDuration();
@@ -77,7 +79,7 @@ public class ReduceHandCostAction extends AbstractGameAction {
         }
         else if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved){
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group){
-                c.setCostForTurn(c.costForTurn-cost);
+                CardModifierManager.addModifier(c, new CostForTurnModifier(-this.cost));
                 c.applyPowers();
                 this.p.hand.addToTop(c);
                 c.superFlash(Color.WHITE.cpy());
@@ -96,7 +98,7 @@ public class ReduceHandCostAction extends AbstractGameAction {
         AbstractCard c= this.p.hand.getRandomCard(AbstractDungeon.cardRandomRng);
         if(c.cost<0 || selected.contains(c) || c.costForTurn==0) findRandomCard(amt,selected);
         else{
-            c.setCostForTurn(c.costForTurn-this.cost);
+            CardModifierManager.addModifier(c, new CostForTurnModifier(-this.cost));
             c.superFlash(Color.WHITE.cpy());
             selected.add(c);
             findRandomCard(amt-1,selected);
