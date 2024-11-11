@@ -84,5 +84,20 @@
       "你的下 #b",
       " 回合开始后，获得 [E] 并抽满手牌。"
     ]
+  },
+  "TlipocaMod:Humanity": {
+    "NAME": "人性",
+    "DESCRIPTIONS": [
+      "打出耗能为 #y1 的牌后，抽 #b1 张牌。",
+      "打出耗能为 #y1 的牌后，抽 #b",
+      " 张牌。"
+    ]
+  },
+  "TlipocaMod:CannotAttack": {
+    "NAME": "无法攻击",
+    "DESCRIPTIONS": [
+      "本回合你不能造成 #y攻击 伤害。"
+    ]
   }
+
 }

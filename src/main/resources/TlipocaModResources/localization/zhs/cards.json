@@ -39,7 +39,7 @@
   },
   "TlipocaMod:Justitia": {
     "NAME": "“正义”",
-    "DESCRIPTION": "处决所有 力量 不少于 !M! 点的人。 消耗 。",
+    "DESCRIPTION": "造成 !D! 点伤害。只有耗能为0时才能打出。 斩杀 时，在本局游戏的耗能永久减1。",
     "UPGRADE_DESCRIPTION": "“正义+”"
   },
   "TlipocaMod:SoulFragment": {
@@ -227,7 +227,7 @@
   },
   "TlipocaMod:Gaze": {
     "NAME": "窥视",
-    "DESCRIPTION": "造成 !D! 点伤害。获得等同于抽牌堆顶的牌的耗能的 [E] 。握在手中时，你可以看见抽牌堆的第一张牌。"
+    "DESCRIPTION": "造成 !D! 点伤害。获得等同于抽牌堆顶的牌的耗能的 [E] 。握在手中时，你可以看见抽牌堆顶的牌。"
   },
   "TlipocaMod:RustyBlade": {
     "NAME": "锈刃",
@@ -235,6 +235,36 @@
   },
   "TlipocaMod:Destiny": {
     "NAME": "命运",
-    "DESCRIPTION": "获得 !B! 点格挡。抽取抽牌堆中耗能最高的一张牌。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。抽取抽牌堆中耗能最高的一张牌。"
+  },
+  "TlipocaMod:Cleanse": {
+    "NAME": "擦拭",
+    "DESCRIPTION": "获得 !B! 点 格挡 。随机化一张手牌的耗能。"
+  },
+  "TlipocaMod:Reckoning": {
+    "NAME": "清算",
+    "DESCRIPTION": "移除敌人的 格挡 。敌人每有1层 流血 ，就造成 !D! 点伤害。 消耗 。"
+  },
+  "TlipocaMod:Humanity": {
+    "NAME": "人性",
+    "DESCRIPTION": " 虚无 。打出耗能为1的牌后，抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "打出耗能为1的牌后，抽 !M! 张牌。"
+  },
+  "TlipocaMod:Overwhelm": {
+    "NAME": "覆盖",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。随机化一张手牌的耗能。"
+  },
+  "TlipocaMod:Phantom": {
+    "NAME": "幻象",
+    "DESCRIPTION": " 共鸣 。获得 !B! 点 格挡 。 给予 !M! 层 易伤 。"
+  },
+  "TlipocaMod:Breakdown": {
+    "NAME": "崩溃",
+    "DESCRIPTION": "造成 !D! 点伤害。获得 !M! 点临时 力量 。在手中时，你打出牌后，随机化此牌的耗能。"
+  },
+  "TlipocaMod:Whisper": {
+    "NAME": "轻语",
+    "DESCRIPTION": "获得 !B! 点 格挡 。抽 !M! 张牌，在本场战斗中为它附加 共鸣 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。抽 !M! 张牌，在本场战斗中为它们附加 共鸣 。"
   }
 }

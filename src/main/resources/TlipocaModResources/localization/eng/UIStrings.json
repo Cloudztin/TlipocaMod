@@ -72,5 +72,11 @@
     "TEXT": [
       "Choose a Card to Draw. "
     ]
+  },
+  "Randomize1HandCostAction": {
+    "TEXT": [
+      "Randomize its cost"
+    ]
   }
+
 }

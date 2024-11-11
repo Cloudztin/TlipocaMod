@@ -72,6 +72,11 @@
     "TEXT": [
       "选择一张牌抽到手中。"
     ]
+  },
+  "Randomize1HandCostAction": {
+    "TEXT": [
+      "随机化耗能"
+    ]
   }
 
 }

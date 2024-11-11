@@ -84,5 +84,19 @@
       "At the start of your next #b",
       " turns, gain [E] and draw until your hand is full."
     ]
+  },
+  "TlipocaMod:Humanity": {
+    "NAME": "Humanity",
+    "DESCRIPTIONS": [
+      "When you play a card costs #y1 , draw #b1 card.",
+      "When you play a card costs #y1 , draw #b",
+      " cards."
+    ]
+  },
+  "TlipocaMod:CannotAttack": {
+    "NAME": "Cannot Attack",
+    "DESCRIPTIONS": [
+      "You cannot deal Attack damage this turn."
+    ]
   }
 }

@@ -39,7 +39,7 @@
   },
   "TlipocaMod:Justitia": {
     "NAME": "\"Justitia\"",
-    "DESCRIPTION": "Immediately kill whoever has !M! or more Strength. Exhaust.",
+    "DESCRIPTION": "Deal !D! damage. Can only play when its cost is 0. If Fatal, permanently lower its cost in this run by 1.",
     "UPGRADE_DESCRIPTION": "\"Justitia+\""
   },
   "TlipocaMod:SoulFragment": {
@@ -236,5 +236,35 @@
   "TlipocaMod:Destiny": {
     "NAME": "Destiny",
     "DESCRIPTION": "Gain !B! Block. Put a random card with the highest cost in the draw pile into your hand."
+  },
+  "TlipocaMod:Cleanse": {
+    "NAME": "Cleanse",
+    "DESCRIPTION": "Gain !B! Block. Randomize a card's cost."
+  },
+  "TlipocaMod:Reckoning": {
+    "NAME": "Reckoning",
+    "DESCRIPTION": "Remove enemy's Block. Deal !D! damage for each Bleeding layer enemy has. Exhaust."
+  },
+  "TlipocaMod:Humanity": {
+    "NAME": "Humanity",
+    "DESCRIPTION": "Ethereal. When you play a card costs 1, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "When you play a card costs 1, draw !M! card."
+  },
+  "TlipocaMod:Overwhelm": {
+    "NAME": "Overwhelm",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Randomize a card's cost."
+  },
+  "TlipocaMod:Phantom": {
+    "NAME": "Phantom",
+    "DESCRIPTION": " Resonate. Gain !B! Block. Apply !M! Vulnerable."
+  },
+  "TlipocaMod:Breakdown": {
+    "NAME": "Breakdown",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! Strength, lose !M! Strength at the end of turn. Randomize the cost of this card in your hand after playing cards."
+  },
+  "TlipocaMod:Whisper": {
+    "NAME": "Whisper",
+    "DESCRIPTION": "Gain !B! Block. Draw !M! card. Apply Resonate to it in this combat.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Draw !M! cards. Apply Resonate to them in this combat."
   }
 }
