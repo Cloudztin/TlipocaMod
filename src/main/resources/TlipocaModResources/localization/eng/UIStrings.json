@@ -77,6 +77,11 @@
     "TEXT": [
       "Randomize its cost"
     ]
+  },
+  "ExtractionAction": {
+    "TEXT": [
+      "Gain Energy Equal to the Cost and Double Cost"
+    ]
   }
 
 }

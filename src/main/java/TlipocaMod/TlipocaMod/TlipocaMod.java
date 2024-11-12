@@ -59,9 +59,7 @@ public class TlipocaMod implements PostInitializeSubscriber, EditCharactersSubsc
     }
 
     public static void initialize() {
-        DevConsole.logger.info("5");
         new TlipocaMod();
-        DevConsole.logger.info("6");
     }
 
     public void receiveAddAudio() {
@@ -70,7 +68,7 @@ public class TlipocaMod implements PostInitializeSubscriber, EditCharactersSubsc
     public void receivePostInitialize() {
         Texture badgeTexture = new Texture("TlipocaModResources/img/basic/ORB.png");
         ModPanel settingsPanel = new ModPanel();
-        BaseMod.registerModBadge(badgeTexture, "Tlipoca Mod", "de Fina", "v0.1.0\n Add a new player.", settingsPanel);
+        BaseMod.registerModBadge(badgeTexture, "Tlipoca Mod", "de Fina", "v0.1.0\n Add a new character.", settingsPanel);
         loadSavedCardCost();
         Settings.isDailyRun = false;
         Settings.isTrial = false;
@@ -78,7 +76,6 @@ public class TlipocaMod implements PostInitializeSubscriber, EditCharactersSubsc
     }
 
     public void receiveEditCharacters() {
-        DevConsole.logger.info("7");
         BaseMod.addCharacter((AbstractPlayer) new Tlipoca("Tlipoca"), "TlipocaModResources/img/others/TlipocaButton.png", "TlipocaModResources/img/others/TlipocaStartBG.png", ModClassEnum.Tlipoca_Color);
     }
 
@@ -113,7 +110,7 @@ public class TlipocaMod implements PostInitializeSubscriber, EditCharactersSubsc
         BaseMod.loadCustomStringsFile(UIStrings.class, text);
     }
 
-    class Keywords {
+    static class Keywords {
         Keyword[] keywords;
     }
 
@@ -147,9 +144,9 @@ public class TlipocaMod implements PostInitializeSubscriber, EditCharactersSubsc
                 List<CardPatch.cardCostUnit> result = new ArrayList<>();
                 for(AbstractCard c:AbstractDungeon.player.masterDeck.group){
                     CardPatch.cardCostUnit tmp = new CardPatch.cardCostUnit();
-                    tmp.index=Integer.valueOf(AbstractDungeon.player.masterDeck.group.indexOf(c));
+                    tmp.index= AbstractDungeon.player.masterDeck.group.indexOf(c);
                     tmp.updated=CardPatch.newVarField.updated.get(c);
-                    tmp.eternelCost=CardPatch.newVarField.eternelCost.get(c);
+                    tmp.eternalCost =CardPatch.newVarField.eternalCost.get(c);
                     tmp.eternity=CardPatch.newVarField.eternity.get(c);
                     result.add(tmp);
                 }
@@ -164,9 +161,9 @@ public class TlipocaMod implements PostInitializeSubscriber, EditCharactersSubsc
                                 AbstractCard c=AbstractDungeon.player.masterDeck.group.get(unit.index);
                                 CardPatch.newVarField.updated.set(c,unit.updated);
                                 CardPatch.newVarField.eternity.set(c,unit.eternity);
-                                CardPatch.newVarField.eternelCost.set(c,unit.eternelCost);
+                                CardPatch.newVarField.eternalCost.set(c,unit.eternalCost);
                                 if(unit.eternity)
-                                    c.costForTurn=unit.eternelCost;
+                                    c.costForTurn=unit.eternalCost;
                             }
                         }
             }

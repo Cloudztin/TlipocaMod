@@ -12,8 +12,8 @@ import javax.swing.text.AbstractDocument;
 
 public class DarkestAction extends AbstractGameAction {
 
-    private AbstractPlayer p;
-    private int upAmt;
+    private final AbstractPlayer p;
+    private final int upAmt;
 
     public DarkestAction(int upAmt) {
         this.p= AbstractDungeon.player;
@@ -31,9 +31,6 @@ public class DarkestAction extends AbstractGameAction {
         for(AbstractCard c: this.p.discardPile.group)
             if(c.cost>=0) c.updateCost(this.upAmt);
 
-        addToBot(new ShuffleAllAction());
-        addToBot(new ShuffleAction(AbstractDungeon.player.drawPile, false));
-        addToBot(new DrawCardAction(p, size));
 
         this.isDone = true;
     }

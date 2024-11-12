@@ -28,7 +28,7 @@ public class CardPatch {
         public static SpireField<Boolean> resonate = new SpireField<>(() -> false);
         public static SpireField<Boolean> ephemeral = new SpireField<>(() -> false);
         public static SpireField<Boolean> eternity = new SpireField<>(() -> false);
-        public static SpireField<Integer> eternelCost =new SpireField<>(()->-2);
+        public static SpireField<Integer> eternalCost =new SpireField<>(()->-2);
         public static SpireField<Boolean> updated =new SpireField<>(()->false);
         public static SpireField<Boolean> twinCast =new SpireField<>(()->false);
         public static SpireField<Boolean> rebound=new SpireField<>(()->false);
@@ -41,11 +41,11 @@ public class CardPatch {
             if(card.cost >=0){
                 if (CardPatch.newVarField.eternity.get(card)) {
                     if (!newVarField.updated.get(card)) {
-                        newVarField.eternelCost.set(card, card.costForTurn);
+                        newVarField.eternalCost.set(card, card.costForTurn);
                         newVarField.updated.set(card, true);
                     }
-                    card.costForTurn = newVarField.eternelCost.get(card);
-                    card.cost = newVarField.eternelCost.get(card);
+                    card.costForTurn = newVarField.eternalCost.get(card);
+                    card.cost = newVarField.eternalCost.get(card);
                     card.freeToPlayOnce = false;
                     card.isCostModified = false;
                     card.isCostModifiedForTurn = false;
@@ -55,6 +55,17 @@ public class CardPatch {
             }
         }
 
+    }
+
+    @SpirePatch(clz=AbstractCard.class,method = "freeToPlay")
+    public static class freeToPlayPatch {
+        @SpirePrefixPatch
+        public static SpireReturn<Boolean> Prefix(AbstractCard card) {
+            if(card.cost >=0 && CardPatch.newVarField.eternity.get(card))
+                return SpireReturn.Return(false);
+            else
+                return SpireReturn.Continue();
+        }
     }
 
     @SpirePatch(clz= AbstractCard.class,method = "triggerOnOtherCardPlayed")
@@ -82,7 +93,7 @@ public class CardPatch {
             newVarField.eternity.set(card, newVarField.eternity.get(c));
             newVarField.updated.set(card, newVarField.updated.get(c));
             newVarField.ephemeral.set(card, newVarField.ephemeral.get(c));
-            newVarField.eternelCost.set(card, newVarField.eternelCost.get(c));
+            newVarField.eternalCost.set(card, newVarField.eternalCost.get(c));
             newVarField.resonate.set(card, newVarField.resonate.get(c));
         }
     }
@@ -233,7 +244,7 @@ public class CardPatch {
 
     public static class cardCostUnit{
         public int index;
-        public int eternelCost;
+        public int eternalCost;
         public boolean eternity;
         public boolean updated;
     }

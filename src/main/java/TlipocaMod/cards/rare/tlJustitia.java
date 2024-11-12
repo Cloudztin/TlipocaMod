@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.watcher.FreeAttackPower;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 
 import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
@@ -55,7 +54,7 @@ public class tlJustitia extends AbstractTlipocaCard {
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        if(this.costForTurn==0 || this.freeToPlayOnce || AbstractDungeon.player.hasPower(FreeAttackPower.POWER_ID))
+        if(this.costForTurn==0 || this.freeToPlay())
             return super.canUse(p, m);
 
         return false;
@@ -64,7 +63,7 @@ public class tlJustitia extends AbstractTlipocaCard {
 
     @Override
     public void triggerOnGlowCheck() {
-        if(this.costForTurn==0 || this.freeToPlayOnce || AbstractDungeon.player.hasPower(FreeAttackPower.POWER_ID))
+        if(this.costForTurn==0 || this.freeToPlay())
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         else
             this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();

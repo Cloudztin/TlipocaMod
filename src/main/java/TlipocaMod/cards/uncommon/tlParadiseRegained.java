@@ -1,55 +1,55 @@
 package TlipocaMod.cards.uncommon;
 
-import TlipocaMod.action.WhisperFollowAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
 
-public class tlWhisper extends AbstractTlipocaCard {
+public class tlParadiseRegained extends AbstractTlipocaCard {
 
 
     static final CardRarity rarity = CardRarity.UNCOMMON;
     static final CardType type = CardType.SKILL;
     static final int cost = 2;
-    static final String cardName = "Whisper";
+    static final String cardName = "ParadiseRegained";
 
 
     public static final String ID=getID(cardName);
     private static final CardStrings cardStrings= CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String img_path=loadTlipocaCardImg(cardName,type);
 
-    public tlWhisper() {
-        super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.SELF);
+    public tlParadiseRegained() {
+        super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.SELF_AND_ENEMY);
 
 
-        this.magicNumber=this.baseMagicNumber=2;
-        this.baseBlock=6;
+        this.baseBlock=32;
         this.exhaust=true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, this.block));
-        addToBot(new DrawCardAction(this.magicNumber, new WhisperFollowAction()));
+        if(p.currentBlock==0)
+            addToBot(new GainBlockAction(p, p, this.block));
+        for(AbstractMonster mo: AbstractDungeon.getMonsters().monsters)
+            if(mo.currentBlock==0)
+                addToBot(new GainBlockAction(mo, p, this.block));
     }
 
     @Override
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            upgradeBlock(2);
-            this.upgradeMagicNumber(1);
+            upgradeBlock(8);
         }
     }
 
     public AbstractCard makeCopy() {
-        return new tlWhisper();
+        return new tlParadiseRegained();
     }
 }

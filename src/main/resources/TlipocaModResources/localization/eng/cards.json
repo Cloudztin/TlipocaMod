@@ -101,7 +101,7 @@
   },
   "TlipocaMod:DarkestHour": {
     "NAME": "Darkest Hour",
-    "DESCRIPTION": "Increase ALL your cards' cost by !M! for the rest of combat, whenever you draw 1 card, gain [E] . Reshuffle ALL your cards into your draw pile. Draw cards as many as your hand."
+    "DESCRIPTION": "Increase ALL your cards' cost by !M! for the rest of combat, whenever you draw 1 card, gain [E] ."
   },
   "TlipocaMod:Awaken": {
     "NAME": "Awaken",
@@ -264,7 +264,23 @@
   },
   "TlipocaMod:Whisper": {
     "NAME": "Whisper",
-    "DESCRIPTION": "Gain !B! Block. Draw !M! card. Apply Resonate to it in this combat.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. Draw !M! cards. Apply Resonate to them in this combat."
+    "DESCRIPTION": "Gain !B! Block. Draw !M! cards. Apply Resonate to them in this combat. Exhaust."
+  },
+  "TlipocaMod:ParadiseLost": {
+    "NAME": "Paradise Lost",
+    "DESCRIPTION": "Remove ALL enemies' Block. NL Apply !M! Bleeding to ALL enemies. NL Deal !D! damage to ALL enemies."
+  },
+  "TlipocaMod:ParadiseRegained": {
+    "NAME": "Paradise Regained",
+    "DESCRIPTION": "Whoever doesn't have Block gains !B! Block. Exhaust."
+  },
+  "TlipocaMod:Shadow": {
+    "NAME": "Shadow",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "TlipocaMod:Extraction": {
+    "NAME": "Extraction",
+    "DESCRIPTION": "Gain [E] equal to a card's cost. Temporarily double its cost.",
+    "UPGRADE_DESCRIPTION": "Retain. Gain [E] equal to a card's cost. Temporarily double its cost."
   }
 }

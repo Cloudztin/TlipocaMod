@@ -45,7 +45,7 @@ public class tlDeterrent extends AbstractTlipocaCard {
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            this.upgradeMagicNumber(2);
+            this.upgradeMagicNumber(1);
         }
     }
 

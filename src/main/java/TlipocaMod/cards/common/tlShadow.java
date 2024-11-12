@@ -4,6 +4,7 @@ import TlipocaMod.cards.AbstractTlipocaCard;
 import TlipocaMod.patches.CardPatch;
 import TlipocaMod.powers.BleedingPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -12,28 +13,27 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
 
-public class tlCutDown extends AbstractTlipocaCard {
+public class tlShadow extends AbstractTlipocaCard {
 
     static final CardRarity rarity = CardRarity.COMMON;
     static final CardType type = CardType.SKILL;
-    static final int cost = 1;
-    static final String cardName = "CutDown";
+    static final int cost = 2;
+    static final String cardName = "Shadow";
 
 
     public static final String ID=getID(cardName);
     private static final CardStrings cardStrings= CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String img_path=loadTlipocaCardImg(cardName,type);
 
-    public tlCutDown() {
+    public tlShadow() {
         super(ID, cardStrings.NAME ,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
 
-        CardPatch.newVarField.ephemeral.set(this, true);
-        this.magicNumber=this.baseMagicNumber=3;
+        this.baseBlock=16;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new BleedingPower(m, this.magicNumber)));
+        addToBot(new GainBlockAction(p, p, this.block));
     }
 
 
@@ -41,12 +41,12 @@ public class tlCutDown extends AbstractTlipocaCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(2);
+            upgradeBlock(5);
         }
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new tlCutDown();
+        return new tlShadow();
     }
 }
