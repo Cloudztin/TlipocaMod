@@ -26,6 +26,7 @@ public class tlMaintenance extends AbstractTlipocaCard {
     public tlMaintenance() {
         super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.SELF );
 
+        this.magicNumber = this.baseMagicNumber = 2;
         this.exhaust=true;
     }
 
@@ -38,8 +39,7 @@ public class tlMaintenance extends AbstractTlipocaCard {
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            this.rawDescription=cardStrings.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            this.upgradeMagicNumber(1);
         }
     }
 

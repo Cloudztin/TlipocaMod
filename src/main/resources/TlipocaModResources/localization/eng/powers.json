@@ -49,10 +49,10 @@
     ]
   },
   "TlipocaMod:Bleeding": {
-    "NAME": "Bleeding",
+    "NAME": "Bleed",
     "DESCRIPTIONS": [
       "Upon receiving unblocked attack damage, lose #r",
-      " HP and stack #b1 #yBleeding . At the start of turn, lose #r",
+      " HP and stack #b1 #yBleed . At the start of turn, lose #r",
       " HP and half the stack."
     ]
   },
@@ -60,13 +60,13 @@
     "NAME": "Grievous Wounds",
     "DESCRIPTIONS": [
       "Whenever your Attacks deal unblocked damage, apply #r",
-      " #yBleeding."
+      " #yBleed."
     ]
   },
   "TlipocaMod:Collapse": {
     "NAME": "Collapse",
     "DESCRIPTIONS": [
-      "#rBleeding will not reduce at the start of turn."
+      "#rBleed will not reduce at the start of turn."
     ]
   },
   "TlipocaMod:Maintenance": {
@@ -82,7 +82,7 @@
     "DESCRIPTIONS": [
       "At the start of your next turn, gain [E] and draw until your hand is full.",
       "At the start of your next #b",
-      " turns, gain [E] and draw until your hand is full."
+      " turns, gain [E] and draw #y3 cards."
     ]
   },
   "TlipocaMod:Humanity": {
@@ -97,6 +97,12 @@
     "NAME": "Cannot Attack",
     "DESCRIPTIONS": [
       "You cannot deal Attack damage this turn."
+    ]
+  },
+  "TlipocaMod:Sacrifice": {
+    "NAME": "Sacrifice",
+    "DESCRIPTIONS": [
+      "When losing HP due to #rBleed , ALL other enemies lose equivalent HP."
     ]
   }
 }

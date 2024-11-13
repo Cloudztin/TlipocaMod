@@ -1,7 +1,8 @@
 package TlipocaMod.relics;
 
 import TlipocaMod.TlipocaMod.TlipocaMod;
-import TlipocaMod.action.IncreaseHandCostAction;
+import TlipocaMod.action.IncreaseCostForTurnOnceAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
@@ -25,8 +26,11 @@ public class NightCrown extends AbstractTlipocaRelic {
     }
 
     public void atTurnStartPostDraw() {
-        addToTop(new IncreaseHandCostAction(1, false, 1));
+        addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        addToBot(new IncreaseCostForTurnOnceAction(1, false, 1));
     }
+
+
 
     @Override
     public String getUpdatedDescription() {

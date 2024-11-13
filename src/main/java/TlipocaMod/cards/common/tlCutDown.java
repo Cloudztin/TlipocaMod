@@ -28,7 +28,7 @@ public class tlCutDown extends AbstractTlipocaCard {
         super(ID, cardStrings.NAME ,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
 
         CardPatch.newVarField.ephemeral.set(this, true);
-        this.magicNumber=this.baseMagicNumber=3;
+        this.magicNumber=this.baseMagicNumber=2;
     }
 
     @Override
@@ -41,7 +41,9 @@ public class tlCutDown extends AbstractTlipocaCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(2);
+            CardPatch.newVarField.ephemeral.set(this, false);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 

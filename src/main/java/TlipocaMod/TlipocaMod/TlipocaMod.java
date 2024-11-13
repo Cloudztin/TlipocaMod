@@ -110,26 +110,21 @@ public class TlipocaMod implements PostInitializeSubscriber, EditCharactersSubsc
         BaseMod.loadCustomStringsFile(UIStrings.class, text);
     }
 
-    static class Keywords {
-        Keyword[] keywords;
-    }
 
     @Override
     public void receiveEditKeywords() {
         String keywordsPath;
-        int var6;
+
+
         lang = Settings.language.toString().toLowerCase();
         if (!Arrays.asList(langSupported).contains(lang))
             lang = "eng";
         keywordsPath = "TlipocaModResources/localization/" + lang + "/keywords.json";
         Gson gson = new Gson();
-        Keywords keywords = gson.fromJson(loadJson(keywordsPath), Keywords.class);
-        Keyword[] var4 = keywords.keywords;
-        int var5 = var4.length;
-        for (var6 = 0; var6 < var5; var6++) {
-            Keyword key = var4[var6];
-            BaseMod.addKeyword(key.NAMES, key.DESCRIPTION);
-        }
+        Keyword[] keywords = gson.fromJson(loadJson(keywordsPath), Keyword[].class);
+        if (keywords != null) for (Keyword keyword : keywords)
+                BaseMod.addKeyword("tlipocamod", keyword.NAMES[0], keyword.NAMES, keyword.DESCRIPTION);
+
 
     }
 

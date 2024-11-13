@@ -16,8 +16,7 @@ import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
 
 public class tlJustitia extends AbstractTlipocaCard {
 
-
-
+    public static final String[] TEXT =  CardCrawlGame.languagePack.getUIString("Justitia").TEXT;
     static final CardRarity rarity = CardRarity.RARE;
     static final CardType type = CardType.ATTACK;
     static final int cost = 4;
@@ -56,8 +55,11 @@ public class tlJustitia extends AbstractTlipocaCard {
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         if(this.costForTurn==0 || this.freeToPlay())
             return super.canUse(p, m);
+        else{
+            this.cantUseMessage=TEXT[0];
+            return false;
+        }
 
-        return false;
 
     }
 

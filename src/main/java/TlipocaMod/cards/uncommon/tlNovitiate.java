@@ -1,48 +1,49 @@
 package TlipocaMod.cards.uncommon;
 
-import TlipocaMod.action.LeechAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
+import TlipocaMod.powers.UnleashPower;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 
 import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
 
-public class tlLeech extends AbstractTlipocaCard {
+public class tlNovitiate extends AbstractTlipocaCard {
 
     static final CardRarity rarity = CardRarity.UNCOMMON;
-    static final CardType type = CardType.SKILL;
-    static final int cost = -1;
-    static final String cardName = "Leech";
+    static final CardType type = CardType.POWER;
+    static final int cost = 2;
+    static final String cardName = "Novitiate";
 
 
     public static final String ID=getID(cardName);
     private static final CardStrings cardStrings= CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String img_path=loadTlipocaCardImg(cardName,type);
 
-    public tlLeech() {
-        super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
+    public tlNovitiate() {
+        super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.SELF);
 
-        this.exhaust=true;
+        this.magicNumber = this.baseMagicNumber = 4;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new LeechAction(p, m, this.upgraded, this.freeToPlayOnce, this.energyOnUse));
+        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber)));
     }
 
     @Override
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            this.rawDescription=cardStrings.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            upgradeMagicNumber(1);
         }
     }
 
     public AbstractCard makeCopy() {
-        return new tlLeech();
+        return new tlNovitiate();
     }
 }

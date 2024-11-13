@@ -35,19 +35,21 @@ public class CostForTurnModifier extends AbstractCardModifier{
         if(costBiasJustApplied !=0 ){
 
             int tmpCost = card.cost;
-            int diff = card.cost - card.costForTurn;
+            int tmpCostForTurn = card.costForTurn;
             tmpCost += costBiasJustApplied;
+            tmpCostForTurn += costBiasJustApplied;
             if (tmpCost < 0)
                 tmpCost = 0;
+            if(tmpCostForTurn < 0)
+                tmpCostForTurn = 0;
 
             card.isCostModified = tmpCost != trueCost;
 
-            if(tmpCost !=card.cost){
+            if(tmpCost !=card.cost)
                 card.cost = tmpCost;
-                card.costForTurn = card.cost - diff;
-                if (card.costForTurn < 0)
-                    card.costForTurn = 0;
-            }
+            if(tmpCostForTurn !=card.costForTurn)
+                card.costForTurn = tmpCostForTurn;
+
 
 
 

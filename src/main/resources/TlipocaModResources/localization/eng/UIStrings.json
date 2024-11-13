@@ -2,8 +2,8 @@
   "Tlipoca": {
     "TEXT": [
       "Tlipoca",
-      "Death in noviciate, who comes to the Spire to collect souls.",
-      "As the heart beating, you open the Death's Eye, time is up."
+      "A trainee Death, who comes to the Spire to collect souls.",
+      "As the heart beating, you open your Eyes, time is up."
     ]
   },
   "IncreaseHandCost": {
@@ -45,7 +45,8 @@
       "Modifies",
       "In this combat: ",
       "In this turn: ",
-      "Resonate"
+      "Resonate",
+      "tlipocamod:"
     ]
   },
   "ReverseFateAction": {
@@ -82,6 +83,20 @@
     "TEXT": [
       "Gain Energy Equal to the Cost and Double Cost"
     ]
+  },
+  "ScaleAction": {
+    "TEXT": [
+      "Exhaust (Scale)"
+    ]
+  },
+  "Justitia": {
+    "TEXT": [
+      "Can only play when it costs #r0 !"
+    ]
+  },
+  "IncreaseHandCostForTurn": {
+    "TEXT": [
+      "increase cost until played this turn"
+    ]
   }
-
 }

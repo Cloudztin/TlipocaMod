@@ -1,5 +1,4 @@
-{
-  "keywords": [
+[
 
     {
       "NAMES": [
@@ -27,9 +26,10 @@
     },
     {
       "NAMES": [
+        "bleed",
         "bleeding"
       ],
-      "DESCRIPTION": "#rBleeding creatures lose HP and gain #b1 additional #rBleeding when taking unblocked #yAttack damage. At the start of their turn, they lose HP and half the #rBleeding stack."
+      "DESCRIPTION": "#rBleeding creatures lose HP and gain #b1 additional #rBleed when taking unblocked #yAttack damage. At the start of their turn, they lose HP and half the #rBleed stack."
     },
     {
       "NAMES": [
@@ -41,5 +41,4 @@
 
 
 
-  ]
-}
+]

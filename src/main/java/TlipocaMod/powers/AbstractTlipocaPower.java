@@ -40,6 +40,7 @@ public abstract class AbstractTlipocaPower extends TwoAmountPower {
 
 
     public void onMonsterDeath(AbstractMonster m){
-
     };
+
+    public void onRefreshHand(){}
 }

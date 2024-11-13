@@ -82,7 +82,7 @@
     "DESCRIPTIONS": [
       "你的下个回合开始后，获得 [E] 并抽满手牌。",
       "你的下 #b",
-      " 回合开始后，获得 [E] 并抽满手牌。"
+      " 回合开始后，获得 [E] 并抽 #y3 张牌。"
     ]
   },
   "TlipocaMod:Humanity": {
@@ -97,6 +97,12 @@
     "NAME": "无法攻击",
     "DESCRIPTIONS": [
       "本回合你不能造成 #y攻击 伤害。"
+    ]
+  },
+  "TlipocaMod:Sacrifice": {
+    "NAME": "牺牲",
+    "DESCRIPTIONS": [
+      "因 #r流血 而失去生命时，所有其他敌人也失去等量生命。"
     ]
   }
 

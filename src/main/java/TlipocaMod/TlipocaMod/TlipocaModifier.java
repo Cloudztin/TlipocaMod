@@ -79,7 +79,7 @@ public class TlipocaModifier extends AbstractCardModifier {
             keywordBuilder(description, this.extraModifyForThisTurn);
         }
         final TooltipInfo ModifyTip = new TooltipInfo(TEXT[8], description.toString());
-        final List<TooltipInfo> list = new ArrayList<TooltipInfo>();
+        final List<TooltipInfo> list = new ArrayList<>();
         list.add(ModifyTip);
         return list;
     }
@@ -128,28 +128,32 @@ public class TlipocaModifier extends AbstractCardModifier {
     public String modifyDescription(String rawDescription, final AbstractCard card){
         final StringBuilder thingsToAdd = new StringBuilder();
         if(this.extraModify.contains(supportedModify.TWINCAST) ||this.extraModifyForThisTurn.contains(supportedModify.TWINCAST)){
+            thingsToAdd.append(TEXT[12]);
             thingsToAdd.append(TEXT[0]);
             thingsToAdd.append(TEXT[5]);
             thingsToAdd.append(TEXT[3]);
         }
         if(this.extraModify.contains(supportedModify.EPHEMERAL) ||this.extraModifyForThisTurn.contains(supportedModify.EPHEMERAL) ){
+            thingsToAdd.append(TEXT[12]);
             thingsToAdd.append(TEXT[1]);
             thingsToAdd.append(TEXT[5]);
             thingsToAdd.append(TEXT[3]);
         }
         if(this.extraModify.contains(supportedModify.ETERNITY) ||this.extraModifyForThisTurn.contains(supportedModify.ETERNITY) ){
+            thingsToAdd.append(TEXT[12]);
             thingsToAdd.append(TEXT[2]);
             thingsToAdd.append(TEXT[5]);
             thingsToAdd.append(TEXT[3]);
         }
         if(this.extraModify.contains(supportedModify.RESONATE) ||this.extraModifyForThisTurn.contains(supportedModify.RESONATE) ){
+            thingsToAdd.append(TEXT[12]);
             thingsToAdd.append(TEXT[11]);
             thingsToAdd.append(TEXT[5]);
             thingsToAdd.append(TEXT[3]);
         }
         if (thingsToAdd.length() > 0){
             thingsToAdd.append(TEXT[7]);
-            rawDescription =(Object)thingsToAdd + rawDescription;
+            rawDescription =thingsToAdd + rawDescription;
         }
         return rawDescription;
     }

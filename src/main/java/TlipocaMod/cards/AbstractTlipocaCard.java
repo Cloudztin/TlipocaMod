@@ -20,7 +20,7 @@ public abstract class AbstractTlipocaCard extends CustomCard {
     }
 
     public AbstractTlipocaCard(AbstractCard.CardColor color,String id, String name ,String img_path,  int cost, String description, AbstractCard.CardType type, AbstractCard.CardRarity rarity, AbstractCard.CardTarget target){
-        super(id,img_path, name, cost, description, type, color, rarity, target);
+        super(id, name, img_path, cost, description, type, color, rarity, target);
 
         FlavorText.AbstractCardFlavorFields.boxColor.set(this, flavorColor);
     }

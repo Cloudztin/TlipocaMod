@@ -9,24 +9,25 @@
   },
   "TlipocaMod:Deterrent": {
     "NAME": "Deterrent",
-    "DESCRIPTION": " Ephemeral. Apply 1 Weak and !M! Vulnerable."
+    "DESCRIPTION": "Apply !M! Weak and Vulnerable. tlipocamod:Temporarily lower a card's cost by 1.",
+    "UPGRADE_DESCRIPTION":"Retain. Apply !M! Weak and Vulnerable. tlipocamod:Temporarily lower a card's cost by 1."
   },
   "TlipocaMod:Execution": {
     "NAME": "Execution",
-    "DESCRIPTION": " Ephemeral. Deal !D! damage. If no card in your hand costs higher, it crits: deal !M! times damage. If Fatal, critical hits deal an additional 1× damage in this run."
+    "DESCRIPTION": " tlipocamod:Ephemeral. Deal !D! damage. If no card in your hand costs higher, it crits: deal !M! times damage. If Fatal, critical hits deal an additional 1× damage in this run."
   },
   "TlipocaMod:SoulStrike": {
-    "NAME": "Soul Strike",
-    "DESCRIPTION": " Resonate. Deal !D! damage !M! times."
+    "NAME": "Harvest",
+    "DESCRIPTION": " tlipocamod:Resonate. Deal !D! damage !M! times."
   },
   "TlipocaMod:Scarlet": {
     "NAME": "Scarlet",
-    "DESCRIPTION": "Deal !D! damage. Randomly increase the cost of a card in your hand Temporarily by !M! .",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Temporarily increase the cost of a card in your hand by !M! ."
+    "DESCRIPTION": "Deal !D! damage. Randomly increase the cost of a card in your hand tlipocamod:Temporarily by !M! .",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. tlipocamod:Temporarily increase the cost of a card in your hand by !M! ."
   },
   "TlipocaMod:Pale": {
     "NAME": "Pale",
-    "DESCRIPTION": "Gain !B! block. Temporarily reduce a card's cost by !M! ."
+    "DESCRIPTION": "Gain !B! block. tlipocamod:Temporarily reduce a card's cost by !M! ."
   },
   "TlipocaMod:BloodRites": {
     "NAME": "Blood Rite",
@@ -49,8 +50,8 @@
   },
   "TlipocaMod:DeathEye": {
     "NAME": "Eye Of The Death",
-    "DESCRIPTION": "Eternity .Successively put !M! cards in the draw pile to the top of the pile. Exhaust.",
-    "UPGRADE_DESCRIPTION":"Innate. Eternity. Successively put !M! cards in the draw pile to the top of the pile. Exhaust."
+    "DESCRIPTION": "tlipocamod:Eternity .Successively put !M! cards in the draw pile to the top of the pile. Exhaust.",
+    "UPGRADE_DESCRIPTION":"Innate. tlipocamod:Eternity. Successively put !M! cards in the draw pile to the top of the pile. Exhaust."
   },
   "TlipocaMod:Twin": {
     "NAME": "Twin",
@@ -81,11 +82,11 @@
   },
   "TlipocaMod:Samsara": {
     "NAME": "Samsara",
-    "DESCRIPTION": "Eternity. End your turn. After this turn, take an extra turn in which all cards' cost is raised Temporarily by !M! . Exhaust."
+    "DESCRIPTION": "tlipocamod:Eternity. End your turn. After this turn, take an extra turn in which all cards' cost is raised tlipocamod:Temporarily by !M! . Exhaust."
   },
   "TlipocaMod:Dust": {
     "NAME": "Dust",
-    "DESCRIPTION": "Eternity. Deal !D! damage. Gain !B! block. Draw !M! card."
+    "DESCRIPTION": "tlipocamod:Eternity. Deal !D! damage. Gain !B! block. Draw !M! card."
   },
   "TlipocaMod:Annihilate": {
     "NAME": "Annihilate",
@@ -130,42 +131,42 @@
   },
   "TlipocaMod:Misery": {
     "NAME": "Misery",
-    "DESCRIPTION": "Apply !M! Weak, Vulnerable and Bleeding. Exhaust."
+    "DESCRIPTION": "Apply !M! Weak, Vulnerable and tlipocamod:Bleed. Exhaust."
   },
   "TlipocaMod:CutDown": {
     "NAME": "Cut Down",
-    "DESCRIPTION": "Ephemeral. Apply !M! Bleeding."
+    "DESCRIPTION": "tlipocamod:Ephemeral. Apply !M! tlipocamod:Bleed.",
+    "UPGRADE_DESCRIPTION":"Apply !M! tlipocamod:Bleed."
   },
   "TlipocaMod:HeartPierceStrike": {
     "NAME": "Heart Pierce Strike",
-    "DESCRIPTION": "Deal !D! damage. Apply Bleeding equal to the unblocked damage."
+    "DESCRIPTION": "Deal !D! damage. Apply tlipocamod:Bleed equal to the unblocked damage."
   },
   "TlipocaMod:Erosion": {
     "NAME": "Erosion",
-    "DESCRIPTION": "ALL enemies lose !M! Strength this turn. Apply !M! Bleeding to ALL enemies. Exhaust."
+    "DESCRIPTION": "ALL enemies lose !M! Strength this turn. Apply !M! tlipocamod:Bleed to ALL enemies. Exhaust."
   },
   "TlipocaMod:Contagion": {
     "NAME": "Contagion",
-    "DESCRIPTION": "Apply !M! Weak and Vulnerable to ALL enemies Bleeding. Exhaust."
+    "DESCRIPTION": "Apply !M! Weak and Vulnerable to ALL enemies tlipocamod:Bleed. Exhaust."
   },
   "TlipocaMod:GrievousWounds": {
     "NAME": "Grievous Wounds",
-    "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply !M! Bleeding."
+    "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply !M! tlipocamod:Bleed."
   },
   "TlipocaMod:Collapse": {
     "NAME": "Collapse",
-    "DESCRIPTION": " Ethereal. Bleeding will not be reduced at the start of turn now.",
-    "UPGRADE_DESCRIPTION": " Bleeding will not be reduced at the start of turn now."
+    "DESCRIPTION": " Ethereal. tlipocamod:Bleed will not be reduced at the start of turn now.",
+    "UPGRADE_DESCRIPTION": " tlipocamod:Bleed will not be reduced at the start of turn now."
   },
   "TlipocaMod:Present": {
     "NAME": "Present",
-    "DESCRIPTION": "Apply Eternity to ALL cards in your hand in this combat. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. Apply Eternity to ALL cards in your hand in this combat. Exhaust."
+    "DESCRIPTION": "Apply tlipocamod:Eternity to ALL cards in your hand in this combat. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. Apply tlipocamod:Eternity to ALL cards in your hand in this combat. Exhaust."
   },
   "TlipocaMod:Maintenance": {
     "NAME": "Maintenance",
-    "DESCRIPTION": "At the start of your next X turns, gain [E] and draw 2 cards. Exhaust.",
-    "UPGRADE_DESCRIPTION": "At the start of your next X turns, gain [E] and draw until your hand is full. Exhaust."
+    "DESCRIPTION": "At the start of your next X turns, gain [E] and draw !M! cards. Exhaust."
   },
   "TlipocaMod:Recycle": {
     "NAME": "Recycle",
@@ -173,7 +174,7 @@
   },
   "TlipocaMod:Contract": {
     "NAME": "Contract",
-    "DESCRIPTION": "Draw !M! cards. Temporarily increase a card's cost in this turn by !M! ."
+    "DESCRIPTION": "Draw !M! cards. tlipocamod:Temporarily increase a card's cost in this turn by !M! ."
   },
   "TlipocaMod:Torrent": {
     "NAME": "Torrent",
@@ -181,25 +182,25 @@
   },
   "TlipocaMod:Mystery": {
     "NAME": "Mystery",
-    "DESCRIPTION": " Ephemeral. Draw a card. Gain [E] . Can be Upgraded any number of times. Exhaust.",
-    "UPGRADE_DESCRIPTION": " Ephemeral. Draw a card. Gain !M! [E] . Can be Upgraded any number of times. Exhaust.",
+    "DESCRIPTION": " tlipocamod:Ephemeral. Draw a card. Gain [E] . Can be Upgraded any number of times. Exhaust.",
+    "UPGRADE_DESCRIPTION": " tlipocamod:Ephemeral. Draw a card. Gain !M! [E] . Can be Upgraded any number of times. Exhaust.",
     "EXTENDED_DESCRIPTION":[
-      " Ephemeral. Draw a card. Gain [E] ",
+      " TlipocaMod:Ephemeral. Draw a card. Gain [E] ",
       "[E] ",
       ". Can be Upgraded any number of times. Exhaust."
     ]
   },
   "TlipocaMod:Serenade": {
     "NAME": "Serenade",
-    "DESCRIPTION": "Deal !D! damage. Reduce ALL cards' cost this turn in your hand to 0 and apply Ephemeral to them in this turn."
+    "DESCRIPTION": "Deal !D! damage. Reduce ALL cards' cost this turn in your hand to 0 and apply tlipocamod:Ephemeral to them in this turn."
   },
   "TlipocaMod:Rend": {
     "NAME": "Rend",
-    "DESCRIPTION": "Deal !D! damage. If target is Bleeding, deal double damage. If unblocked damage was dealt, apply !M! Bleeding. If both, apply !M! Vulnerable."
+    "DESCRIPTION": "Deal !D! damage. If target is tlipocamod:Bleeding, deal double damage. If unblocked damage was dealt, apply !M! tlipocamod:Bleed. If both, apply !M! Vulnerable."
   },
   "TlipocaMod:Echo": {
     "NAME": "Echo",
-    "DESCRIPTION": "Apply Resonate to ALL cards in your hand for the rest of combat. Exhaust."
+    "DESCRIPTION": "Apply tlipocamod:Resonate to ALL cards in your hand for the rest of combat. Exhaust."
   },
   "TlipocaMod:TwistedMind": {
     "NAME": "Twisted Mind",
@@ -231,7 +232,7 @@
   },
   "TlipocaMod:RustyBlade": {
     "NAME": "Rusty Blade",
-    "DESCRIPTION": "Deal !D! damage. If break an enemy's Block, apply !M! Bleeding. Draw a card."
+    "DESCRIPTION": "Deal !D! damage. If break an enemy's Block, apply !M! tlipocamod:Bleed. Draw a card."
   },
   "TlipocaMod:Destiny": {
     "NAME": "Destiny",
@@ -243,7 +244,7 @@
   },
   "TlipocaMod:Reckoning": {
     "NAME": "Reckoning",
-    "DESCRIPTION": "Remove enemy's Block. Deal !D! damage for each Bleeding layer enemy has. Exhaust."
+    "DESCRIPTION": "Remove enemy's Block. Deal !D! damage for each tlipocamod:Bleed layer enemy has. Exhaust."
   },
   "TlipocaMod:Humanity": {
     "NAME": "Humanity",
@@ -256,7 +257,7 @@
   },
   "TlipocaMod:Phantom": {
     "NAME": "Phantom",
-    "DESCRIPTION": " Resonate. Gain !B! Block. Apply !M! Vulnerable."
+    "DESCRIPTION": " tlipocamod:Resonate. Gain !B! Block. Apply !M! Vulnerable."
   },
   "TlipocaMod:Breakdown": {
     "NAME": "Breakdown",
@@ -264,11 +265,11 @@
   },
   "TlipocaMod:Whisper": {
     "NAME": "Whisper",
-    "DESCRIPTION": "Gain !B! Block. Draw !M! cards. Apply Resonate to them in this combat. Exhaust."
+    "DESCRIPTION": "Gain !B! Block. Draw !M! cards. Apply tlipocamod:Resonate to them in this combat. Exhaust."
   },
   "TlipocaMod:ParadiseLost": {
     "NAME": "Paradise Lost",
-    "DESCRIPTION": "Remove ALL enemies' Block. NL Apply !M! Bleeding to ALL enemies. NL Deal !D! damage to ALL enemies."
+    "DESCRIPTION": "Remove ALL enemies' Block. NL Apply !M! tlipocamod:Bleed to ALL enemies. NL Deal !D! damage to ALL enemies."
   },
   "TlipocaMod:ParadiseRegained": {
     "NAME": "Paradise Regained",
@@ -280,7 +281,56 @@
   },
   "TlipocaMod:Extraction": {
     "NAME": "Extraction",
-    "DESCRIPTION": "Gain [E] equal to a card's cost. Temporarily double its cost.",
-    "UPGRADE_DESCRIPTION": "Retain. Gain [E] equal to a card's cost. Temporarily double its cost."
+    "DESCRIPTION": "Gain [E] equal to a card's cost. tlipocamod:Temporarily double its cost.",
+    "UPGRADE_DESCRIPTION": "Retain. Gain [E] equal to a card's cost. tlipocamod:Temporarily double its cost."
+  },
+  "TlipocaMod:Sacrifice": {
+    "NAME": "Sacrifice",
+    "DESCRIPTION": "When target lose HP due to tlipocamod:Bleed, ALL other enemies lose equivalent HP. Exhaust.",
+    "UPGRADE_DESCRIPTION": "When target lose HP due to tlipocamod:Bleed, ALL other enemies lose equivalent HP. Apply !M! tlipocamod:Bleed. Exhaust."
+  },
+  "TlipocaMod:Mercy": {
+    "NAME": "Mercy",
+    "DESCRIPTION": " tlipocamod:Ephemeral. Ethereal. You can no longer deal Attack damage this turn. Draw !M! cards. Gain [E] . Exhaust."
+  },
+  "TlipocaMod:Torment": {
+    "NAME": "Torment",
+    "DESCRIPTION": "Double enemy's tlipocamod:Bleed. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Triple enemy's tlipocamod:Bleed. Exhaust."
+  },
+  "TlipocaMod:Sentence": {
+    "NAME": "Sentence",
+    "DESCRIPTION": "Deal !D! damage X times.",
+    "EXTENDED_DESCRIPTION": [
+      "Deal !D! damage !M! times.",
+      "Deal !D! damage."
+    ]
+  },
+  "TlipocaMod:Scale": {
+    "NAME": "Scale",
+    "DESCRIPTION": "Exhaust a card. Add a *Sentence with X equals to its cost into your hand. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Exhaust a card. Add a *Sentence with X equals to its cost into your hand. It costs 0 until played. Exhaust."
+  },
+  "TlipocaMod:Novitiate": {
+    "NAME": "Novitiate",
+    "DESCRIPTION": "Gain !M! Strength."
+  },
+  "TlipocaMod:Vilify": {
+    "NAME": "Vilify",
+    "DESCRIPTION": "Gain 1 Strength for each kind of debuff enemy has.",
+    "UPGRADE_DESCRIPTION": "tlipocamod:Resonate. Gain 1 Strength for each kind of debuff enemy has."
+  },
+  "TlipocaMod:Insight": {
+    "NAME": "Insight",
+    "DESCRIPTION": "Apply !M! tlipocamod:Bleed. If enemy intends to attack, gain !B! block. Otherwise, deal !D! damage. Exhaust."
+  },
+  "TlipocaMod:Afire": {
+    "NAME": "Afire",
+    "DESCRIPTION": "Deal !D! damage. If the enemy is tlipocamod:Bleeding, gain [E] and draw 1 card."
+  },
+  "TlipocaMod:ObscureTheSun": {
+    "NAME": "Obscure The Sun",
+    "DESCRIPTION": "Apply X Weak, Vulnerable, and tlipocamod:Bleed to all enemies. All enemies lose X Strength this turn. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply X+1 Weak, Vulnerable, and tlipocamod:Bleed to all enemies. All enemies lose X+1 Strength this turn. Exhaust."
   }
 }

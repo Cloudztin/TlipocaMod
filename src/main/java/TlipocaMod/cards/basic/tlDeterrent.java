@@ -1,5 +1,6 @@
 package TlipocaMod.cards.basic;
 
+import TlipocaMod.action.ReduceHandCostAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
 import TlipocaMod.patches.CardPatch;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -18,7 +19,7 @@ public class tlDeterrent extends AbstractTlipocaCard {
 
     static final CardRarity rarity = CardRarity.BASIC;
     static final CardType type = CardType.SKILL;
-    static final int cost = 0;
+    static final int cost = 1;
     static final String cardName = "Deterrent";
 
 
@@ -31,21 +32,23 @@ public class tlDeterrent extends AbstractTlipocaCard {
 
 
         this.magicNumber=this.baseMagicNumber=1;
-        CardPatch.newVarField.ephemeral.set(this, true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(m, p, new WeakPower(m, 1, false), 1));
+        addToBot(new ApplyPowerAction(m, p, new WeakPower(m, this.magicNumber, false), this.magicNumber));
         addToBot(new WaitAction(0.5f));
         addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber, false), this.magicNumber));
+        addToBot(new ReduceHandCostAction(1, false, 1));
     }
 
     @Override
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.selfRetain=true;
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 

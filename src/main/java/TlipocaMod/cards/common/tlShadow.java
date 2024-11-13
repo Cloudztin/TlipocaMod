@@ -26,7 +26,7 @@ public class tlShadow extends AbstractTlipocaCard {
     private static final String img_path=loadTlipocaCardImg(cardName,type);
 
     public tlShadow() {
-        super(ID, cardStrings.NAME ,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
+        super(ID, cardStrings.NAME ,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.SELF);
 
         this.baseBlock=16;
     }

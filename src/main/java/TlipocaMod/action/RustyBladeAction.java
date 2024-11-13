@@ -35,6 +35,11 @@ public class RustyBladeAction extends AbstractGameAction {
 
         }
 
+        if ((AbstractDungeon.getCurrRoom()).monsters.areMonstersBasicallyDead())
+            AbstractDungeon.actionManager.clearPostCombatActions();
+
+
+
         this.isDone = true;
 
     }

@@ -1,6 +1,7 @@
 package TlipocaMod.cards.uncommon;
 
 import TlipocaMod.action.LeechAction;
+import TlipocaMod.action.ObscureTheSunAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -10,19 +11,19 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
 
-public class tlLeech extends AbstractTlipocaCard {
+public class tlObscureTheSun extends AbstractTlipocaCard {
 
     static final CardRarity rarity = CardRarity.UNCOMMON;
     static final CardType type = CardType.SKILL;
     static final int cost = -1;
-    static final String cardName = "Leech";
+    static final String cardName = "ObscureTheSun";
 
 
     public static final String ID=getID(cardName);
     private static final CardStrings cardStrings= CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String img_path=loadTlipocaCardImg(cardName,type);
 
-    public tlLeech() {
+    public tlObscureTheSun() {
         super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
 
         this.exhaust=true;
@@ -30,7 +31,7 @@ public class tlLeech extends AbstractTlipocaCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new LeechAction(p, m, this.upgraded, this.freeToPlayOnce, this.energyOnUse));
+        addToBot(new ObscureTheSunAction(p,this.freeToPlayOnce, this.energyOnUse, this.upgraded));
     }
 
     @Override
@@ -43,6 +44,6 @@ public class tlLeech extends AbstractTlipocaCard {
     }
 
     public AbstractCard makeCopy() {
-        return new tlLeech();
+        return new tlObscureTheSun();
     }
 }

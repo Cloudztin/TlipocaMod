@@ -1,8 +1,9 @@
 package TlipocaMod.cards.uncommon;
 
-import TlipocaMod.action.LeechAction;
+import TlipocaMod.action.AfireAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -10,39 +11,39 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
 
-public class tlLeech extends AbstractTlipocaCard {
+public class tlAfire extends AbstractTlipocaCard {
 
     static final CardRarity rarity = CardRarity.UNCOMMON;
-    static final CardType type = CardType.SKILL;
-    static final int cost = -1;
-    static final String cardName = "Leech";
+    static final CardType type = CardType.ATTACK;
+    static final int cost = 1;
+    static final String cardName = "Afire";
 
 
     public static final String ID=getID(cardName);
     private static final CardStrings cardStrings= CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String img_path=loadTlipocaCardImg(cardName,type);
 
-    public tlLeech() {
+    public tlAfire() {
         super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
 
-        this.exhaust=true;
+
+        this.baseDamage=5;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new LeechAction(p, m, this.upgraded, this.freeToPlayOnce, this.energyOnUse));
+        addToBot(new AfireAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn)));
     }
 
     @Override
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            this.rawDescription=cardStrings.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            upgradeDamage(3);
         }
     }
 
     public AbstractCard makeCopy() {
-        return new tlLeech();
+        return new tlAfire();
     }
 }

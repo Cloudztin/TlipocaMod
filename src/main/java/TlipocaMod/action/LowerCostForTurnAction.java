@@ -4,7 +4,6 @@ import TlipocaMod.TlipocaMod.CostForTurnModifier;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.core.Settings;
 
 public class LowerCostForTurnAction extends AbstractGameAction {
 

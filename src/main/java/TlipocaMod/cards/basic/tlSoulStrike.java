@@ -32,7 +32,6 @@ public class tlSoulStrike extends AbstractTlipocaCard {
             this.magicNumber=this.baseMagicNumber=2;
 
             CardPatch.newVarField.resonate.set(this, true);
-            this.tags.add(CardTags.STRIKE);
         }
 
     @Override

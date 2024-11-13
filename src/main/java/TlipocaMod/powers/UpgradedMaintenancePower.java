@@ -43,7 +43,7 @@ public class UpgradedMaintenancePower extends AbstractTlipocaPower{
     public void atStartOfTurnPostDraw() {
         flash();
         addToBot(new GainEnergyAction(1));
-        addToBot(new ExpertiseAction(AbstractDungeon.player, BaseMod.MAX_HAND_SIZE));
+        addToBot(new DrawCardAction(3));
         if(this.amount <=1)
             addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
         else
