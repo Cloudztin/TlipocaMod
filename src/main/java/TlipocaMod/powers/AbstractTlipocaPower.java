@@ -17,17 +17,17 @@ public abstract class AbstractTlipocaPower extends TwoAmountPower {
         this.owner = owner;
         this.amount = amount;
         this.type = type;
-        this.region48=new TextureAtlas.AtlasRegion(ImageMaster.loadImage(NormalPowerIMG_beta(this.ID)), 0, 0, 32, 32);
-        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(LargePowerIMG_beta(this.ID)), 0, 0, 64, 64);
+        this.region48=new TextureAtlas.AtlasRegion(ImageMaster.loadImage(NormalPowerIMG(this.ID)), 0, 0, 36, 36);
+        this.region128 = new TextureAtlas.AtlasRegion(ImageMaster.loadImage(LargePowerIMG(this.ID)), 0, 0, 72, 72);
     }
 
 
     public String LargePowerIMG(String PowerID) {
-        return "TlipocaModResources/img/powers/Tlipoca/" + PowerID + "_p.png";
+        return "TlipocaModResources/img/powers/Tlipoca/" + PowerID.replace("TlipocaMod:","") + "_p.png";
     }
 
     public String NormalPowerIMG(String PowerID) {
-        return "TlipocaModResources/img/powers/Tlipoca/" + PowerID + ".png";
+        return "TlipocaModResources/img/powers/Tlipoca/" + PowerID.replace("TlipocaMod:","") + ".png";
     }
 
     public String LargePowerIMG_beta(String PowerID) {
@@ -41,6 +41,4 @@ public abstract class AbstractTlipocaPower extends TwoAmountPower {
 
     public void onMonsterDeath(AbstractMonster m){
     };
-
-    public void onRefreshHand(){}
 }

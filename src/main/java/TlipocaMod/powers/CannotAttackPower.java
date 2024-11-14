@@ -50,7 +50,8 @@ public class CannotAttackPower extends AbstractTlipocaPower{
         else return damageAmount;
     }
 
-    public void atEndOfTurn() {
-        addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, ID));
+    public void atEndOfTurn(boolean isPlayer) {
+        if(isPlayer)
+            addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, ID));
     }
 }

@@ -261,7 +261,7 @@
   },
   "TlipocaMod:Breakdown": {
     "NAME": "Breakdown",
-    "DESCRIPTION": "Deal !D! damage. Gain !M! Strength, lose !M! Strength at the end of turn. Randomize the cost of this card in your hand after playing cards."
+    "DESCRIPTION": "Deal !D! damage. Gain !M! Strength, lose !M! Strength at the end of turn. Randomize the cost of this card in your hand during this turn after playing cards."
   },
   "TlipocaMod:Whisper": {
     "NAME": "Whisper",
@@ -332,5 +332,9 @@
     "NAME": "Obscure The Sun",
     "DESCRIPTION": "Apply X Weak, Vulnerable, and tlipocamod:Bleed to all enemies. All enemies lose X Strength this turn. Exhaust.",
     "UPGRADE_DESCRIPTION": "Apply X+1 Weak, Vulnerable, and tlipocamod:Bleed to all enemies. All enemies lose X+1 Strength this turn. Exhaust."
+  },
+  "TlipocaMod:MagicBullet": {
+    "NAME": "Magic Bullet",
+    "DESCRIPTION": "Deal !D! damage. Look at the top !M! cards of your draw pile and put one into your hand. Repeat the damage based on its cost."
   }
 }

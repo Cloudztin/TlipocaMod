@@ -16,6 +16,7 @@ public class IncreaseCostForTurnAction extends AbstractGameAction {
 
     public void update() {
         CardModifierManager.addModifier(this.targetCard, new CostForTurnModifier(this.amount));
+        this.targetCard.flash();
         this.isDone = true;
     }
 

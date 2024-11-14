@@ -24,7 +24,7 @@ public class tlObscureTheSun extends AbstractTlipocaCard {
     private static final String img_path=loadTlipocaCardImg(cardName,type);
 
     public tlObscureTheSun() {
-        super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
+        super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ALL_ENEMY);
 
         this.exhaust=true;
     }

@@ -16,7 +16,7 @@ public class tlParadiseRegained extends AbstractTlipocaCard {
 
     static final CardRarity rarity = CardRarity.UNCOMMON;
     static final CardType type = CardType.SKILL;
-    static final int cost = 2;
+    static final int cost = 1;
     static final String cardName = "ParadiseRegained";
 
 
@@ -28,7 +28,7 @@ public class tlParadiseRegained extends AbstractTlipocaCard {
         super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.SELF_AND_ENEMY);
 
 
-        this.baseBlock=32;
+        this.baseBlock=23;
         this.exhaust=true;
     }
 
@@ -45,7 +45,7 @@ public class tlParadiseRegained extends AbstractTlipocaCard {
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            upgradeBlock(8);
+            upgradeBlock(7);
         }
     }
 

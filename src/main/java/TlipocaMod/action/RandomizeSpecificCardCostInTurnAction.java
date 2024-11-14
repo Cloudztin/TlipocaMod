@@ -10,11 +10,11 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import java.util.ArrayList;
 
 
-public class RandomizeSpecificCardCostAction extends AbstractGameAction {
+public class RandomizeSpecificCardCostInTurnAction extends AbstractGameAction {
 
     private final AbstractCard card;
 
-    public RandomizeSpecificCardCostAction(AbstractCard card) {
+    public RandomizeSpecificCardCostInTurnAction(AbstractCard card) {
         this.card = card;
     }
 
@@ -26,14 +26,8 @@ public class RandomizeSpecificCardCostAction extends AbstractGameAction {
         }
         int newCost = AbstractDungeon.cardRandomRng.random(3);
         if(card.cost != newCost)
-            card.isCostModified=true;
-        card.cost = newCost;
-        card.costForTurn=newCost;
-        ArrayList<AbstractCardModifier> mods = CardModifierManager.getModifiers(card, CostForTurnModifier.ID);
-        if(!mods.isEmpty() && mods.get(0) instanceof CostForTurnModifier)
-            if(((CostForTurnModifier) mods.get(0)).trueCost>=0)
-                ((CostForTurnModifier) mods.get(0)).trueCost = newCost;
-
+            CardModifierManager.addModifier(card, new CostForTurnModifier(newCost-card.cost));
+        card.flash();
         this.isDone=true;
 
 

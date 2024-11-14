@@ -51,7 +51,7 @@
   },
   "ReverseFateAction": {
     "TEXT": [
-      "put on the top of the draw pile (Midnight)"
+      "Play (Midnight)"
     ]
   },
   "ParcloseAction": {
@@ -61,7 +61,7 @@
   },
   "MeteorAction": {
     "TEXT": [
-      "Exhaust"
+      "Exhaust a Card (Meteor)"
     ]
   },
   "InnateModify": {
@@ -97,6 +97,11 @@
   "IncreaseHandCostForTurn": {
     "TEXT": [
       "increase cost until played this turn"
+    ]
+  },
+  "MagicBulletAction": {
+    "TEXT": [
+      "Choose a Card to Put into Hand (Magic Bullet)"
     ]
   }
 }

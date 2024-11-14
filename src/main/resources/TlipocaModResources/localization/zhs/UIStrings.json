@@ -51,7 +51,7 @@
   },
   "ReverseFateAction": {
     "TEXT": [
-      "放到抽牌堆顶 （午夜）"
+      "打出 （午夜）"
     ]
   },
   "ParcloseAction": {
@@ -61,7 +61,7 @@
   },
   "MeteorAction": {
     "TEXT": [
-      "消耗"
+      "消耗一张牌（陨星）"
     ]
   },
   "InnateModify": {
@@ -97,6 +97,11 @@
   "IncreaseHandCostForTurn": {
     "TEXT": [
       "增加打出前的耗能"
+    ]
+  },
+  "MagicBulletAction": {
+    "TEXT": [
+      "将一张牌加入手中（魔弹）"
     ]
   }
 

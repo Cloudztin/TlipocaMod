@@ -73,6 +73,7 @@ public class Randomize1HandCostAction extends AbstractGameAction {
         }else if(!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved){
 
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group){
+                c.flash();
                 int newCost = AbstractDungeon.cardRandomRng.random(3);
                 if(c.cost!=newCost)
                     c.isCostModified = true;
