@@ -45,8 +45,8 @@
   },
   "TlipocaMod:SoulFragment": {
     "NAME": "魂屑",
-    "DESCRIPTION": "将一张随机手牌在本场战斗的耗能加1。获得 [E] [E] [E] 。",
-    "UPGRADE_DESCRIPTION": "将一张手牌在本场战斗的耗能加1。获得 [E] [E] [E] 。"
+    "DESCRIPTION": "将一张手牌在本场战斗的耗能加1。获得 [E] [E] [E] 。",
+    "UPGRADE_DESCRIPTION": "将一张手牌在本场战斗的耗能加2。获得 [E] [E] [E] [E] 。"
   },
   "TlipocaMod:DeathEye": {
     "NAME": "死神之眼",
@@ -135,8 +135,7 @@
   },
   "TlipocaMod:CutDown": {
     "NAME": "砍倒",
-    "DESCRIPTION": " tlipocamod:须臾 。给予 !M! 层 tlipocamod:流血 。",
-    "UPGRADE_DESCRIPTION":"给予 !M! 层 tlipocamod:流血 。"
+    "DESCRIPTION": "造成 !D! 点伤害。给予 !M! 层 tlipocamod:流血 。"
   },
   "TlipocaMod:HeartPierceStrike": {
     "NAME": "穿心打击",
@@ -148,7 +147,7 @@
   },
   "TlipocaMod:Contagion": {
     "NAME": "蔓延",
-    "DESCRIPTION": "给予所有 tlipocamod:流血 的敌人 !M! 层 虚弱 与 易伤 。 消耗 。"
+    "DESCRIPTION": "你的回合开始时，给予所有敌人 !M! 层 tlipocamod:流血 。"
   },
   "TlipocaMod:GrievousWounds": {
     "NAME": "重伤",
@@ -290,7 +289,7 @@
     "UPGRADE_DESCRIPTION": "当目标因 tlipocamod:流血 失去生命时，所有其他敌人也失去等量生命。给予 !M! 层 tlipocamod:流血 。 消耗 。."
   },
   "TlipocaMod:Mercy": {
-    "NAME": "慈悲",
+    "NAME": "仁慈",
     "DESCRIPTION": " tlipocamod:须臾 。 虚无 。抽 !M! 张牌。获得 [E] 。本回合你不能造成攻击伤害。 消耗 。"
   },
   "TlipocaMod:Torment": {
@@ -336,5 +335,23 @@
   "TlipocaMod:MagicBullet": {
     "NAME": "魔弹",
     "DESCRIPTION": "造成 !D! 点伤害。查看抽牌堆顶的 !M! 张牌并将其中一张加入手中，根据其耗能重复造成伤害。"
+  },
+  "TlipocaMod:StarlightSeize": {
+    "NAME": "撷星",
+    "DESCRIPTION": "从3张任意颜色的耗能不低于3的卡牌中选一张加入手中。 消耗 。",
+    "UPGRADE_DESCRIPTION": "从3张任意颜色的耗能不低于3的卡牌中选一张加入手中。其在本场战斗中具有 tlipocamod:共鸣 。 消耗 。"
+  },
+  "TlipocaMod:Bloodthirst": {
+  "NAME": "渴血",
+  "DESCRIPTION": "造成 !D! 点伤害。触发 tlipocamod:流血 时，回复等同层数的生命。 消耗 。"
+  },
+  "TlipocaMod:Funeral": {
+    "NAME": "葬仪",
+    "DESCRIPTION": " tlipocamod:须臾 。 虚无 。造成 !D! 点伤害。"
+  },
+  "TlipocaMod:Virtue": {
+    "NAME": "美德",
+    "DESCRIPTION": "下次你受到负面效果时，抵消并获得1点 力量 。 消耗 。",
+    "UPGRADE_DESCRIPTION":"下 !M! 次你受到负面效果时，抵消并获得1点 力量 。 消耗 。"
   }
 }

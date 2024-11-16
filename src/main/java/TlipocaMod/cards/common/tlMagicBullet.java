@@ -31,7 +31,7 @@ public class tlMagicBullet extends AbstractTlipocaCard {
         super(ID, cardStrings.NAME ,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
 
 
-        this.baseDamage=8;
+        this.baseDamage=7;
         this.magicNumber=this.baseMagicNumber=3;
     }
 

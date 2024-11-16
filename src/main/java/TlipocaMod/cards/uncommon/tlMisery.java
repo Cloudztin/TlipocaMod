@@ -29,7 +29,7 @@ public class tlMisery extends AbstractTlipocaCard {
         super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
 
 
-        this.magicNumber=this.baseMagicNumber=4;
+        this.magicNumber=this.baseMagicNumber=3;
         this.exhaust=true;
     }
 

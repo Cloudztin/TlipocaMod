@@ -80,7 +80,7 @@
   "TlipocaMod:UpMaintenance": {
     "NAME": "Maintenance",
     "DESCRIPTIONS": [
-      "At the start of your next turn, gain [E] and draw until your hand is full.",
+      "At the start of your next turn, gain [E] and draw #y3 cards.",
       "At the start of your next #b",
       " turns, gain [E] and draw #y3 cards."
     ]
@@ -103,6 +103,14 @@
     "NAME": "Sacrifice",
     "DESCRIPTIONS": [
       "When losing HP due to #rBleed , ALL other enemies lose equivalent HP."
+    ]
+  },
+  "TlipocaMod:Virtue": {
+    "NAME": "Virtue",
+    "DESCRIPTIONS": [
+      "Negates the next debuff and gain #y1 #yStrength .",
+      "Negates the next #b",
+      " debuffs and gain #y1 #yStrength ."
     ]
   }
 }

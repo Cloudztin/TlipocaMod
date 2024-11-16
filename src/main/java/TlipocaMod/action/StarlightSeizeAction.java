@@ -1,5 +1,7 @@
 package TlipocaMod.action;
 
+import TlipocaMod.TlipocaMod.TlipocaModifier;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -15,11 +17,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
 
-public class InspireAction extends AbstractGameAction {
+public class StarlightSeizeAction extends AbstractGameAction {
     private boolean retrieveCard = false;
     private final boolean upgrade;
 
-    public InspireAction(boolean upgrade) {
+    public StarlightSeizeAction(boolean upgrade) {
         this.actionType = ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_FAST;
         this.upgrade = upgrade;
@@ -77,7 +79,7 @@ public class InspireAction extends AbstractGameAction {
 
             if(!dupe){
                 AbstractCard item=tmp.makeCopy();
-                if(upgrade) item.upgrade();
+                if(upgrade) CardModifierManager.addModifier(item, new TlipocaModifier(TlipocaModifier.supportedModify.RESONATE, false));
                 choices.add(item);
             }
         }
@@ -100,7 +102,7 @@ public class InspireAction extends AbstractGameAction {
                                     if (!var.hasNext())
                                         if(!pool.isEmpty()){
                                             pool.shuffle(AbstractDungeon.cardRandomRng);
-                                           return pool.getRandomCard(true, cardRarity);
+                                            return pool.getRandomCard(true, cardRarity);
                                         } else{
                                             return getXcostCard(AbstractCard.CardRarity.UNCOMMON);
                                         }
@@ -110,7 +112,7 @@ public class InspireAction extends AbstractGameAction {
                             } while(((AbstractCard)c.getValue()).hasTag(AbstractCard.CardTags.HEALING));
                         } while(((AbstractCard)c.getValue()).type == AbstractCard.CardType.CURSE);
                     } while(((AbstractCard)c.getValue()).type == AbstractCard.CardType.STATUS);
-                } while(((AbstractCard)c.getValue()).cost != -1);
+                } while(((AbstractCard)c.getValue()).cost <3);
             } while(UnlockTracker.isCardLocked((String)c.getKey()) && !Settings.treatEverythingAsUnlocked());
 
             pool.addToBottom((AbstractCard) c.getValue());
@@ -118,4 +120,5 @@ public class InspireAction extends AbstractGameAction {
 
 
     }
+
 }

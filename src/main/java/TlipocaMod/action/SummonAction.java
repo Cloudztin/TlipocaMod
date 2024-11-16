@@ -3,6 +3,7 @@ package TlipocaMod.action;
 import basemod.BaseMod;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -33,6 +34,20 @@ public class SummonAction extends AbstractGameAction {
         }
         if(this.p.hand.size()>= BaseMod.MAX_HAND_SIZE || (this.p.drawPile.isEmpty() && this.p.discardPile.isEmpty()) ) {
             this.isDone = true;
+            return;
+        }
+
+        if (AbstractDungeon.player.hasPower("No Draw")) {
+            AbstractDungeon.player.getPower("No Draw").flash();
+            this.isDone = true;
+            return;
+        }
+
+        if(this.p.drawPile.isEmpty()){
+            addToTop(new SummonAction(this.aimCost));
+            addToTop(new EmptyDeckShuffleAction());
+
+            this.isDone=true;
             return;
         }
 

@@ -45,8 +45,8 @@
   },
   "TlipocaMod:SoulFragment": {
     "NAME": "Soul Fragment",
-    "DESCRIPTION": "Increase the cost of a random card in your hand by 1 in this combat. Gain [E] [E] [E] .",
-    "UPGRADE_DESCRIPTION": "Increase the cost of a card in your hand by 1 in this combat. Gain [E] [E] [E] ."
+    "DESCRIPTION": "Increase the cost of a card in your hand by 1 in this combat. Gain [E] [E] [E] .",
+    "UPGRADE_DESCRIPTION": "Increase the cost of a card in your hand by 2 in this combat. Gain [E] [E] [E] [E] ."
   },
   "TlipocaMod:DeathEye": {
     "NAME": "Eye Of The Death",
@@ -135,8 +135,7 @@
   },
   "TlipocaMod:CutDown": {
     "NAME": "Cut Down",
-    "DESCRIPTION": "tlipocamod:Ephemeral. Apply !M! tlipocamod:Bleed.",
-    "UPGRADE_DESCRIPTION":"Apply !M! tlipocamod:Bleed."
+    "DESCRIPTION": "Deal !D! damage. Apply !M! tlipocamod:Bleed."
   },
   "TlipocaMod:HeartPierceStrike": {
     "NAME": "Heart Pierce Strike",
@@ -148,7 +147,7 @@
   },
   "TlipocaMod:Contagion": {
     "NAME": "Contagion",
-    "DESCRIPTION": "Apply !M! Weak and Vulnerable to ALL enemies tlipocamod:Bleed. Exhaust."
+    "DESCRIPTION": "Apply !M! tlipocamod:Bleed to ALL enemies at the start of your turn."
   },
   "TlipocaMod:GrievousWounds": {
     "NAME": "Grievous Wounds",
@@ -336,5 +335,23 @@
   "TlipocaMod:MagicBullet": {
     "NAME": "Magic Bullet",
     "DESCRIPTION": "Deal !D! damage. Look at the top !M! cards of your draw pile and put one into your hand. Repeat the damage based on its cost."
+  },
+  "TlipocaMod:StarlightSeize": {
+    "NAME": "Starlight Seize",
+    "DESCRIPTION": "Choose 1 of 3 cards with a cost of 3 or more of any color to add into your hand. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 cards with a cost of 3 or more of any color to add into your hand. Apply tlipocamod:Resonate to it in this combat. Exhaust."
+  },
+  "TlipocaMod:Bloodthirst": {
+    "NAME": "Bloodthirst",
+    "DESCRIPTION": "Deal !D! damage. Heal for the tlipocamod:Bleed stack amount when triggers tlipocamod:Bleed. Exhaust."
+  },
+  "TlipocaMod:Funeral": {
+    "NAME": "Funeral",
+    "DESCRIPTION": "tlipocamod:Ephemeral. Ethereal. Deal !D! damage."
+  },
+  "TlipocaMod:Virtue": {
+    "NAME": "Virtue",
+    "DESCRIPTION": "The next time you receive debuff, negates it and gain 1 Strength. Exhaust.",
+    "UPGRADE_DESCRIPTION":"The next !M! times you receive debuff, negates it and gain 1 Strength. Exhaust."
   }
 }

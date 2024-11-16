@@ -1,11 +1,13 @@
 package TlipocaMod.powers;
 
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 
 import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
@@ -19,11 +21,14 @@ public class MaintenancePower extends AbstractTlipocaPower{
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     public static final PowerType type = PowerType.BUFF;
 
+    private static int MaintenanceBias;
+
 
 
 
     public MaintenancePower(AbstractCreature owner, int amount) {
-        super(NAME, ID, owner,amount , type);
+        super(NAME, ID+ MaintenanceBias, owner, amount , type, ID);
+        MaintenanceBias++;
         updateDescription();
     }
 

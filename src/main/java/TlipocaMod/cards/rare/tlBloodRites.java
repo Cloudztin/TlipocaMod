@@ -2,11 +2,7 @@ package TlipocaMod.cards.rare;
 
 import TlipocaMod.action.BloodRitesAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
-import TlipocaMod.cards.basic.tlStrike;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;

@@ -1,10 +1,9 @@
 package TlipocaMod.cards.uncommon;
 
-import TlipocaMod.action.HeartPierceAction;
-import TlipocaMod.action.MeteorAction;
+import TlipocaMod.action.InspireAction;
+import TlipocaMod.action.StarlightSeizeAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -12,40 +11,38 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
 
-public class tlHeartPierceStrike extends AbstractTlipocaCard {
-
+public class tlStarlightSeize extends AbstractTlipocaCard {
     static final CardRarity rarity = CardRarity.UNCOMMON;
-    static final CardType type = CardType.ATTACK;
-    static final int cost = 2;
-    static final String cardName = "HeartPierceStrike";
+    static final CardType type = CardType.SKILL;
+    static final int cost = 0;
+    static final String cardName = "StarlightSeize";
 
 
     public static final String ID=getID(cardName);
     private static final CardStrings cardStrings= CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String img_path=loadTlipocaCardImg(cardName,type);
 
-    public tlHeartPierceStrike() {
-        super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
+    public tlStarlightSeize() {
+        super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.SELF);
 
-        this.tags.add(CardTags.STRIKE);
-        this.baseDamage=8;
+        this.exhaust=true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new HeartPierceAction(p, m, new DamageInfo(p, this.damage, this.damageTypeForTurn)));
+        addToBot(new StarlightSeizeAction(this.upgraded));
     }
-
 
     @Override
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            this.upgradeDamage(3);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 
     public AbstractCard makeCopy() {
-        return new tlHeartPierceStrike();
+        return new tlStarlightSeize();
     }
 }

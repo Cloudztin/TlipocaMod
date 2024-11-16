@@ -44,7 +44,8 @@ public class CardPatch {
                         newVarField.eternalCost.set(card, card.costForTurn);
                         newVarField.updated.set(card, true);
                     }
-                    card.costForTurn = newVarField.eternalCost.get(card);
+                    else
+                        card.costForTurn = newVarField.eternalCost.get(card);
                     card.cost = newVarField.eternalCost.get(card);
                     card.freeToPlayOnce = false;
                     card.isCostModified = false;

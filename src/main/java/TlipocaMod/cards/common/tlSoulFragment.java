@@ -1,5 +1,6 @@
 package TlipocaMod.cards.common;
 
+import TlipocaMod.action.IncreaseCostForTurnOnceAction;
 import TlipocaMod.action.IncreaseHandCostForCombatAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
@@ -30,7 +31,10 @@ public class tlSoulFragment extends AbstractTlipocaCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new IncreaseHandCostForCombatAction(1, !this.upgraded, 1));
+        if(this.upgraded)
+            addToBot(new IncreaseHandCostForCombatAction(1, false, 2));
+        else
+            addToBot(new IncreaseHandCostForCombatAction(1, false, 1));
         addToBot(new GainEnergyAction(this.magicNumber));
     }
 
@@ -39,6 +43,7 @@ public class tlSoulFragment extends AbstractTlipocaCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            upgradeMagicNumber(1);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
