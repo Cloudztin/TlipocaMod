@@ -1,14 +1,18 @@
 package TlipocaMod.characters;
 
+import TlipocaMod.TlipocaMod.TlipocaMod;
 import TlipocaMod.cards.basic.tlDeterrent;
 import TlipocaMod.enums.CardEnum;
 import TlipocaMod.enums.ModClassEnum;
 import TlipocaMod.relics.LittleRed;
+import basemod.abstracts.CustomMultiPageFtue;
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
+import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -17,12 +21,18 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import com.megacrit.cardcrawl.ui.FtueTip;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.LogManager;
 
 public class Tlipoca extends CustomPlayer {
 
@@ -185,6 +195,25 @@ public class Tlipoca extends CustomPlayer {
     @Override
     public void applyEndOfTurnTriggers() {
         super.applyEndOfTurnTriggers();
+    }
+
+    public void applyPreCombatLogic(){
+        super.applyPreCombatLogic();
+        if(!TlipocaMod.tutorial){
+            AbstractDungeon.ftue = new CustomMultiPageFtue(new Texture[] {ImageMaster.loadImage("TlipocaModResources/img/others/tutorial1.png"), ImageMaster.loadImage("TlipocaModResources/img/others/tutorial2.png"), ImageMaster.loadImage("TlipocaModResources/img/others/tutorial3.png")}, (CardCrawlGame.languagePack.getUIString("TlipocaModTutorial")).TEXT);
+
+
+            TlipocaMod.tutorial = true;
+
+            try {
+                    SpireConfig spireConfig= new SpireConfig("TlipocaMod","common");
+                    spireConfig.setBool(TlipocaMod.getID("tutorial"),  TlipocaMod.tutorial );
+                    spireConfig.save();
+            }
+            catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 
     public List<CutscenePanel> getCutscenePanels() {

@@ -1,4 +1,4 @@
-package TlipocaMod.cards.uncommon;
+package TlipocaMod.cards.deprecated;
 
 import TlipocaMod.cards.AbstractTlipocaCard;
 import TlipocaMod.powers.BleedingPower;

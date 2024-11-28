@@ -1,7 +1,6 @@
 package TlipocaMod.cards.common;
 
 import TlipocaMod.cards.AbstractTlipocaCard;
-import TlipocaMod.patches.CardPatch;
 import TlipocaMod.powers.BleedingPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -30,9 +29,8 @@ public class tlCutDown extends AbstractTlipocaCard {
     public tlCutDown() {
         super(ID, cardStrings.NAME ,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
 
-        CardPatch.newVarField.ephemeral.set(this, true);
         this.baseDamage=5;
-        this.magicNumber=this.baseMagicNumber=1;
+        this.magicNumber=this.baseMagicNumber=2;
     }
 
     @Override
@@ -46,7 +44,7 @@ public class tlCutDown extends AbstractTlipocaCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            upgradeDamage(3);
+            upgradeDamage(2);
             upgradeMagicNumber(1);
         }
     }

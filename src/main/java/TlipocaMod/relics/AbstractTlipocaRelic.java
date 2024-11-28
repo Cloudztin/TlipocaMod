@@ -3,6 +3,7 @@ package TlipocaMod.relics;
 import TlipocaMod.TlipocaMod.TlipocaMod;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
@@ -21,7 +22,7 @@ public class AbstractTlipocaRelic extends CustomRelic {
     }
 
     private static String loadOutlineImg(String id){
-        return "TlipocaModResources/img/relics/outlines/" + id + ".png";
+        return "TlipocaModResources/img/relics/outline/" + id + ".png";
     }
 
     private static String loadLargeImg(String id){
@@ -29,5 +30,7 @@ public class AbstractTlipocaRelic extends CustomRelic {
     }
 
 
+    public void onMonsterDamaged(){
+    }
 
 }

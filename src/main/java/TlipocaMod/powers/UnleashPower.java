@@ -21,8 +21,8 @@ public class UnleashPower extends AbstractTlipocaPower {
     private int eP1=0;
     private int loseAmt=0;
 
-    public UnleashPower(AbstractCreature owner, int amount) {
-        super(NAME, ID, owner, amount, type);
+    public UnleashPower(AbstractCreature owner) {
+        super(NAME, ID, owner, -1, type);
         this.amount2=limit;
         updateDescription();
     }
@@ -30,8 +30,7 @@ public class UnleashPower extends AbstractTlipocaPower {
 
     @Override
     public void updateDescription() {
-        if(this.amount == 1) description = DESCRIPTIONS[0] +this.amount+DESCRIPTIONS[1]+this.amount2+DESCRIPTIONS[3];
-        else description = DESCRIPTIONS[0] +this.amount+DESCRIPTIONS[2]+this.amount2+DESCRIPTIONS[3];
+        description = DESCRIPTIONS[0] +this.amount2+DESCRIPTIONS[1];
     }
 
 
@@ -49,7 +48,7 @@ public class UnleashPower extends AbstractTlipocaPower {
         if(eP1>eP){
             loseAmt+=(eP1-eP);
             if(loseAmt>= limit){
-                addToTop(new DrawCardAction((loseAmt/ limit)*this.amount));
+                addToTop(new DrawCardAction(loseAmt/ limit));
                 loseAmt%= limit;
             }
             this.amount2= limit -loseAmt;

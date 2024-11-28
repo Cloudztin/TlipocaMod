@@ -27,7 +27,7 @@ public class tlOverwhelm extends AbstractTlipocaCard {
     public tlOverwhelm() {
         super(ID, cardStrings.NAME ,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ALL_ENEMY);
 
-        this.baseDamage=9;
+        this.baseDamage=7;
         this.isMultiDamage=true;
     }
 

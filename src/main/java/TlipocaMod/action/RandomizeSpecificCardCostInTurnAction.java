@@ -27,6 +27,7 @@ public class RandomizeSpecificCardCostInTurnAction extends AbstractGameAction {
         int newCost = AbstractDungeon.cardRandomRng.random(3);
         if(card.cost != newCost)
             CardModifierManager.addModifier(card, new CostForTurnModifier(newCost-card.cost));
+        card.costForTurn=newCost;
         card.flash();
         this.isDone=true;
 

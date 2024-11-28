@@ -2,10 +2,12 @@ package TlipocaMod.cards.uncommon;
 
 import TlipocaMod.action.AfireAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
+import TlipocaMod.powers.BleedingPower;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -33,6 +35,14 @@ public class tlAfire extends AbstractTlipocaCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new AfireAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn)));
+    }
+
+    @Override
+    public void triggerOnGlowCheck() {
+        super.triggerOnGlowCheck();
+        for(AbstractMonster m: AbstractDungeon.getMonsters().monsters)
+            if(m.hasPower(BleedingPower.ID))
+                this.glowColor=AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
     }
 
     @Override

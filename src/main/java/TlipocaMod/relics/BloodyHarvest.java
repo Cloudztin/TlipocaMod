@@ -1,8 +1,7 @@
 package TlipocaMod.relics;
 
 import TlipocaMod.TlipocaMod.TlipocaMod;
-import TlipocaMod.action.IncreaseHandCostAction;
-import TlipocaMod.cards.AbstractTlipocaCard;
+
 import basemod.abstracts.CustomSavable;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;

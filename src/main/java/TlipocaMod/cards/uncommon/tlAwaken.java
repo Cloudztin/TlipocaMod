@@ -1,9 +1,6 @@
 package TlipocaMod.cards.uncommon;
 
-import TlipocaMod.action.DarkestAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
-import TlipocaMod.cards.rare.tlDarkestHour;
-import TlipocaMod.powers.DarkPower;
 import TlipocaMod.powers.UnleashPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -34,7 +31,8 @@ public class tlAwaken extends AbstractTlipocaCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new UnleashPower(p, this.magicNumber)));
+        if(!p.hasPower(UnleashPower.ID))
+            addToBot(new ApplyPowerAction(p, p, new UnleashPower(p)));
     }
 
     @Override

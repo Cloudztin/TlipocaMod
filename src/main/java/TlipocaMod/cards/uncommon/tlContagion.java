@@ -25,7 +25,7 @@ public class tlContagion extends AbstractTlipocaCard {
     private static final String img_path=loadTlipocaCardImg(cardName,type);
 
     public tlContagion() {
-        super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ALL_ENEMY);
+        super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.SELF);
 
 
         this.magicNumber=this.baseMagicNumber=2;

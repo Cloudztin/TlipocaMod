@@ -2,6 +2,7 @@ package TlipocaMod.powers;
 
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -41,4 +42,8 @@ public abstract class AbstractTlipocaPower extends TwoAmountPower {
 
     public void onMonsterDeath(AbstractMonster m){
     }
+
+    public void onRefreshHand(){
+    }
+
 }

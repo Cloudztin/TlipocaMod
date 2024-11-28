@@ -3,6 +3,7 @@ package TlipocaMod.patches;
 import TlipocaMod.TlipocaMod.CostForTurnModifier;
 import TlipocaMod.action.IncreaseCostForTurnAction;
 import TlipocaMod.action.LowerCostForTurnAction;
+import TlipocaMod.cards.tempCards.tlGriefOfTheGreatDeath;
 import basemod.abstracts.AbstractCardModifier;
 import basemod.helpers.CardModifierManager;
 import com.badlogic.gdx.graphics.Color;
@@ -16,6 +17,7 @@ import com.megacrit.cardcrawl.cards.CardQueueItem;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.cardManip.CardGlowBorder;
 
 import java.util.ArrayList;
 
@@ -41,7 +43,10 @@ public class CardPatch {
             if(card.cost >=0){
                 if (CardPatch.newVarField.eternity.get(card)) {
                     if (!newVarField.updated.get(card)) {
-                        newVarField.eternalCost.set(card, card.costForTurn);
+                        if(card.freeToPlayOnce)
+                            newVarField.eternalCost.set(card, 0);
+                        else
+                            newVarField.eternalCost.set(card, card.costForTurn);
                         newVarField.updated.set(card, true);
                     }
                     else
@@ -149,6 +154,23 @@ public class CardPatch {
         }
     }
 
+    @SpirePatch(clz= AbstractCard.class, method = "triggerOnGlowCheck")
+    static public class triggerOnGlowCheckPatch {
+        @SpirePrefixPatch
+        static public void Prefix(AbstractCard card, ArrayList<CardGlowBorder> ___glowList) {
+            ___glowList.clear();
+            if(newVarField.ephemeral.get(card) && newVarField.resonate.get(card))
+                card.glowColor=Color.LIGHT_GRAY.cpy();
+            if(newVarField.ephemeral.get(card) &&(!newVarField.resonate.get(card)))
+                card.glowColor=Color.PINK.cpy();
+            if((!newVarField.ephemeral.get(card)) && newVarField.resonate.get(card))
+                card.glowColor=Color.LIME.cpy();
+            if((!newVarField.ephemeral.get(card)) && (!newVarField.resonate.get(card)))
+                card.glowColor=new Color(0.2F, 0.9F, 1.0F, 0.25F);
+
+        }
+    }
+
     @SpirePatch(clz= EnlightenmentAction.class, method = "update")
     static public class updateEnlightenmentPatch {
         @SpirePrefixPatch
@@ -241,6 +263,7 @@ public class CardPatch {
             }
         }
     }
+
 
 
     public static class cardCostUnit{

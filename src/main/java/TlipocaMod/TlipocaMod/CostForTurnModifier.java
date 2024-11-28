@@ -1,11 +1,18 @@
 package TlipocaMod.TlipocaMod;
 
+import TlipocaMod.patches.CardPatch;
 import basemod.abstracts.AbstractCardModifier;
 import basemod.helpers.CardModifierManager;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardHelper;
+import com.megacrit.cardcrawl.helpers.FontHelper;
 
 import java.util.ArrayList;
 
@@ -61,9 +68,7 @@ public class CostForTurnModifier extends AbstractCardModifier{
     public boolean shouldApply(final AbstractCard card){
         final ArrayList<AbstractCardModifier> mods =  CardModifierManager.getModifiers(card, CostForTurnModifier.ID);
         if(!mods.isEmpty() && mods.get(0) instanceof CostForTurnModifier) {
-            System.out.println("cost modifier found");
             ((CostForTurnModifier)mods.get(0)).costBiasJustApplied=this.costBiasJustApplied;
-
             ((CostForTurnModifier)mods.get(0)).applyModify(card);
 
             return false;
@@ -87,6 +92,17 @@ public class CostForTurnModifier extends AbstractCardModifier{
                 this.isDone = true;
             }
         });
+    }
+
+    public void onRender(final AbstractCard card, final SpriteBatch sb){
+        if(trueCost <0 || trueCost == card.costForTurn || CardPatch.newVarField.eternity.get(card))
+            return;
+        Color trueCostColor = CardHelper.getColor(255,186,255).cpy();
+        trueCostColor.a=card.transparency;
+        FontHelper.cardEnergyFont_L.getData().setScale(card.drawScale*0.8f);
+        BitmapFont font= FontHelper.cardEnergyFont_L;
+        String costText = Integer.toString(this.trueCost);
+        FontHelper.renderRotatedText(sb, font, costText, card.current_x, card.current_y, -105.0f * card.drawScale * Settings.scale, 205.0f * card.drawScale * Settings.scale, card.angle, false, trueCostColor);
     }
 
 

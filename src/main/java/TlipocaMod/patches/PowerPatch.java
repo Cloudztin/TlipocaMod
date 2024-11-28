@@ -6,9 +6,11 @@ import basemod.abstracts.AbstractCardModifier;
 import basemod.helpers.CardModifierManager;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.unique.RandomizeHandCostAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -48,6 +50,15 @@ public class PowerPatch {
             if(!mods.isEmpty() && mods.get(0) instanceof CostForTurnModifier)
                 if(((CostForTurnModifier) mods.get(0)).trueCost >=0)
                     ((CostForTurnModifier) mods.get(0)).trueCost = newCost;
+        }
+    }
+    @SpirePatch(clz= CardGroup.class, method = "refreshHandLayout")
+    public static class RefreshHandLayoutPatch{
+        @SpireInsertPatch(rloc=43)
+        public static void Insert(CardGroup group) {
+            for(AbstractPower p: AbstractDungeon.player.powers)
+                if(p instanceof AbstractTlipocaPower)
+                    ((AbstractTlipocaPower) p).onRefreshHand();
         }
     }
 }

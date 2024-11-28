@@ -8,12 +8,14 @@
   },
   "IncreaseHandCost": {
     "TEXT": [
-      "increase cost"
+      "increase cost by ",
+      ""
     ]
   },
   "ReduceHandCost": {
     "TEXT": [
-      "reduce cost"
+      "reduce cost by ",
+      ""
     ]
   },
   "BloodRites": {
@@ -71,7 +73,7 @@
   },
   "AstrologyAction": {
     "TEXT": [
-      "Choose a Card to Draw. "
+      "Choose a Card to put into your hand. "
     ]
   },
   "Randomize1HandCostAction": {
@@ -96,12 +98,27 @@
   },
   "IncreaseHandCostForTurn": {
     "TEXT": [
-      "increase cost until played this turn"
+      "increase cost by ",
+      " until played this turn"
     ]
   },
   "MagicBulletAction": {
     "TEXT": [
       "Choose a Card to Put into Hand (Magic Bullet)"
+    ]
+  },
+  "TlipocaModTutorial": {
+    "TEXT": [
+      "Tlipoca fights with a lot of cards that #yTemporarily modifies cards' cost. #yTemporary cost changes will last until your turn ends. NL There will be a small PINK number right upon the cost number to show the true cost of that card in this combat.",
+      " #bEphermeral and #bResonate cards are different from normal cards, when they are in your hand, almost EVERY card played will result int #yTemporary cost change in them. #bEphermeral cards are shown with light pink border while #bResonate ones are #glime #ggreen.",
+      "Moreover, if a card has #yEternity , its cost is constant once it shows up. You cannot change its cost in any ways, in combat, events or any other ways."
+    ]
+  },
+  "ChangeCostAction": {
+    "TEXT": [
+      " Modify Its Cost to ",
+      "",
+      "There is no card in my hand to modify cost !"
     ]
   }
 }

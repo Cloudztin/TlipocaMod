@@ -1,6 +1,6 @@
 package TlipocaMod.cards.uncommon;
 
-import TlipocaMod.action.InspireAction;
+
 import TlipocaMod.action.StarlightSeizeAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
 import com.megacrit.cardcrawl.cards.AbstractCard;

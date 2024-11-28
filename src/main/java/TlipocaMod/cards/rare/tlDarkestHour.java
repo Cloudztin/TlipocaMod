@@ -18,7 +18,7 @@ public class tlDarkestHour extends AbstractTlipocaCard {
 
     static final CardRarity rarity = CardRarity.RARE;
     static final CardType type = CardType.POWER;
-    static final int cost = 1;
+    static final int cost = 4;
     static final String cardName = "DarkestHour";
 
 
@@ -42,7 +42,7 @@ public class tlDarkestHour extends AbstractTlipocaCard {
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            upgradeBaseCost(0);
+            upgradeBaseCost(3);
         }
     }
 

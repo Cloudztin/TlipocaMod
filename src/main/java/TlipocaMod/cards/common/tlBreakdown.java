@@ -33,7 +33,7 @@ public class tlBreakdown extends AbstractTlipocaCard {
         super(ID, cardStrings.NAME ,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
 
 
-        this.baseDamage=12;
+        this.baseDamage=9;
         this.magicNumber=this.baseMagicNumber=2;
     }
 
@@ -55,7 +55,7 @@ public class tlBreakdown extends AbstractTlipocaCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            upgradeDamage(4);
+            upgradeDamage(2);
             upgradeMagicNumber(2);
         }
     }

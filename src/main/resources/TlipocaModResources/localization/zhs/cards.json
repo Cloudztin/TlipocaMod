@@ -9,12 +9,11 @@
   },
   "TlipocaMod:Deterrent": {
     "NAME": "震慑",
-    "DESCRIPTION": "给予 !M! 层 虚弱 和 易伤 。将一张手牌的耗能 tlipocamod:暂时 降低1点。",
-    "UPGRADE_DESCRIPTION": " 保留 。给予 !M! 层 虚弱 和 易伤 。将一张手牌的耗能 tlipocamod:暂时 降低1点。"
+    "DESCRIPTION": "给予 !M! 层 虚弱 和 易伤 。将一张手牌的耗能 tlipocamod:暂时 降低1点。"
   },
   "TlipocaMod:Execution": {
     "NAME": "死刑宣告",
-    "DESCRIPTION": " tlipocamod:须臾 。造成 !D! 点伤害。 若你没有耗能更高的手牌，则暴击：造成 !M! 倍伤害。 斩杀 时，这张牌在本局游戏中暴击额外造成一倍伤害。"
+    "DESCRIPTION": " tlipocamod:须臾 。造成 !D! 点伤害。 若你没有耗能更高的非X耗能手牌，则暴击：造成 !M! 倍伤害。 斩杀 时，这张牌在本局游戏中暴击额外造成一倍伤害。"
   },
   "TlipocaMod:SoulStrike": {
     "NAME": "收割",
@@ -106,7 +105,7 @@
   },
   "TlipocaMod:Awaken": {
     "NAME": "唤醒",
-    "DESCRIPTION": "你每失去 [E] [E] [E] ,抽 !M! 张牌。"
+    "DESCRIPTION": "你每失去 [E] [E] [E] ,抽 !M! 张牌。不能叠加。"
   },
   "TlipocaMod:Blades": {
     "NAME": "流斩",
@@ -135,7 +134,7 @@
   },
   "TlipocaMod:CutDown": {
     "NAME": "砍倒",
-    "DESCRIPTION": "造成 !D! 点伤害。给予 !M! 层 tlipocamod:流血 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 tlipocamod:流血 。"
   },
   "TlipocaMod:HeartPierceStrike": {
     "NAME": "穿心打击",
@@ -165,7 +164,7 @@
   },
   "TlipocaMod:Maintenance": {
     "NAME": "整备",
-    "DESCRIPTION": "你的下X个回合开始后，获得 [E] 并抽 !M! 张牌。 消耗 。"
+    "DESCRIPTION": "你的下X个回合开始时，获得 [E] 并抽 !M! 张牌。 消耗 。"
   },
   "TlipocaMod:Recycle": {
     "NAME": "回收",
@@ -231,11 +230,11 @@
   },
   "TlipocaMod:RustyBlade": {
     "NAME": "锈刃",
-    "DESCRIPTION": "造成 !D! 点伤害。如果突破了敌人的 格挡 ，则给予 !M! 层 tlipocamod:流血 。抽一张牌。"
+    "DESCRIPTION": "造成 !D! 点伤害，如果突破了敌人的 格挡 ，则给予 !M! 层 tlipocamod:流血 。 NL 抽一张牌。"
   },
   "TlipocaMod:Destiny": {
     "NAME": "命运",
-    "DESCRIPTION": "获得 !B! 点 格挡 。抽取抽牌堆中耗能最高的一张牌。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。将抽牌堆耗能最高的一张牌加入手中。"
   },
   "TlipocaMod:Cleanse": {
     "NAME": "擦拭",
@@ -243,12 +242,12 @@
   },
   "TlipocaMod:Reckoning": {
     "NAME": "清算",
-    "DESCRIPTION": "移除敌人的 格挡 。敌人每有1层 tlipocamod:流血 ，就造成 !D! 点伤害。 消耗 。"
+    "DESCRIPTION": "移除敌人的 格挡 。 NL 敌人每有1层 tlipocamod:流血 ，就造成 !D! 点伤害。 消耗 。",
+    "UPGRADE_DESCRIPTION":" 保留 。移除敌人的 格挡 。 NL 敌人每有1层 tlipocamod:流血 ，就造成 !D! 点伤害。 消耗 。"
   },
-  "TlipocaMod:Humanity": {
-    "NAME": "人性",
-    "DESCRIPTION": " 虚无 。打出耗能为1的牌后，抽 !M! 张牌。",
-    "UPGRADE_DESCRIPTION": "打出耗能为1的牌后，抽 !M! 张牌。"
+  "TlipocaMod:Immortal": {
+    "NAME": "不朽",
+    "DESCRIPTION": "获得 !B! 点 格挡 X次。 NL 本回合你可以保留至多X张牌。"
   },
   "TlipocaMod:Overwhelm": {
     "NAME": "覆盖",
@@ -285,8 +284,8 @@
   },
   "TlipocaMod:Sacrifice": {
     "NAME": "牺牲",
-    "DESCRIPTION": "当目标因 tlipocamod:流血 失去生命时，所有其他敌人也失去等量生命。 消耗 。",
-    "UPGRADE_DESCRIPTION": "当目标因 tlipocamod:流血 失去生命时，所有其他敌人也失去等量生命。给予 !M! 层 tlipocamod:流血 。 消耗 。."
+    "DESCRIPTION": "目标因 tlipocamod:流血 失去生命时，所有其他敌人也失去等量生命。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "目标因 tlipocamod:流血 失去生命时，所有其他敌人也失去等量生命。 NL 给予 !M! 层 tlipocamod:流血 。 消耗 。"
   },
   "TlipocaMod:Mercy": {
     "NAME": "仁慈",
@@ -338,8 +337,8 @@
   },
   "TlipocaMod:StarlightSeize": {
     "NAME": "撷星",
-    "DESCRIPTION": "从3张任意颜色的耗能不低于3的卡牌中选一张加入手中。 消耗 。",
-    "UPGRADE_DESCRIPTION": "从3张任意颜色的耗能不低于3的卡牌中选一张加入手中。其在本场战斗中具有 tlipocamod:共鸣 。 消耗 。"
+    "DESCRIPTION": "从3张任意颜色的耗能不低于2的卡牌中选一张加入手中。 消耗 。",
+    "UPGRADE_DESCRIPTION": "从3张任意颜色的耗能不低于2的卡牌中选一张加入手中。其在本场战斗中具有 tlipocamod:共鸣 。 消耗 。"
   },
   "TlipocaMod:Bloodthirst": {
   "NAME": "渴血",
@@ -347,11 +346,49 @@
   },
   "TlipocaMod:Funeral": {
     "NAME": "葬仪",
-    "DESCRIPTION": " tlipocamod:须臾 。 虚无 。造成 !D! 点伤害。"
+    "DESCRIPTION": " tlipocamod:须臾 。 虚无 。 NL 造成 !D! 点伤害。"
   },
   "TlipocaMod:Virtue": {
     "NAME": "美德",
     "DESCRIPTION": "下次你受到负面效果时，抵消并获得1点 力量 。 消耗 。",
     "UPGRADE_DESCRIPTION":"下 !M! 次你受到负面效果时，抵消并获得1点 力量 。 消耗 。"
+  },
+  "TlipocaMod:FirstMove": {
+    "NAME": "先攻",
+    "DESCRIPTION": "造成 !D! 点伤害。本回合你可以 保留 !M! 张牌。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。本回合你可以 保留 至多 !M! 张牌。"
+  },
+  "TlipocaMod:Blossom": {
+    "NAME": "绽放",
+    "DESCRIPTION": "造成 !D! 点伤害。抽一张牌。 NL 下回合多抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。抽一张牌。 NL 下回合多抽 !M! 张牌。"
+  },
+  "TlipocaMod:Thrift": {
+    "NAME": "俭行",
+    "DESCRIPTION": "你的回合结束时，每剩余 [E] ，获得 !M! 点 格挡 。"
+  },
+  "TlipocaMod:Grief": {
+    "NAME": "夜之主的悲歌",
+    "DESCRIPTION": "不能从牌组中移除。 NL 打出其他牌或你的回合结束时，在手中加入一张此牌的复制。"
+  },
+  "TlipocaMod:Humanity": {
+    "NAME": "人性",
+    "DESCRIPTION": "当你打出一张耗能为X的牌后，获得其耗能 !M! 倍的 格挡 。"
+  },
+  "TlipocaMod:0": {
+    "NAME": "0",
+    "DESCRIPTION": "在本场战斗中将一张手牌的耗能改为0"
+  },
+  "TlipocaMod:1": {
+    "NAME": "1",
+    "DESCRIPTION": "在本场战斗中将一张手牌的耗能改为1"
+  },
+  "TlipocaMod:2": {
+    "NAME": "2",
+    "DESCRIPTION": "在本场战斗中将一张手牌的耗能改为2"
+  },
+  "TlipocaMod:3": {
+    "NAME": "3",
+    "DESCRIPTION": "在本场战斗中将一张手牌的耗能改为3"
   }
 }

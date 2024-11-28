@@ -41,7 +41,7 @@ public class MaintenancePower extends AbstractTlipocaPower{
     }
 
     @Override
-    public void atStartOfTurnPostDraw() {
+    public void atStartOfTurn() {
         flash();
         addToBot(new GainEnergyAction(1));
         addToBot(new DrawCardAction(2));

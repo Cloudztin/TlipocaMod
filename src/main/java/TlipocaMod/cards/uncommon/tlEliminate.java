@@ -34,6 +34,7 @@ public class tlEliminate extends AbstractTlipocaCard {
 
 
         this.baseDamage=26;
+        this.tags.add(CardTags.HEALING);
         this.magicNumber=this.baseMagicNumber=3;
         this.misc=0;
     }
@@ -60,10 +61,9 @@ public class tlEliminate extends AbstractTlipocaCard {
 
     @Override
     public void triggerOnGlowCheck() {
+        super.triggerOnGlowCheck();
         if(this.misc==0)
-            this.glowColor = AbstractCard.GREEN_BORDER_GLOW_COLOR.cpy();
-        else
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
     }
 
     @Override

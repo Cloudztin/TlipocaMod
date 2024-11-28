@@ -6,10 +6,8 @@ import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
-import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import com.megacrit.cardcrawl.vfx.combat.WhirlwindEffect;
 
@@ -56,13 +54,13 @@ public class BladesAction extends AbstractGameAction {
         if (effect > 0) {
             for (int i = 0; i < effect; i++) {
                 if (i == 0) {
-                    addToBot((AbstractGameAction)new SFXAction("ATTACK_WHIRLWIND"));
-                    addToBot((AbstractGameAction)new VFXAction((AbstractGameEffect)new WhirlwindEffect(), 0.0F));
+                    addToBot(new SFXAction("ATTACK_WHIRLWIND"));
+                    addToBot(new VFXAction(new WhirlwindEffect(), 0.0F));
                 }
 
-                addToBot((AbstractGameAction)new SFXAction("ATTACK_HEAVY"));
-                addToBot((AbstractGameAction)new VFXAction((AbstractCreature)this.p, (AbstractGameEffect)new CleaveEffect(), 0.0F));
-                addToBot((AbstractGameAction)new DamageAllEnemiesAction((AbstractCreature)this.p, this.multiDamage, this.damageType, AttackEffect.NONE, true));
+                addToBot(new SFXAction("ATTACK_HEAVY"));
+                addToBot(new VFXAction(this.p, new CleaveEffect(), 0.0F));
+                addToBot(new DamageAllEnemiesAction(this.p, this.multiDamage, this.damageType, AttackEffect.NONE, true));
             }
 
             if (!this.freeToPlayOnce) {

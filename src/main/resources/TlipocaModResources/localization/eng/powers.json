@@ -2,10 +2,8 @@
   "TlipocaMod:Unleash": {
     "NAME": "Awakened",
     "DESCRIPTIONS": [
-      "Whenever you lose [E] [E] [E] ,draw #b",
-      " card. ( #b",
-      " cards.( #b",
-      " [E] to go.)"
+      "Whenever you lose [E] [E] [E] ,draw #y1 card. ( #b",
+      " [E] to go. Cannot stack.)"
     ]
   },
   "TlipocaMod:Reaper": {
@@ -88,9 +86,8 @@
   "TlipocaMod:Humanity": {
     "NAME": "Humanity",
     "DESCRIPTIONS": [
-      "When you play a card costs #y1 , draw #b1 card.",
-      "When you play a card costs #y1 , draw #b",
-      " cards."
+      "When you play a card costs #yX , gain #b",
+      " #yBlock for each [E] it costs."
     ]
   },
   "TlipocaMod:CannotAttack": {
@@ -111,6 +108,36 @@
       "Negates the next debuff and gain #y1 #yStrength .",
       "Negates the next #b",
       " debuffs and gain #y1 #yStrength ."
+    ]
+  },
+  "TlipocaMod:FirstStrike": {
+    "NAME": "Retain",
+    "DESCRIPTIONS": [
+      "You can #yRetain a card this turn.",
+      "You can #yRetain at most #b",
+      " cards this turn."
+    ]
+  },
+  "TlipocaMod:Contagion": {
+    "NAME": "Contagion",
+    "DESCRIPTIONS": [
+      "At the start of your turn, apply #b",
+      " #yBleed to ALL enemies."
+    ]
+  },
+  "TlipocaMod:Thrift": {
+    "NAME": "Thrift",
+    "DESCRIPTIONS": [
+      "At the end of your turn, gain #b",
+      " #yBlock for each remaining [E] ."
+    ]
+  },
+  "TlipocaMod:Infinity": {
+    "NAME": "Infinity",
+    "DESCRIPTIONS": [
+      "In this turn, when your hand is less than #y8 , draw until 8.",
+      "In #b",
+      " turns, when your hand is less than #y8 , draw until 8."
     ]
   }
 }

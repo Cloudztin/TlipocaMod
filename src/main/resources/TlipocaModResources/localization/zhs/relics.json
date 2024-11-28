@@ -15,9 +15,9 @@
   },
   "TlipocaMod:NightCrown": {
     "NAME": "夜之冠冕",
-    "FLAVOR": "夜之主的王冠。只有大死神才能够佩戴。",
+    "FLAVOR": "夜之主的王冠。真的非常重。",
     "DESCRIPTIONS": [
-      "在每回合开始时获得 [E] ，然后将一张手牌本回合打出前的耗能加 #b1 。"
+      "在每回合开始时获得 [E] ，然后选择一张手牌的耗能 #y暂时 加 #b3 。"
     ]
   },
   "TlipocaMod:BloodyHarvest": {
@@ -25,6 +25,55 @@
     "FLAVOR": "死与恶衔接黑暗之环，生与善敲响末日之钟；我手持镰刀将万物收割，繁荣国度终将归于虚空。",
     "DESCRIPTIONS": [
       "替换 #r小红 并继承灵魂。 非爪牙敌人彻底死亡时，收割 #b2 点灵魂。你的回合开始时，消耗 #b1 点灵魂，获得 [E] ，抽 #b2 张牌。"
+    ]
+  },
+  "TlipocaMod:DragonBlood": {
+    "NAME": "龙血",
+    "FLAVOR": "你从中感到了诅咒的气息。",
+    "DESCRIPTIONS": [
+      "战斗开始时，随机给予一名敌人 #b2 层 #y流血 。"
+    ]
+  },
+  "TlipocaMod:Cryolite": {
+    "NAME": "冰晶",
+    "FLAVOR": "空洞的宝石，似乎在渴望外界的力量。",
+    "DESCRIPTIONS": [
+      "如果你在回合结束或战斗结束时有剩余的 [E] ，则在下一个回合额外抽 #b1 张牌。"
+    ]
+  },
+  "TlipocaMod:CassildasSong": {
+    "NAME": "凯西露达之歌",
+    "FLAVOR": "“我的灵魂已无法歌唱；我的歌像泪不再流淌；只有干涸和沉默在那；失落的卡尔克萨。”",
+    "DESCRIPTIONS": [
+      "当你打出耗能不低于3的牌后，获得 [E] 。"
+    ]
+  },
+  "TlipocaMod:SoulStone": {
+    "NAME": "灵魂石",
+    "FLAVOR": "据说属于曾经的大死神，那位已经消失的“夜之主”。其传说也消散在迷雾之中。",
+    "DESCRIPTIONS": [
+      "你每回合打出的第N张牌若耗能也为N，则会额外打出一次。拾起时，被 #r诅咒 。"
+    ]
+  },
+  "TlipocaMod:AlchemyFlask": {
+    "NAME": "炼金瓶",
+    "FLAVOR": "据说属于“最伟大的炼金术士”，标签已经模糊不清",
+    "DESCRIPTIONS": [
+      "收集了 #b13 名非爪牙敌人的灵魂后，在战斗结束时消耗所有灵魂获得额外奖励： #b1 个 #b遗物 ， #b77 #y金币 和 #b1 瓶 #b药水 。"
+    ]
+  },
+  "TlipocaMod:SealofthePast": {
+    "NAME": "旧日之印",
+    "FLAVOR": "可以对抗堕落和疯狂。",
+    "DESCRIPTIONS": [
+      "如果你的生命值低于或等于 #b50% ，回合结束时获得 #b3 点 #y格挡 。"
+    ]
+  },
+  "TlipocaMod:Schistosome": {
+    "NAME": "血吸虫",
+    "FLAVOR": "近年来血液的质量越来越差了。",
+    "DESCRIPTIONS": [
+      "每回合首次有敌人因非 #y攻击 伤害失去生命后，抽 #b2 张牌。"
     ]
   }
 }

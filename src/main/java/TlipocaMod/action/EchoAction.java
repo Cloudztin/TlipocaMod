@@ -21,7 +21,7 @@ public class EchoAction extends AbstractGameAction {
 
     public void update() {
 
-        for(AbstractCard c : p.hand.group) if(!CardPatch.newVarField.resonate.get(c))
+        for(AbstractCard c : p.hand.group) if(!CardPatch.newVarField.resonate.get(c) && c.cost>=0)
             CardModifierManager.addModifier(c, new TlipocaModifier(TlipocaModifier.supportedModify.RESONATE, false));
 
         this.isDone=true;

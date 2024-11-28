@@ -15,7 +15,7 @@ public class LittleRed extends AbstractTlipocaRelic implements CustomSavable<Int
     public static final String ID = TlipocaMod.getID(relicName);
 
     public LittleRed() {
-        super(relicName, RelicTier.STARTER, LandingSound.CLINK, false);
+        super(relicName, RelicTier.STARTER, LandingSound.CLINK, true);
 
         this.counter = 0;
     }

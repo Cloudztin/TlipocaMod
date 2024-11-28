@@ -1,9 +1,7 @@
-package TlipocaMod.cards.common;
+package TlipocaMod.cards.deprecated;
 
 import TlipocaMod.action.EdgeAction;
-import TlipocaMod.action.ParcloseAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
-import TlipocaMod.cards.uncommon.tlParclose;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.tempCards.Shiv;

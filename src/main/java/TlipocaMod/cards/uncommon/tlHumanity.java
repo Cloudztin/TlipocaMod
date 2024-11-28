@@ -2,6 +2,7 @@ package TlipocaMod.cards.uncommon;
 
 import TlipocaMod.cards.AbstractTlipocaCard;
 import TlipocaMod.powers.HumanityPower;
+import TlipocaMod.powers.UnleashPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,9 +14,10 @@ import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
 
 public class tlHumanity extends AbstractTlipocaCard {
 
+
     static final CardRarity rarity = CardRarity.UNCOMMON;
     static final CardType type = CardType.POWER;
-    static final int cost = 2;
+    static final int cost = 1;
     static final String cardName = "Humanity";
 
 
@@ -26,8 +28,7 @@ public class tlHumanity extends AbstractTlipocaCard {
     public tlHumanity() {
         super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.SELF);
 
-        this.magicNumber = this.baseMagicNumber = 1;
-        this.isEthereal=true;
+        this.magicNumber = this.baseMagicNumber = 2;
     }
 
     @Override
@@ -39,9 +40,7 @@ public class tlHumanity extends AbstractTlipocaCard {
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            this.isEthereal=false;
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            upgradeMagicNumber(1);
         }
     }
 

@@ -32,6 +32,7 @@ public class tlStrike extends AbstractTlipocaCard {
 
         this.baseDamage=6;
         this.tags.add(CardTags.STARTER_STRIKE);
+        this.tags.add(CardTags.STRIKE);
     }
 
     @Override

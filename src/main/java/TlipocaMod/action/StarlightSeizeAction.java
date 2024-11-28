@@ -1,6 +1,7 @@
 package TlipocaMod.action;
 
 import TlipocaMod.TlipocaMod.TlipocaModifier;
+import TlipocaMod.patches.CardPatch;
 import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -38,6 +39,7 @@ public class StarlightSeizeAction extends AbstractGameAction {
         if(!this.retrieveCard){
             if(AbstractDungeon.cardRewardScreen.discoveryCard !=null){
                 AbstractCard disCard = AbstractDungeon.cardRewardScreen.discoveryCard.makeStatEquivalentCopy();
+                if(upgrade && !CardPatch.newVarField.resonate.get(disCard)) CardModifierManager.addModifier(disCard, new TlipocaModifier(TlipocaModifier.supportedModify.RESONATE, false));
                 disCard.current_x = -1000.0F * Settings.xScale;
 
                 if (AbstractDungeon.player.hand.size() < 10)
@@ -79,7 +81,6 @@ public class StarlightSeizeAction extends AbstractGameAction {
 
             if(!dupe){
                 AbstractCard item=tmp.makeCopy();
-                if(upgrade) CardModifierManager.addModifier(item, new TlipocaModifier(TlipocaModifier.supportedModify.RESONATE, false));
                 choices.add(item);
             }
         }
@@ -112,7 +113,7 @@ public class StarlightSeizeAction extends AbstractGameAction {
                             } while(((AbstractCard)c.getValue()).hasTag(AbstractCard.CardTags.HEALING));
                         } while(((AbstractCard)c.getValue()).type == AbstractCard.CardType.CURSE);
                     } while(((AbstractCard)c.getValue()).type == AbstractCard.CardType.STATUS);
-                } while(((AbstractCard)c.getValue()).cost <3);
+                } while(((AbstractCard)c.getValue()).cost <2);
             } while(UnlockTracker.isCardLocked((String)c.getKey()) && !Settings.treatEverythingAsUnlocked());
 
             pool.addToBottom((AbstractCard) c.getValue());

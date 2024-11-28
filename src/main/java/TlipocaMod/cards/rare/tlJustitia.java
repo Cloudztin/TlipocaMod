@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.combat.LightningEffect;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
 
 import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
@@ -38,7 +39,9 @@ public class tlJustitia extends AbstractTlipocaCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if(m!=null){
-            AbstractDungeon.effectList.add(new WeightyImpactEffect(m.hb.cX, m.hb.cY));
+            CardCrawlGame.sound.playA("ORB_LIGHTNING_EVOKE", 0.9F);
+            CardCrawlGame.sound.playA("ORB_LIGHTNING_PASSIVE", -0.3F);
+            AbstractDungeon.effectList.add(new LightningEffect(m.hb.cX, m.hb.cY));
             addToBot(new JusticeAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), this.magicNumber, this.uuid));
         }
     }
@@ -47,7 +50,7 @@ public class tlJustitia extends AbstractTlipocaCard {
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            upgradeDamage(10);
+            upgradeDamage(12);
         }
     }
 
@@ -65,10 +68,9 @@ public class tlJustitia extends AbstractTlipocaCard {
 
     @Override
     public void triggerOnGlowCheck() {
+        super.triggerOnGlowCheck();
         if(this.costForTurn==0 || this.freeToPlay())
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
-        else
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
     }
 
     @Override

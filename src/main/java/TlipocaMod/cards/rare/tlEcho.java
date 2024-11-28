@@ -14,7 +14,7 @@ public class tlEcho extends AbstractTlipocaCard {
 
     static final CardRarity rarity = CardRarity.RARE;
     static final CardType type = CardType.SKILL;
-    static final int cost = 2;
+    static final int cost = 3;
     static final String cardName = "Echo";
 
 
@@ -38,7 +38,7 @@ public class tlEcho extends AbstractTlipocaCard {
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            upgradeBaseCost(1);
+            upgradeBaseCost(2);
         }
     }
 

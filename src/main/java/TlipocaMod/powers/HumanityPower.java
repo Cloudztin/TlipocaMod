@@ -3,9 +3,9 @@ package TlipocaMod.powers;
 
 
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -33,17 +33,14 @@ public class HumanityPower extends AbstractTlipocaPower {
 
     @Override
     public void updateDescription() {
-        if(this.amount == 1)
-            description=DESCRIPTIONS[0];
-        else
-            description = DESCRIPTIONS[1] +this.amount+DESCRIPTIONS[2];
+        description = DESCRIPTIONS[0] +this.amount+DESCRIPTIONS[1];
     }
 
 
     public void onUseCard(AbstractCard card, UseCardAction action){
-        if ((card.cost>=0 && card.costForTurn==1) ||(card.cost==-1 && card.energyOnUse==1) ){
+        if (card.cost==-1 && card.energyOnUse>0){
             flash();
-            addToBot(new DrawCardAction(this.amount));
+            addToBot(new GainBlockAction(this.owner, this.amount*card.energyOnUse));
         }
     }
 

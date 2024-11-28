@@ -1,6 +1,5 @@
 package TlipocaMod.cards.common;
 
-import TlipocaMod.action.IncreaseCostForTurnOnceAction;
 import TlipocaMod.action.IncreaseHandCostForCombatAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;

@@ -39,11 +39,11 @@ public class VirtuePower extends AbstractTlipocaPower implements OnReceivePowerP
     public boolean onReceivePower(AbstractPower abstractPower, AbstractCreature abstractCreature, AbstractCreature abstractCreature1) {
         if(abstractPower.type==PowerType.DEBUFF){
             if(this.amount==1)
-                addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
-            else  addToBot(new ReducePowerAction(this.owner, this.owner, this, 1));
+                addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+            else  addToTop(new ReducePowerAction(this.owner, this.owner, this, 1));
             addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, 1), 1));
             return false;
         }
-        return false;
+        return true;
     }
 }

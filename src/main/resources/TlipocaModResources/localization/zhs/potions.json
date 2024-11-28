@@ -1,0 +1,24 @@
+{
+  "TlipocaMod:CorrectionFluid": {
+    "NAME": "涂改液",
+    "DESCRIPTIONS": [
+      "在本场战斗中，将你手中的 #b",
+      " 张牌的耗能修改为0~3。",
+      " 张牌的耗能修改为0~3。"
+    ]
+  },
+  "TlipocaMod:BottledDisease": {
+    "NAME": "瓶装疫病",
+    "DESCRIPTIONS": [
+      "给予 #b",
+      " 层 #y流血 。"
+    ]
+  },
+  "TlipocaMod:InfinityPotion": {
+    "NAME": "无限药剂",
+    "DESCRIPTIONS": [
+      "在本回合内，当你的手牌少于 #y8 张时，将手牌抽到8张。",
+      "在 #b2 回合内，当你的手牌少于 #y8 张时，将手牌抽到8张。"
+    ]
+  }
+}

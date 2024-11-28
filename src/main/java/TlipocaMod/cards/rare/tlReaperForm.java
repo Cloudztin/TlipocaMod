@@ -3,6 +3,7 @@ package TlipocaMod.cards.rare;
 
 import TlipocaMod.cards.AbstractTlipocaCard;
 import TlipocaMod.powers.ReaperPower;
+import basemod.BaseMod;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -28,6 +29,7 @@ public class tlReaperForm extends AbstractTlipocaCard {
     public tlReaperForm() {
         super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.SELF);
 
+        this.tags.add(CardTags.HEALING);
         this.magicNumber = this.baseMagicNumber = 2;
     }
 

@@ -33,7 +33,7 @@ public class BloodRitesAction extends AbstractGameAction {
         if (this.duration == 0.5F) {
             if(this.m!=null){
                 this.m.damage(new DamageInfo(this.p, this.c.damage, this.c.damageTypeForTurn));
-                if ((this.m.isDying || this.m.currentHealth <= 0) && !this.m.halfDead && !this.m.hasPower("Minion")){
+                if ( (this.m.isDying || this.m.currentHealth <= 0) && !this.m.halfDead && (!this.m.hasPower("Minion")) ){
                     cardSelected = false;
 
                     CardGroup tmp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
@@ -44,11 +44,12 @@ public class BloodRitesAction extends AbstractGameAction {
                     if (tmp.group.isEmpty()){
                         cardSelected = true;
                         this.isDone=true;
-                        tickDuration();
                         return;
                     }
                     if(tmp.size()==1){
                         giveCards(tmp.group);
+                        this.isDone=true;
+                        return;
                     }
                     else if(!AbstractDungeon.isScreenUp){
                         AbstractDungeon.gridSelectScreen.open(tmp, 1, TEXT[0] + LocalizedStrings.PERIOD, false, false, false, false);
@@ -67,6 +68,8 @@ public class BloodRitesAction extends AbstractGameAction {
 
 
                 }
+
+                this.isDone=true;
             }
 
 
@@ -82,8 +85,7 @@ public class BloodRitesAction extends AbstractGameAction {
     public void giveCards(ArrayList<AbstractCard> group) {
         cardSelected = true;
         float displayCount = 0.0F;
-        for (Iterator<AbstractCard> i = group.iterator(); i.hasNext(); ) {
-            AbstractCard card = i.next();
+        for (AbstractCard card : group) {
             card.untip();
             card.unhover();
             AbstractDungeon.player.masterDeck.removeCard(card);
@@ -94,7 +96,6 @@ public class BloodRitesAction extends AbstractGameAction {
                 AbstractDungeon.topLevelEffectsQueue.add(new ShowCardAndObtainEffect(
 
                         AbstractDungeon.getTransformedCard(), Settings.WIDTH / 3.0F + displayCount, Settings.HEIGHT / 2.0F, false));
-
 
 
                 displayCount += Settings.WIDTH / 6.0F;

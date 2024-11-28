@@ -1,9 +1,10 @@
 package TlipocaMod.cards.uncommon;
 
-import TlipocaMod.action.AfireAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
 import TlipocaMod.patches.CardPatch;
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -11,6 +12,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.combat.ViolentAttackEffect;
 
 import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
 
@@ -36,7 +38,8 @@ public class tlFuneral extends AbstractTlipocaCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+        addToBot(new VFXAction(new ViolentAttackEffect(m.hb.cX, m.hb.cY, Color.PINK), 0.4F));
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.FIRE));
     }
 
     @Override

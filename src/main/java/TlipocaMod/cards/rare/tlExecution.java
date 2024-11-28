@@ -50,14 +50,13 @@ public class tlExecution extends AbstractTlipocaCard {
 
     @Override
     public void triggerOnGlowCheck() {
+        super.triggerOnGlowCheck();
         int maxCost=0;
         for(AbstractCard c:AbstractDungeon.player.hand.group)
             if(c.costForTurn>maxCost)
                 maxCost=c.costForTurn;
         if(this.costForTurn>=maxCost)
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
-        else
-            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
     }
 
     @Override

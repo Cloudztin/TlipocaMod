@@ -56,13 +56,13 @@ public class IncreaseCostForTurnOnceAction extends AbstractGameAction {
 
                     if(this.p.hand.size()>amount){
                         if(amount<0){
-                            AbstractDungeon.handCardSelectScreen.open(TEXT[0], 99, true, true);
+                            AbstractDungeon.handCardSelectScreen.open(TEXT[0]+this.cost+TEXT[1], 99, true, true);
                             AbstractDungeon.player.hand.applyPowers();
                             tickDuration();
                             return;
                         }
                         else{
-                            AbstractDungeon.handCardSelectScreen.open(TEXT[0],amount,false, false, false, false);
+                            AbstractDungeon.handCardSelectScreen.open(TEXT[0]+this.cost+TEXT[1],amount,false, false, false, false);
                             AbstractDungeon.player.hand.applyPowers();
                             tickDuration();
                             return;

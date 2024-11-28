@@ -2,7 +2,6 @@ package TlipocaMod.cards.basic;
 
 import TlipocaMod.action.ReduceHandCostAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
-import TlipocaMod.patches.CardPatch;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -19,7 +18,7 @@ public class tlDeterrent extends AbstractTlipocaCard {
 
     static final CardRarity rarity = CardRarity.BASIC;
     static final CardType type = CardType.SKILL;
-    static final int cost = 1;
+    static final int cost = 2;
     static final String cardName = "Deterrent";
 
 
@@ -46,9 +45,7 @@ public class tlDeterrent extends AbstractTlipocaCard {
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            this.selfRetain=true;
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            upgradeBaseCost(1);
         }
     }
 

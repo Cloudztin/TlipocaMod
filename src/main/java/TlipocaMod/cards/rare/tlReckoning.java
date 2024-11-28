@@ -18,7 +18,7 @@ public class tlReckoning extends AbstractTlipocaCard {
 
     static final CardRarity rarity = CardRarity.RARE;
     static final CardType type = CardType.ATTACK;
-    static final int cost = 4;
+    static final int cost = 3;
     static final String cardName = "Reckoning";
 
 
@@ -47,7 +47,10 @@ public class tlReckoning extends AbstractTlipocaCard {
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
+            this.selfRetain=true;
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             upgradeDamage(2);
+            this.initializeDescription();
         }
     }
 

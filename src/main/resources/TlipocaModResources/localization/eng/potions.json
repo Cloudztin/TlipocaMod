@@ -1,0 +1,24 @@
+{
+  "TlipocaMod:CorrectionFluid": {
+    "NAME": "Correction Fluid",
+    "DESCRIPTIONS": [
+      "In this combat, change the cost of #b",
+      " card in your hand to 0~3.",
+      " cards in your hand to 0~3."
+    ]
+  },
+  "TlipocaMod:BottledDisease": {
+    "NAME": "Bottled Disease",
+    "DESCRIPTIONS": [
+      "Apply #b",
+      " #yBleed ."
+    ]
+  },
+  "TlipocaMod:InfinityPotion": {
+    "NAME": "Infinity Potion",
+    "DESCRIPTIONS": [
+      "In this turn, when your hand is less than #y8 , draw until 8.",
+      "In #b2 turns, when your hand is less than #y8 , draw until 8."
+    ]
+  }
+}

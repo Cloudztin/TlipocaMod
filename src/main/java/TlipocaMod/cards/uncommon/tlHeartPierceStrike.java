@@ -1,7 +1,6 @@
 package TlipocaMod.cards.uncommon;
 
 import TlipocaMod.action.HeartPierceAction;
-import TlipocaMod.action.MeteorAction;
 import TlipocaMod.cards.AbstractTlipocaCard;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -28,7 +27,7 @@ public class tlHeartPierceStrike extends AbstractTlipocaCard {
         super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
 
         this.tags.add(CardTags.STRIKE);
-        this.baseDamage=8;
+        this.baseDamage=7;
     }
 
     @Override

@@ -17,7 +17,7 @@
     "NAME": "Night Crown",
     "FLAVOR": "The crown of the Death. ",
     "DESCRIPTIONS": [
-      "At the start of your turn, gain [E] , then increase the cost of a card in your hand by #b1 until it's played in this turn."
+      "At the start of your turn, gain [E] , then #yTemporarily increase the cost of a card in your hand by #b3 ."
     ]
   },
   "TlipocaMod:BloodyHarvest": {
@@ -25,6 +25,55 @@
     "FLAVOR": "Death entwines with evil, life harmonizes with virtue. My scythe doth reap the world's bounty, with each swing decisive and true. ",
     "DESCRIPTIONS": [
       "Replace #rLittle #rRed and inherits its soul. Harvest #b2 soul when a non-minion enemy thoroughly dies. At the start of your turn, consume #b1 soul to gain [E] and draw #b2 cards."
+    ]
+  },
+  "TlipocaMod:DragonBlood": {
+    "NAME": "Dragon Blood",
+    "FLAVOR": "Seems cursed...",
+    "DESCRIPTIONS": [
+      "At the start of combat, apply #b2 #yBleed to a random enemy."
+    ]
+  },
+  "TlipocaMod:Cryolite": {
+    "NAME": "Cryolite",
+    "FLAVOR": "You can feel it begging for outer energy.",
+    "DESCRIPTIONS": [
+      "If you have [E] left at the end of turn or combat, then at the start of your next turn, draw #b1 card."
+    ]
+  },
+  "TlipocaMod:CassildasSong": {
+    "NAME": "Cassilda's Song",
+    "FLAVOR": "Song of my soul, my voice is dead; Die thou, unsung, as tears unshed; Shall dry and die in Lost Carcosa.",
+    "DESCRIPTIONS": [
+      "When you play a card with a cost more than 2, gain [E] ."
+    ]
+  },
+  "TlipocaMod:SoulStone": {
+    "NAME": "Soul Stone",
+    "FLAVOR": "It was said to belong to the disappearing Great Death revered as the 'Lord of the Night', whose legend also dissipated in the mist of obscurity... ",
+    "DESCRIPTIONS": [
+      "When you play the Nth card each turn, if its cost is also N, it will be played once more. Upon pickup, obtain a special #rCurse ."
+    ]
+  },
+  "TlipocaMod:AlchemyFlask": {
+    "NAME": "Alchemy Flask",
+    "FLAVOR": "The label was blurry.",
+    "DESCRIPTIONS": [
+      "After collecting #b13 souls of non-Minion enemies, consume all soul collected to get rewards: a #brelic , #b77 #ygold and a #bpotion ."
+    ]
+  },
+  "TlipocaMod:SealofthePast": {
+    "NAME": "Seal of the Past",
+    "FLAVOR": "A heavy stone from the past. Can prevent insanity if properly used.",
+    "DESCRIPTIONS": [
+      "If your HP is no more than #b50% , gain #b3 #yBlock at the end of turn."
+    ]
+  },
+  "TlipocaMod:Schistosome": {
+    "NAME": "Schistosome",
+    "FLAVOR": "The quality of blood is worsening each year.",
+    "DESCRIPTIONS": [
+      "Once for each turn, when an enemy loses life due to a cause other than #yAttack damage, draw #b2 cards."
     ]
   }
 }

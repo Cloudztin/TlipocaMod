@@ -18,8 +18,9 @@ public class WhisperFollowAction extends AbstractGameAction {
 
         if (this.isDone)
             for (AbstractCard c : DrawCardAction.drawnCards)
-                if(!CardPatch.newVarField.resonate.get(c))
-                    CardModifierManager.addModifier(c, new TlipocaModifier(TlipocaModifier.supportedModify.RESONATE, false));
+                if(c.cost>=0)
+                    if(!CardPatch.newVarField.resonate.get(c))
+                        CardModifierManager.addModifier(c, new TlipocaModifier(TlipocaModifier.supportedModify.RESONATE, false));
 
     }
 }
