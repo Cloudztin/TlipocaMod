@@ -1,4 +1,4 @@
-package TlipocaMod.cards.tempCards;
+package TlipocaMod.cards.choices;
 
 import TlipocaMod.action.ChangeCostAction;
 import TlipocaMod.cards.AbstractTlipocaCard;

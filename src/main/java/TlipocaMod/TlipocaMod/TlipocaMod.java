@@ -120,7 +120,7 @@ public class TlipocaMod implements PostInitializeSubscriber, EditCharactersSubsc
 
     public void receiveEditCards() {
         System.out.println("Adding cards");
-        new AutoAdd("TlipocaMod").packageFilter(AbstractTlipocaCard.class).notPackageFilter("TlipocaMod.cards.deprecated").setDefaultSeen(true).cards();
+        new AutoAdd("TlipocaMod").packageFilter(AbstractTlipocaCard.class).notPackageFilter("TlipocaMod.cards.deprecated").notPackageFilter("TlipocaMod.cards.choices").setDefaultSeen(true).cards();
     }
 
     @Override

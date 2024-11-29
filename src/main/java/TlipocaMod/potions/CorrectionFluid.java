@@ -1,10 +1,10 @@
 package TlipocaMod.potions;
 
 import TlipocaMod.TlipocaMod.TlipocaMod;
-import TlipocaMod.cards.tempCards.tl0;
-import TlipocaMod.cards.tempCards.tl1;
-import TlipocaMod.cards.tempCards.tl2;
-import TlipocaMod.cards.tempCards.tl3;
+import TlipocaMod.cards.choices.tl0;
+import TlipocaMod.cards.choices.tl1;
+import TlipocaMod.cards.choices.tl2;
+import TlipocaMod.cards.choices.tl3;
 import basemod.abstracts.CustomPotion;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;

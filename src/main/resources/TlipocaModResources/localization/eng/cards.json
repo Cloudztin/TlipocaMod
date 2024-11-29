@@ -130,7 +130,8 @@
   },
   "TlipocaMod:Misery": {
     "NAME": "Misery",
-    "DESCRIPTION": "Apply !M! Weak, Vulnerable and tlipocamod:Bleed. Exhaust."
+    "DESCRIPTION": "Apply 3 Vulnerable. The target's next received attack damage is doubled. Exhaust.",
+    "UPGRADE_DESCRIPTION":"Apply 5 Vulnerable. The target's next !M! received attack damage is doubled. Exhaust."
   },
   "TlipocaMod:CutDown": {
     "NAME": "Cut Down",

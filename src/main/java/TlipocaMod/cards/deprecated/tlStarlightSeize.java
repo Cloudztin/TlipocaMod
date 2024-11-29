@@ -1,4 +1,4 @@
-package TlipocaMod.cards.uncommon;
+package TlipocaMod.cards.deprecated;
 
 
 import TlipocaMod.action.StarlightSeizeAction;

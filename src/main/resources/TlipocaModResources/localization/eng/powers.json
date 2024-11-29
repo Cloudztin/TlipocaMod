@@ -139,5 +139,13 @@
       "In #b",
       " turns, when your hand is less than #y8 , draw until 8."
     ]
+  },
+  "TlipocaMod:Fragile": {
+    "NAME": "Fragile",
+    "DESCRIPTIONS": [
+      "The next #yAttack damage received will be doubled.",
+      "The next #b",
+      " #yAttack damage received will be doubled."
+    ]
   }
 }

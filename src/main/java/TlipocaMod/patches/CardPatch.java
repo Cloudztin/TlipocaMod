@@ -159,6 +159,10 @@ public class CardPatch {
         @SpirePrefixPatch
         static public void Prefix(AbstractCard card, ArrayList<CardGlowBorder> ___glowList) {
             ___glowList.clear();
+            if(newVarField.eternity.get(card)){
+                card.glowColor=Color.NAVY.cpy();
+                return;
+            }
             if(newVarField.ephemeral.get(card) && newVarField.resonate.get(card))
                 card.glowColor=Color.LIGHT_GRAY.cpy();
             if(newVarField.ephemeral.get(card) &&(!newVarField.resonate.get(card)))
@@ -167,7 +171,6 @@ public class CardPatch {
                 card.glowColor=Color.LIME.cpy();
             if((!newVarField.ephemeral.get(card)) && (!newVarField.resonate.get(card)))
                 card.glowColor=new Color(0.2F, 0.9F, 1.0F, 0.25F);
-
         }
     }
 

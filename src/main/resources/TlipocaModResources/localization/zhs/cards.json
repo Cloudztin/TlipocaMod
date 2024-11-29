@@ -130,7 +130,8 @@
   },
   "TlipocaMod:Misery": {
     "NAME": "痛苦",
-    "DESCRIPTION": "给予 !M! 层 虚弱 ， 易伤 和 tlipocamod:流血 。 NL 消耗 。"
+    "DESCRIPTION": "给予3层 易伤 。目标下次受到的攻击伤害翻倍。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"给予5层 易伤 。目标下 !M! 次受到的攻击伤害翻倍。 NL 消耗 。"
   },
   "TlipocaMod:CutDown": {
     "NAME": "砍倒",
