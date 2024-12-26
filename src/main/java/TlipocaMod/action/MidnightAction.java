@@ -26,26 +26,21 @@ public class MidnightAction extends AbstractGameAction {
         if (this.duration == 0.3F) {
             int maxCost = -1;
             for(AbstractCard c: AbstractDungeon.player.hand.group) {
-                if(c.cost==-1)
-                    if(EnergyPanel.getCurrentEnergy()>maxCost)
-                        maxCost = EnergyPanel.getCurrentEnergy();
-                if(c.cost>=0)
-                    if(c.costForTurn>maxCost)
-                        maxCost = c.costForTurn;
+                if(c.cost==-1 && EnergyPanel.getCurrentEnergy()>maxCost)
+                    maxCost = EnergyPanel.getCurrentEnergy();
+
+                if(c.cost>=0 && c.costForTurn>maxCost)
+                    maxCost = c.costForTurn;
             }
             if(maxCost==-1){
                 this.isDone=true;
                 return;
             }
+
             int cardAmt=0;
-            for(AbstractCard c: AbstractDungeon.player.hand.group) {
-                if(c.cost==-1)
-                    if(EnergyPanel.getCurrentEnergy()==maxCost)
-                        cardAmt++;
-                if(c.cost>=0)
-                    if(c.costForTurn==maxCost)
-                        cardAmt++;
-            }
+            for(AbstractCard c: AbstractDungeon.player.hand.group)
+                if((c.cost==-1 && EnergyPanel.getCurrentEnergy()==maxCost) || (c.cost>=0 && c.costForTurn==maxCost)) cardAmt++;
+
             if(cardAmt==1){
                 AbstractCard card1 = null;
                 for(AbstractCard c: AbstractDungeon.player.hand.group)

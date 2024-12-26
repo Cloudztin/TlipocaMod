@@ -6,6 +6,13 @@
       "你睁开所有的眼睛，看着心脏砰砰地跳动。“是时候了。”你举起了镰刀。"
     ]
   },
+  "HaaLouLing": {
+    "TEXT": [
+      "霞露零",
+      "霞露门之后，人类与精灵的混血，心爱之人的恶驱使她孤身向北，只为斩尽魑魅魍魉。",
+      "你屏息凝神……其形如妖，其秽成炁，凶秽消散，道炁常存，应斩之……绷簧一响，刀已如闪电般出鞘。"
+    ]
+  },
   "IncreaseHandCost": {
     "TEXT": [
       "增加",
@@ -119,6 +126,84 @@
       "修改耗能为",
       "",
       "我没有可以修改耗能的手牌！"
+    ]
+  },
+  "LockHandAction": {
+    "TEXT": [
+      "施加锁定",
+      ""
+    ]
+  },
+  "LockPatch": {
+    "TEXT": [
+      " NL 锁定  !L! 。",
+      "这张牌被 #r锁定 了！",
+      "tlipocamod:锁定",
+      "免疫"
+    ]
+  },
+  "UnlockHandAction": {
+    "TEXT": [
+      "解锁"
+    ]
+  },
+  "AlertAction": {
+    "TEXT": [
+      "解锁或者锁定",
+      ""
+    ]
+  },
+  "HaaLouLing:AllOutSlash": {
+    "TEXT": [
+      "消耗 （全力一击）"
+    ]
+  },
+  "ZanshinAction": {
+    "TEXT": [
+      "升级所有其他手牌"
+    ]
+  },
+  "ChannelAction": {
+    "TEXT": [
+      "变化"
+    ]
+  },
+  "DetectAction": {
+    "TEXT": [
+      "这个敌人的意图不是 #r攻击 ！",
+      "这个敌人的攻击已经被识破过了！"
+    ]
+  },
+  "SublimationAction": {
+    "TEXT": [
+      "变化"
+    ]
+  },
+  "TaoAction": {
+    "TEXT": [
+      "变成枷锁"
+    ]
+  },
+  "ConvergeAction": {
+    "TEXT": [
+      "集中所有手牌的锁定",
+      "缺少可以操作的牌"
+    ]
+  },
+  "DisintegrationAction": {
+    "TEXT": [
+      "变成枷锁"
+    ]
+  },
+  "AdaptAction": {
+    "TEXT": [
+      "锁定1或解锁"
+    ]
+  },
+  "PotionString": {
+    "TEXT": [
+      "tlipocamod:流血",
+      "tlipocamod:纳刀"
     ]
   }
 }

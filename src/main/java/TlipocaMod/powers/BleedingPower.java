@@ -17,7 +17,7 @@ import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
 
 public class BleedingPower extends AbstractTlipocaPower implements HealthBarRenderPower {
 
-    private static final String powerName="Bleeding";
+    private static final String powerName="Bleed";
     public static final String ID=getID(powerName);
     public static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(ID);
     public static final String NAME = powerStrings.NAME;
@@ -40,7 +40,7 @@ public class BleedingPower extends AbstractTlipocaPower implements HealthBarRend
     public void atStartOfTurn() {
         this.flashWithoutSound();
         if(this.owner.hasPower(SacrificePower.ID))
-            addToTop(new DamageAllEnemiesAction(this.owner, DamageInfo.createDamageMatrix(this.amount, false), DamageInfo.DamageType.HP_LOSS, AbstractGameAction.AttackEffect.NONE));
+            addToTop(new DamageAllEnemiesAction(this.owner, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.HP_LOSS, AbstractGameAction.AttackEffect.NONE));
         else
             addToTop(new LoseHPAction(this.owner, this.owner, this.amount, AbstractGameAction.AttackEffect.NONE));
 
@@ -57,7 +57,7 @@ public class BleedingPower extends AbstractTlipocaPower implements HealthBarRend
         if (damageAmount < this.owner.currentHealth && damageAmount > 0 && info.owner != null && info.type == DamageInfo.DamageType.NORMAL){
             flash();
             if(this.owner.hasPower(SacrificePower.ID))
-                addToTop(new DamageAllEnemiesAction(this.owner, DamageInfo.createDamageMatrix(this.amount, false), DamageInfo.DamageType.HP_LOSS, AbstractGameAction.AttackEffect.NONE));
+                addToTop(new DamageAllEnemiesAction(this.owner, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.HP_LOSS, AbstractGameAction.AttackEffect.NONE));
             else
                 addToTop(new LoseHPAction(this.owner, this.owner, this.amount, AbstractGameAction.AttackEffect.NONE));
             this.amount++;

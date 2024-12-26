@@ -1,6 +1,6 @@
 package TlipocaMod.cards;
 
-import TlipocaMod.enums.CardEnum;
+import TlipocaMod.characters.Tlipoca;
 import basemod.abstracts.CustomCard;
 import com.badlogic.gdx.graphics.Color;
 import com.evacipated.cardcrawl.mod.stslib.patches.FlavorText;
@@ -14,7 +14,7 @@ public abstract class AbstractTlipocaCard extends CustomCard {
     public Color flavorColor= CardHelper.getColor(107, 9, 40);
 
     public AbstractTlipocaCard(String id, String name,String img_path, int cost, String description, AbstractCard.CardType type, AbstractCard.CardRarity rarity, AbstractCard.CardTarget target) {
-        super(id, name, img_path, cost, description, type, CardEnum.Tlipoca_Color, rarity,target );
+        super(id, name, img_path, cost, description, type, Tlipoca.PlayerClass.Tlipoca_Color, rarity,target );
 
         FlavorText.AbstractCardFlavorFields.boxColor.set(this, flavorColor);
     }
@@ -24,6 +24,8 @@ public abstract class AbstractTlipocaCard extends CustomCard {
 
         FlavorText.AbstractCardFlavorFields.boxColor.set(this, flavorColor);
     }
+
+
 
     public static String loadTlipocaCardImg(String id  ,CardType type) {
         return "TlipocaModResources/img/cards/Tlipoca/test/"+ type.toString().toLowerCase()+ ".png";

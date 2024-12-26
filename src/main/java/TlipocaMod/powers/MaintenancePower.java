@@ -28,6 +28,7 @@ public class MaintenancePower extends AbstractTlipocaPower{
 
     public MaintenancePower(AbstractCreature owner, int amount) {
         super(NAME, ID+ MaintenanceBias, owner, amount , type, ID);
+        this.amount2=2;
         MaintenanceBias++;
         updateDescription();
     }

@@ -20,7 +20,7 @@ public class PresentAction extends AbstractGameAction {
     public void update() {
 
         for(AbstractCard c : p.hand.group)
-            if(!CardPatch.newVarField.eternity.get(c))
+            if(!CardPatch.newVarField.eternity.get(c) && c.cost>=0)
                 CardModifierManager.addModifier(c, new TlipocaModifier( TlipocaModifier.supportedModify.ETERNITY, false));
 
         this.isDone=true;

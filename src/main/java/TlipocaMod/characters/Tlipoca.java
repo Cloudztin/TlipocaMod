@@ -2,8 +2,6 @@ package TlipocaMod.characters;
 
 import TlipocaMod.TlipocaMod.TlipocaMod;
 import TlipocaMod.cards.basic.tlDeterrent;
-import TlipocaMod.enums.CardEnum;
-import TlipocaMod.enums.ModClassEnum;
 import TlipocaMod.relics.LittleRed;
 import basemod.abstracts.CustomMultiPageFtue;
 import basemod.abstracts.CustomPlayer;
@@ -24,15 +22,14 @@ import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.CardHelper;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
-import com.megacrit.cardcrawl.ui.FtueTip;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.LogManager;
 
 public class Tlipoca extends CustomPlayer {
 
@@ -40,13 +37,12 @@ public class Tlipoca extends CustomPlayer {
     public static final String[] orbTextures = new String[]{"TlipocaModResources/img/energy/layer23.png", "TlipocaModResources/img/energy/layer22.png", "TlipocaModResources/img/energy/layer21.png", "TlipocaModResources/img/energy/layer20.png", "TlipocaModResources/img/energy/layer19.png", "TlipocaModResources/img/energy/layer18.png", "TlipocaModResources/img/energy/layer23d.png", "TlipocaModResources/img/energy/layer22d.png", "TlipocaModResources/img/energy/layer21d.png", "TlipocaModResources/img/energy/layer20d.png", "TlipocaModResources/img/energy/layer19d.png"};
     public static AnimationState.TrackEntry e;
     private static final float[] LAYER_SPEED = new float[]{-32.0F, -16.0F, 64.0F, 32.0F, 64.0F, -64.0F, -64.0F, 64.0F, -30.0F, 30.0F};
-    private static final int STARTING_HP = 72;
-    private static final int MAX_HP = 72;
+    private static final int STARTING_HP = 75;
+    private static final int MAX_HP = 75;
     private static final int STARTING_GOLD = 99;
     private static final int MAX_ORBS = 0;
-    private static final int ASCENSION_MAX_HP_LOSS = 6;
+    private static final int ASCENSION_MAX_HP_LOSS = 7;
     public static final int CARD_DRAW = 5;
-    //返回一个颜色
     public static final Color TlipocaColor = CardHelper.getColor(255, 13, 102);
     public static final String[] TEXT;
 
@@ -55,7 +51,7 @@ public class Tlipoca extends CustomPlayer {
     }
 
     public Tlipoca(String name) {
-        super(name, ModClassEnum.Tlipoca_Color, orbTextures, "TlipocaModResources/img/energy/energyTLVFX.png", LAYER_SPEED, null, null);
+        super(name, PlayerClass.Tlipoca, orbTextures, "TlipocaModResources/img/energy/energyTLVFX.png", LAYER_SPEED, null, null);
         this.dialogX = this.drawX + 0.0F * Settings.scale;
         this.dialogY = this.drawY + 240.0F * Settings.scale;
 
@@ -65,13 +61,6 @@ public class Tlipoca extends CustomPlayer {
         e.setTime(e.getEndTime() * MathUtils.random());
         e.setTimeScale(1.0F);
     }
-
-    public static class Enums {
-
-        @SpireEnum
-        public static AbstractPlayer.PlayerClass Tlipoca;
-    }
-
     @Override
     public ArrayList<String> getStartingDeck() {
         //添加初始卡组
@@ -121,13 +110,13 @@ public class Tlipoca extends CustomPlayer {
     }
 
     @Override
-    public String getTitle(PlayerClass playerClass) {
+    public String getTitle(AbstractPlayer.PlayerClass playerClass) {
         return TEXT[0];
     }
 
     public AbstractCard.CardColor getCardColor() {
         //选择卡牌颜色
-        return CardEnum.Tlipoca_Color;
+        return PlayerClass.Tlipoca_Color;
     }
 
     @Override
@@ -152,7 +141,6 @@ public class Tlipoca extends CustomPlayer {
 
     @Override
     public void doCharSelectScreenSelectEffect() {
-        return;
     }
 
     @Override
@@ -192,11 +180,6 @@ public class Tlipoca extends CustomPlayer {
         return TlipocaColor;
     }
 
-    @Override
-    public void applyEndOfTurnTriggers() {
-        super.applyEndOfTurnTriggers();
-    }
-
     public void applyPreCombatLogic(){
         super.applyPreCombatLogic();
         if(!TlipocaMod.tutorial){
@@ -220,5 +203,16 @@ public class Tlipoca extends CustomPlayer {
         List<CutscenePanel> panels = new ArrayList<>();
         panels.add(new CutscenePanel("TlipocaModResources/img/others/TlipocaVictory.png"));
         return panels;
+    }
+
+    public static class PlayerClass{
+        @SpireEnum(name="Tlipoca_Color")
+        public static AbstractCard.CardColor Tlipoca_Color;
+
+        @SpireEnum
+        public static AbstractPlayer.PlayerClass Tlipoca;
+
+        @SpireEnum(name="Tlipoca_Color")
+        public static CardLibrary.LibraryType Tlipoca_Library;
     }
 }

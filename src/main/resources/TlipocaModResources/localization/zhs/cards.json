@@ -21,8 +21,7 @@
   },
   "TlipocaMod:Scarlet": {
     "NAME": "猩红",
-    "DESCRIPTION": "造成 !D! 点伤害。使你的一张随机手牌的耗能 tlipocamod:暂时 增加 !M! 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。使你的一张手牌的耗能 tlipocamod:暂时 增加 !M! 。"
+    "DESCRIPTION": "造成 !D! 点伤害。使你的一张手牌的耗能 tlipocamod:暂时 增加 !M! 。"
   },
   "TlipocaMod:Pale": {
     "NAME": "苍白",
@@ -44,8 +43,8 @@
   },
   "TlipocaMod:SoulFragment": {
     "NAME": "魂屑",
-    "DESCRIPTION": "将一张手牌在本场战斗的耗能加1。获得 [E] [E] [E] 。",
-    "UPGRADE_DESCRIPTION": "将一张手牌在本场战斗的耗能加2。获得 [E] [E] [E] [E] 。"
+    "DESCRIPTION": "将一张手牌在本场战斗的耗能加1。获得 [E] [E] 。",
+    "UPGRADE_DESCRIPTION": "将一张手牌在本场战斗的耗能加2。获得 [E] [E] [E] 。"
   },
   "TlipocaMod:DeathEye": {
     "NAME": "死神之眼",
@@ -67,8 +66,8 @@
   },
   "TlipocaMod:PowerUnleash": {
     "NAME": "力量解放",
-    "DESCRIPTION": "获得等同于你手牌耗能之和的能量。 消耗 。",
-    "UPGRADE_DESCRIPTION":" 保留 。获得等同于你手牌耗能之和的能量。 消耗 。"
+    "DESCRIPTION": " 虚无 。获得等同于你手牌耗能之和的能量。 消耗 。",
+    "UPGRADE_DESCRIPTION":" 获得等同于你手牌耗能之和的能量。 消耗 。"
   },
   "TlipocaMod:Summon": {
     "NAME": "召唤",
@@ -131,7 +130,7 @@
   "TlipocaMod:Misery": {
     "NAME": "痛苦",
     "DESCRIPTION": "给予3层 易伤 。目标下次受到的攻击伤害翻倍。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION":"给予5层 易伤 。目标下 !M! 次受到的攻击伤害翻倍。 NL 消耗 。"
+    "UPGRADE_DESCRIPTION":"给予3层 易伤 。目标下 !M! 次受到的攻击伤害翻倍。 NL 消耗 。"
   },
   "TlipocaMod:CutDown": {
     "NAME": "砍倒",
@@ -215,11 +214,11 @@
   },
   "TlipocaMod:Edge": {
     "NAME": "试锋",
-    "DESCRIPTION": "抽 !M! 张牌。将一张手牌放到抽牌堆顶，然后根据其耗能在手中加入等量的 *小刀 。"
+    "DESCRIPTION": "抽 !M! 张牌。将一张牌放到抽牌堆顶，然后根据其耗能在手中加入等量的 *小刀 。"
   },
   "TlipocaMod:DeathKnell": {
     "NAME": "丧钟",
-    "DESCRIPTION": " 保留 。造成 !D! 点伤害。在本场战斗中增加 !M! 点耗能并翻倍基础伤害值。将这张牌洗入抽牌堆。"
+    "DESCRIPTION": " 保留 。造成 !D! 点伤害。本场战斗中伤害翻倍且耗能加 !M! 。 NL 将之洗入抽牌堆。"
   },
   "TlipocaMod:Eliminate": {
     "NAME": "处决",
@@ -227,7 +226,7 @@
   },
   "TlipocaMod:Gaze": {
     "NAME": "窥视",
-    "DESCRIPTION": "造成 !D! 点伤害。获得等同于抽牌堆顶的牌的耗能的 [E] 。握在手中时，你可以看见抽牌堆顶的牌。"
+    "DESCRIPTION": "造成 !D! 点伤害。获得等同抽牌堆顶的牌的耗能的 [E] 。在手中时，可以看见抽牌堆顶的牌。"
   },
   "TlipocaMod:RustyBlade": {
     "NAME": "锈刃",
@@ -260,7 +259,7 @@
   },
   "TlipocaMod:Breakdown": {
     "NAME": "崩溃",
-    "DESCRIPTION": "造成 !D! 点伤害。获得 !M! 点临时 力量 。在手中时，你打出牌后，随机化此牌本回合内的耗能。"
+    "DESCRIPTION": "造成 !D! 点伤害。获得 !M! 点临时 力量 。你打出牌后， tlipocamod:暂时 随机化此牌的耗能。"
   },
   "TlipocaMod:Whisper": {
     "NAME": "轻语",
@@ -321,7 +320,7 @@
   },
   "TlipocaMod:Insight": {
     "NAME": "洞察",
-    "DESCRIPTION": "给予 !M! 层流血。如果敌人的意图是攻击，获得 !B! 点 格挡 。否则造成 !D! 点伤害。"
+    "DESCRIPTION": "造成 !D! 点伤害。如果敌人 tlipocamod:流血 ，获得 !M! 点 力量 然后 消耗 。"
   },
   "TlipocaMod:Afire": {
     "NAME": "焚心",
@@ -370,7 +369,7 @@
   },
   "TlipocaMod:Grief": {
     "NAME": "夜之主的悲歌",
-    "DESCRIPTION": "不能从牌组中移除。 NL 打出其他牌或你的回合结束时，在手中加入一张此牌的复制。"
+    "DESCRIPTION": "不能从牌组中移除。 NL 不能被打出 。 NL 抽到这张牌时，丢弃并失去一点能量。"
   },
   "TlipocaMod:Humanity": {
     "NAME": "人性",
@@ -391,5 +390,382 @@
   "TlipocaMod:3": {
     "NAME": "3",
     "DESCRIPTION": "在本场战斗中将一张手牌的耗能改为3"
+  },
+  "HaaLouLing:Strike": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "HaaLouLing:Defend": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
+  },
+  "HaaLouLing:Firmness": {
+    "NAME": "坚定",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 将一张牌 tlipocamod:锁定 !M! 。 tlipocamod:纳刀 。"
+  },
+  "HaaLouLing:Suburi": {
+    "NAME": "素振",
+    "DESCRIPTION": " tlipocamod:极意 。 NL 造成 !D! 点伤害。 tlipocamod:解锁 一张牌，如果 tlipocamod:解锁 了，再造成一次伤害。 "
+  },
+  "HaaLouLing:Alert": {
+    "NAME": "警惕",
+    "DESCRIPTION": " 保留 。将一张牌 tlipocamod:锁定 !M! 或 tlipocamod:解锁 ，获得 !B! 点 格挡 。"
+  },
+  "HaaLouLing:AllOutSlash": {
+    "NAME": "全力一击",
+    "DESCRIPTION": " 消耗 手中 tlipocamod:锁定 层数最高的一张牌。造成 !M! 倍于层数的伤害。",
+    "UPGRADE_DESCRIPTION": " NL (造成 !D! 点伤害。)"
+  },
+  "HaaLouLing:AncientScabbard": {
+    "NAME": "古老的剑鞘",
+    "DESCRIPTION": "不能被升级。 NL 获得 !M! 点 力量 。"
+  },
+  "HaaLouLing:BrokenBlade": {
+    "NAME": "破碎的剑刃",
+    "DESCRIPTION": "不能被升级。 NL 将一张手牌 tlipocamod:锁定 !M! 。造成 !D! 点伤害。本回合你的下一张攻击牌打出两次。 消耗 。"
+  },
+  "HaaLouLing:RustyHilt": {
+    "NAME": "生锈的剑柄",
+    "DESCRIPTION": "不能被升级。 NL 获得 !B! 点 格挡 !M! 次。 消耗 。"
+  },
+  "HaaLouLing:IllusionBlade": {
+    "NAME": "幻切",
+    "DESCRIPTION": "不能被升级。 NL 获得 !M! 点 力量 。本场战斗中，你的攻击造成双倍伤害。"
+  },
+  "HaaLouLing:Zanshin": {
+    "NAME": "残心",
+    "DESCRIPTION": "抽 !M! 张牌。选择一张牌：升级所有其他手牌且每张都使它的 tlipocamod:锁定 值增加1。",
+    "UPGRADE_DESCRIPTION":"抽 !M! 张牌。选择一张牌：升级所有其他手牌且每张都使它的 tlipocamod:锁定 值增加1。"
+  },
+  "HaaLouLing:Calm": {
+    "NAME": "冷静",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽满手牌。"
+  },
+  "HaaLouLing:Channel": {
+    "NAME": "引导",
+    "DESCRIPTION": "获得 !B! 点 格挡 。将一张牌变为此牌的复制。"
+  },
+  "HaaLouLing:EnchantmentScroll": {
+    "NAME": "附魔卷轴",
+    "DESCRIPTION": "使一张攻击牌在本场战斗的伤害提高 !M! 点。 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "增加",
+      "点伤害"
+    ]
+  },
+  "HaaLouLing:FlickOff": {
+    "NAME": "振腕",
+    "DESCRIPTION": "造成 !D! 点伤害。目标本回合失去等同于未被格挡伤害的 力量 。"
+  },
+  "HaaLouLing:Massacre": {
+    "NAME": "皆杀",
+    "DESCRIPTION": "造成 !D! 点伤害两次，不断选取随机目标直到攻击到重复目标或其意图不为攻击。"
+  },
+  "HaaLouLing:Stalemate": {
+    "NAME": "对峙",
+    "DESCRIPTION": "每有一名敌人，获得 !B! 点 格挡。 tlipocamod:解锁 一张牌。 tlipocamod:纳刀 。"
+  },
+  "HaaLouLing:TsubameGaeshi": {
+    "NAME": "燕返",
+    "DESCRIPTION": "造成 !D! 点伤害。当你 tlipocamod:锁定 或 tlipocamod:解锁 牌时，从弃牌堆返回手中。"
+  },
+  "HaaLouLing:WaveSplitter": {
+    "NAME": "断浪切",
+    "DESCRIPTION": "手中每有一张 tlipocamod:锁定 的牌，造成 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （你有",
+      " 张 tlipocamod:锁定 牌。）",
+      " 张 tlipocamod:锁定 牌。）"
+    ],
+    "FLAVOR": "传说中连水波都能切开的利刃。"
+  },
+  "HaaLouLing:Haa": {
+    "NAME": "霞",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害两次。抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION":"对所有敌人造成 !D! 点伤害两次。抽 !M! 张牌。"
+  },
+  "HaaLouLing:HaaLouDefense": {
+    "NAME": "霞露门·守御",
+    "DESCRIPTION": " 不能被打出 。这张牌进入或脱离 tlipocamod:锁定 后，获得 !B! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "#r不能被打出 。"
+    ]
+  },
+  "HaaLouLing:Foresight": {
+    "NAME": "看破",
+    "DESCRIPTION": "如果敌人的意图是攻击，获得1点 力量 ，给予 !M! 层 虚弱 并使其本回合失去99点 力量。 对每名敌人只能生效一次。 NL tlipocamod:纳刀 。"
+  },
+  "HaaLouLing:BlankCard": {
+    "NAME": "留白",
+    "DESCRIPTION": "打出你本场战斗中打出的上一张牌。 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "我还没有打出过牌。",
+      "上一张牌是 #r空白 的！"
+    ]
+  },
+  "HaaLouLing:Calamity": {
+    "NAME": "天劫",
+    "DESCRIPTION": "将手中所有牌 tlipocamod:锁定 2，如果本次被 tlipocamod:锁定 的牌耗能各不相同，对敌人随机造成 !D! 点伤害 !M! 次。"
+  },
+  "HaaLouLing:TheRenowned": {
+    "NAME": "名刀",
+    "DESCRIPTION": "造成 !D! 点伤害X次。",
+    "EXTENDED_DESCRIPTION": [
+      "造成 !D! 点伤害 !M! 次。",
+      "造成 !D! 点伤害。"
+    ]
+  },
+  "HaaLouLing:Cast": {
+    "NAME": "锻刀",
+    "DESCRIPTION": " 消耗 所有手牌。将一张X等于 消耗 牌数的 *名刀 加入手中。 消耗 。",
+    "UPGRADE_DESCRIPTION":" 消耗 所有手牌。将一张X等于 消耗 牌数的 *名刀 加入手中，它在打出前的耗能为0。 消耗 。"
+  },
+  "HaaLouLing:CleaveSouls": {
+    "NAME": "斩绝念",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。如果你本回合打出了攻击、技能和能力牌，清除所有敌人的正面效果。 消耗 。"
+  },
+  "HaaLouLing:Impregnable": {
+    "NAME": "固若金汤",
+    "DESCRIPTION": " 将你的所有手牌 tlipocamod:锁定 加1，然后获得手牌 tlipocamod:锁定 层数之和 !M! 倍的 格挡 。 消耗 。",
+    "UPGRADE_DESCRIPTION": " NL (获得 !B! 点 格挡 。)"
+  },
+  "HaaLouLing:Intro": {
+    "NAME": "起手式",
+    "DESCRIPTION": " tlipocamod:极意 。 NL 造成 !D! 点伤害。若此为本回合打出的首张牌， tlipocamod:解锁 你的全部手牌，获得 [E] 并抽2张牌。",
+    "UPGRADE_DESCRIPTION":" tlipocamod:极意 。 固有 。 NL 造成 !D! 点伤害。若此为本回合打出的首张牌， tlipocamod:解锁 你的全部手牌，获得 [E] 并抽2张牌。"
+  },
+  "HaaLouLing:Oracle": {
+    "NAME": "神谕",
+    "DESCRIPTION": " 虚无 。 NL 抽 !M! 张牌。将此牌洗入抽牌堆并在本场战斗中增加1点耗能。",
+    "UPGRADE_DESCRIPTION":" 虚无 。 NL 抽 !M! 张牌。获得 [E] 。将此牌洗入抽牌堆并在本场战斗中增加1点耗能。"
+  },
+  "HaaLouLing:PhantomPain": {
+    "NAME": "幻痛",
+    "DESCRIPTION": "目标受到攻击伤害时，所有敌人失去等同于未被格挡的伤害值一半的生命。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"目标受到攻击伤害时，所有敌人失去等同于未被格挡的伤害值一半的生命。"
+  },
+  "HaaLouLing:Practice": {
+    "NAME": "修行",
+    "DESCRIPTION": "回复5点生命。抽1张牌。 tlipocamod:纳刀 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"回复7点生命。抽2张牌。 tlipocamod:纳刀 。 NL 消耗 。"
+  },
+  "HaaLouLing:Sublimation": {
+    "NAME": "升华",
+    "DESCRIPTION": "获得 !M! 点 力量 。将一张 不能被打出 的牌变为此牌的复制。"
+  },
+  "HaaLouLing:Fetter": {
+    "NAME": "枷锁",
+    "DESCRIPTION": " 不能被打出 。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION":"#r不能被打出 !"
+  },
+  "HaaLouLing:Tao": {
+    "NAME": "道",
+    "DESCRIPTION": "抽到此牌时，选择至多1张手牌变为 tlipocamod:枷锁 。打出时，将这些牌依次打出。"
+  },
+  "HaaLouLing:DivineBook": {
+    "NAME": "天书",
+    "DESCRIPTION": " 不能被打出 。 NL 这张牌被 tlipocamod:解锁 时，抽等同于其 tlipocamod:锁定 层数的牌；如果因此抽满了手牌，获得 [E] 。",
+    "UPGRADE_DESCRIPTION":" 不能被打出 。 NL 这张牌被 tlipocamod:解锁 时，抽满手牌，获得 [E] 。",
+    "EXTENDED_DESCRIPTION": [
+      " #r不能被打出 !"
+    ]
+  },
+  "HaaLouLing:TranscendentForm": {
+    "NAME": "超然形态",
+    "DESCRIPTION": " 虚无 。 NL 免疫生命流失和负面效果。被 保留 时，在你的手中加入一张 *奇迹 。",
+    "UPGRADE_DESCRIPTION":"免疫生命流失和负面效果。被 保留 时，在你的手中加入一张 *奇迹 。"
+  },
+  "HaaLouLing:WellPrepared": {
+    "NAME": "万事俱备",
+    "DESCRIPTION": "你的回合开始时，如果你手中有牌，抽1张牌。",
+    "UPGRADE_DESCRIPTION":" 固有 。 NL 你的回合开始时，如果你手中有牌，抽1张牌。"
+  },
+  "HaaLouLing:AncientAmulet": {
+    "NAME": "护身符",
+    "DESCRIPTION": "所有敌人本回合失去 !M! 点 力量 。被 保留 时，获得1点 力量 。 NL 消耗 。"
+  },
+  "HaaLouLing:Parry": {
+    "NAME": "负剑",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
+  },
+  "HaaLouLing:WindBlade": {
+    "NAME": "剑风",
+    "DESCRIPTION": "造成 !D! 点伤害。在本回合内打出攻击牌后，随机造成等量伤害。"
+  },
+  "HaaLouLing:Conceal": {
+    "NAME": "藏锋",
+    "DESCRIPTION": "将手中所有攻击牌 tlipocamod:锁定 1，每张获得 !B! 点 格挡 。"
+  },
+  "HaaLouLing:Converge": {
+    "NAME": "汇聚",
+    "DESCRIPTION": "将所有手牌的 tlipocamod:锁定 集中到一张牌上。"
+  },
+  "HaaLouLing:CoupDeGrace": {
+    "NAME": "致命一击",
+    "DESCRIPTION": "造成 !D! 点伤害。对被负面效果影响的敌人造成双倍伤害。"
+  },
+  "HaaLouLing:CrossSlash": {
+    "NAME": "秘传·十文字",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。当此牌进入或脱离 tlipocamod:锁定 后，在本场战斗额外造成一次伤害。"
+  },
+  "HaaLouLing:Disintegration": {
+    "NAME": "旧日崩解",
+    "DESCRIPTION": "选择任意张非 tlipocamod:枷锁 手牌变成 tlipocamod:枷锁 ，每张都使你抽一张牌并获得 [E] 。 NL 消耗 。"
+  },
+  "HaaLouLing:Adaption": {
+    "NAME": "应变",
+    "DESCRIPTION": "你的回合开始后，你可以选择至多 !M! 张牌 tlipocamod:锁定 1或 tlipocamod:解锁 。"
+  },
+  "HaaLouLing:HiddenWeapons": {
+    "NAME": "暗器",
+    "DESCRIPTION": "当一张牌被 tlipocamod:解锁 时，对所有敌人造成 !M! 点伤害。"
+  },
+  "HaaLouLing:IaiSlash": {
+    "NAME": "居合斩",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL tlipocamod:纳刀 ：获得 !M! 点 力量 。"
+  },
+  "HaaLouLing:Flow": {
+    "NAME": "流转",
+    "DESCRIPTION": " 虚无 。 NL 当一张牌的 tlipocamod:锁定 值变化1后，获得 !M! 点 格挡 。",
+    "UPGRADE_DESCRIPTION":"当一张牌的 tlipocamod:锁定 值变化1后，获得 !M! 点 格挡 。"
+  },
+  "HaaLouLing:HelmBreaker": {
+    "NAME": "登龙",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。失去1点 力量 。 NL tlipocamod:纳刀 ： 不能被打出 。",
+    "UPGRADE_DESCRIPTION":" 保留 。 NL 造成 !D! 点伤害 !M! 次。失去1点 力量 。 NL tlipocamod:纳刀 。 NL tlipocamod:纳刀 ： 不能被打出 。",
+    "EXTENDED_DESCRIPTION": [
+      "不能在 #r纳刀 时打出 !"
+    ]
+  },
+  "HaaLouLing:InnerForce": {
+    "NAME": "内功",
+    "DESCRIPTION": "翻倍一张牌的 tlipocamod:锁定 值，获得等同其 tlipocamod:锁定 的 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "翻倍锁定值"
+    ]
+  },
+  "HaaLouLing:Intimidate": {
+    "NAME": "恫吓",
+    "DESCRIPTION": "给予所有意图是攻击的敌人 !M! 层 虚弱 ，给予所有其他敌人 !M! 层 易伤 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"给予所有敌人 !M! 层 虚弱 和 易伤 。 NL 消耗 。"
+  },
+  "HaaLouLing:Kendo": {
+    "NAME": "剑道",
+    "DESCRIPTION":"本回合直到你打出非攻击牌前，你每打出一张攻击牌就获得 !M! 点临时 力量 。 NL tlipocamod:纳刀 。抽一张牌。 NL 消耗 。"
+  },
+  "HaaLouLing:Knowledge": {
+    "NAME": "博学",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 将一张牌 tlipocamod:锁定 !M! 。"
+  },
+  "HaaLouLing:LastBreath": {
+    "NAME": "绝响",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。在手中时，你每打出一张攻击牌，伤害就增加 !M! 。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "我手中有未锁定的牌。"
+    ]
+  },
+  "HaaLouLing:Lou": {
+    "NAME": "露",
+    "DESCRIPTION": "获得 !M! 层 再生 。 NL 下回合获得 [E] 。"
+  },
+  "HaaLouLing:Retrace": {
+    "NAME": "折回",
+    "DESCRIPTION": "你每回合打出的首张牌会从弃牌堆返回手中。"
+  },
+  "HaaLouLing:MutualDestruction": {
+    "NAME": "相杀",
+    "DESCRIPTION": "造成 !D! 点伤害两次。 NL 如果未击杀，下回合少抽一张牌。"
+  },
+  "HaaLouLing:Unleash": {
+    "NAME": "释放",
+    "DESCRIPTION": "将一张牌的 tlipocamod:锁定 值降低 !M! 。每点获得 !B! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "降低锁定值"
+    ]
+  },
+  "HaaLouLing:Seal": {
+    "NAME": "封印",
+    "DESCRIPTION": "选择至多 !M! 张牌 tlipocamod:锁定 2，获得等量 [E] 。",
+    "EXTENDED_DESCRIPTION": [
+      "锁定2"
+    ]
+  },
+  "HaaLouLing:ShadowBlade": {
+    "NAME": "影刃",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 在手中时，你打出攻击牌后，打出一张此牌的复制。 NL 消耗 。"
+  },
+  "HaaLouLing:SharpEdge": {
+    "NAME": "利刃",
+    "DESCRIPTION": "你的回合结束时，手中每有一张 tlipocamod:锁定 的牌，就对随机敌人造成 !M! 点伤害。"
+  },
+  "HaaLouLing:SpiritBloom": {
+    "NAME": "心灵绽放",
+    "DESCRIPTION": "当一张牌被 tlipocamod:解锁 时，将你手中所有牌的 tlipocamod:锁定 值降低 !M! 。"
+  },
+  "HaaLouLing:TaiChi": {
+    "NAME": "太极",
+    "DESCRIPTION": "将一张牌打出并 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "打出并消耗"
+    ]
+  },
+  "HaaLouLing:WineGourd": {
+    "NAME": "酒葫芦",
+    "DESCRIPTION": "从三张与你打出的上一张牌同类型的牌中选一张加入你的手中 。本回合它打出前的耗能为0。 NL 消耗 。",
+    "EXTENDED_DESCRIPTION": [
+      "我还没有出过牌！"
+    ]
+  },
+  "HaaLouLing:HaaLouBook": {
+    "NAME": "霞露门·斩妖法",
+    "DESCRIPTION": " 不能被打出 。 NL 这张牌被 tlipocamod:锁定 时，给予所有敌人 !M! 层 易伤 。 NL 这张牌 tlipocamod:解锁 时，给予所有敌人 !M! 层 虚弱 。",
+    "EXTENDED_DESCRIPTION": [
+      " #r不能被打出 ！"
+    ]
+  },
+  "HaaLouLing:HaaLouTreasure": {
+    "NAME": "霞露门·名器",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 斩杀 时，在本局游戏中的耗能降低1点。"
+  },
+  "HaaLouLing:Petal": {
+    "NAME": "落英",
+    "DESCRIPTION": " tlipocamod:极意 。 NL 造成 !D! 点伤害。 NL 如果手中没有同名牌， 消耗 并将弃牌堆所有同名牌返回手中。"
+  },
+  "HaaLouLing:Flower": {
+    "NAME": "花朵",
+    "DESCRIPTION": "将 !M! 张 *落英 放进弃牌堆。 NL 被 保留 时，将1张 *落英 放进弃牌堆。",
+    "UPGRADE_DESCRIPTION": "将 !M! 张 *落英+ 放进弃牌堆。 NL 被 保留 时，将1张 *落英+ 放进弃牌堆。"
+  },
+  "HaaLouLing:SpiritSlash": {
+    "NAME": "气刃斩",
+    "DESCRIPTION": " tlipocamod:极意 。 NL 造成 !D! 点伤害。 NL tlipocamod:纳刀 ：抽一张牌。"
+  },
+  "HaaLouLing:Flurry": {
+    "NAME": "乱舞",
+    "DESCRIPTION": " tlipocamod:极意 。 NL 对敌人随机造成 !D! 点伤害 !M! 次。 NL 结束你的回合。"
+  },
+  "HaaLouLing:HaaLouCrossDouble": {
+    "NAME": "霞露十字斩·二连",
+    "DESCRIPTION": " tlipocamod:极意 。 NL 造成 !D! 点伤害两次。 NL 给予 !M! 层 易伤 。 NL tlipocamod:纳刀 ：额外打出一次。"
+  },
+  "HaaLouLing:Ling": {
+    "NAME": "零",
+    "DESCRIPTION": " tlipocamod:无法锁定 。 NL 如果它是你手中唯一能打出的牌，对所有敌人造成 !D! 点伤害。"
+  },
+  "HaaLouLing:VanishingShadow": {
+    "NAME": "绝影",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL tlipocamod:解锁 手中所有 tlipocamod:锁定 牌，然后抽等量牌。"
+  },
+  "HaaLouLing:Ichimonji": {
+    "NAME": "常式·一文字",
+    "DESCRIPTION": " tlipocamod:极意 。 tlipocamod:永恒 。 NL 造成 !D! 点伤害。 NL 打出后从弃牌堆返回手中。"
+  },
+  "HaaLouLing:QuickDraw": {
+    "NAME": "拔付",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果这是你本回合打出的首张攻击牌，获得 !M! 点临时 力量 ，抽一张牌。"
+  },
+  "HaaLouLing:BloodShake": {
+    "NAME": "血振",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL tlipocamod:纳刀 。 NL 如果本场战斗打出的上一张是攻击牌，抽一张牌并把它 升级 。"
   }
 }

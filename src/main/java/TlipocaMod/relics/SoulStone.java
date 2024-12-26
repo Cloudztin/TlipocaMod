@@ -1,7 +1,7 @@
 package TlipocaMod.relics;
 
 import TlipocaMod.TlipocaMod.TlipocaMod;
-import TlipocaMod.cards.tempCards.tlGriefOfTheGreatDeath;
+import TlipocaMod.cards.special.tlGriefOfTheGreatDeath;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -22,7 +22,7 @@ public class SoulStone extends AbstractTlipocaRelic{
     public SoulStone() {
         super(relicName, RelicTier.BOSS, LandingSound.SOLID, true);
 
-        this.counter = 0;
+        this.counter = -1;
     }
 
 
@@ -51,7 +51,8 @@ public class SoulStone extends AbstractTlipocaRelic{
 
     public void onUseCard(AbstractCard card, UseCardAction action){
         if(!card.purgeOnUse){
-            this.counter++;
+            if(this.counter >=0)
+                this.counter++;
             if((card.costForTurn==this.counter && !card.freeToPlayOnce) || (card.cost==-1 && card.energyOnUse==this.counter)){
                 flash();
 
@@ -74,6 +75,10 @@ public class SoulStone extends AbstractTlipocaRelic{
 
     public void atTurnStart() {
         this.counter = 0;
+    }
+
+    public void onVictory() {
+        this.counter = -1;
     }
 
     @Override

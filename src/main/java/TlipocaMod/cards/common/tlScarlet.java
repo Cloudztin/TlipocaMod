@@ -36,7 +36,7 @@ public class tlScarlet extends AbstractTlipocaCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m){
         addToBot(new DamageAction(m,new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        addToBot(new IncreaseHandCostAction(1 , !this.upgraded, this.magicNumber));
+        addToBot(new IncreaseHandCostAction(1 , false, this.magicNumber));
     }
 
     @Override
@@ -44,8 +44,6 @@ public class tlScarlet extends AbstractTlipocaCard {
         if(!this.upgraded) {
             this.upgradeName();
             upgradeDamage(4);
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            initializeDescription();
         }
     }
 

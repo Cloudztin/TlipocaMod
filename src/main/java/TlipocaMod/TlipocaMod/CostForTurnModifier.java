@@ -1,5 +1,6 @@
 package TlipocaMod.TlipocaMod;
 
+import TlipocaMod.action.CostForTurnSettleAction;
 import TlipocaMod.patches.CardPatch;
 import basemod.abstracts.AbstractCardModifier;
 import basemod.helpers.CardModifierManager;
@@ -81,17 +82,7 @@ public class CostForTurnModifier extends AbstractCardModifier{
     }
 
     public void atEndOfTurn(AbstractCard card, CardGroup group) {
-        if(trueCost != -1)
-            AbstractDungeon.actionManager.addToTop(new AbstractGameAction() {
-            public void update() {
-                card.cost = Math.max(trueCost, 0);
-                card.costForTurn=card.cost;
-                trueCost = -1 ;
-                card.isCostModifiedForTurn=false;
-                card.isCostModified=false;
-                this.isDone = true;
-            }
-        });
+        AbstractDungeon.actionManager.addToTop(new CostForTurnSettleAction(card, this));
     }
 
     public void onRender(final AbstractCard card, final SpriteBatch sb){

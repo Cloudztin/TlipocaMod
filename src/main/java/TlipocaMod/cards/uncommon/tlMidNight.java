@@ -15,7 +15,7 @@ public class tlMidNight extends AbstractTlipocaCard {
 
     static final CardRarity rarity = CardRarity.UNCOMMON;
     static final CardType type = CardType.SKILL;
-    static final int cost = 1;
+    static final int cost = 0;
     static final String cardName = "Midnight";
 
 
@@ -24,7 +24,7 @@ public class tlMidNight extends AbstractTlipocaCard {
     private static final String img_path=loadTlipocaCardImg(cardName,type);
 
     public tlMidNight() {
-        super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.SELF);
+        super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.NONE);
 
     }
 

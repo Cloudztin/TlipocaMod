@@ -6,6 +6,13 @@
       "As the heart beating, you open your Eyes, time is up."
     ]
   },
+  "HaaLouLing": {
+    "TEXT": [
+      "Haa Lou Ling",
+      "Descendant of Haa Lou, who comes to the spire to liquidate all the evil",
+      "You hold your breath in concentration... 'Form like a demon but filth becomes energy. The malevolent filth dissipates then the energy of the Tao remains.' You unsheathe the blade. "
+    ]
+  },
   "IncreaseHandCost": {
     "TEXT": [
       "increase cost by ",
@@ -119,6 +126,84 @@
       " Modify Its Cost to ",
       "",
       "There is no card in my hand to modify cost !"
+    ]
+  },
+  "LockPatch": {
+    "TEXT": [
+      " NL Locked  !L! .",
+      "This card is #rLocked !",
+      "tlipocamod:lock",
+      "Immune"
+    ]
+  },
+  "LockHandAction": {
+    "TEXT": [
+      "Apply Lock by ",
+      ""
+    ]
+  },
+  "UnlockHandAction": {
+    "TEXT": [
+      "Unlock"
+    ]
+  },
+  "AlertAction": {
+    "TEXT": [
+      "Unlock or Lock by ",
+      ""
+    ]
+  },
+  "HaaLouLing:AllOutSlash": {
+    "TEXT": [
+      "Exhaust (All Out Slash)"
+    ]
+  },
+  "ZanshinAction": {
+    "TEXT": [
+      "Upgrade ALL Other Cards in Your Hand"
+    ]
+  },
+  "ChannelAction": {
+    "TEXT": [
+      "Change"
+    ]
+  },
+  "DetectAction": {
+    "TEXT": [
+      "The enemy is not intending to attack.",
+      "The enemy's attack has been detected once."
+    ]
+  },
+  "SublimationAction": {
+    "TEXT": [
+      "Change"
+    ]
+  },
+  "TaoAction": {
+    "TEXT": [
+      "Change into Fetter"
+    ]
+  },
+  "ConvergeAction": {
+    "TEXT": [
+      "Converge All Lock Layer",
+      "Don't have enough cards to change."
+    ]
+  },
+  "DisintegrationAction": {
+    "TEXT": [
+      "Change into Fetter"
+    ]
+  },
+  "AdaptAction": {
+    "TEXT": [
+      "Unlock or Lock by 1"
+    ]
+  },
+  "PotionString": {
+    "TEXT": [
+      "tlipocamod:Bleed",
+      "tlipocamod:Sheathe"
     ]
   }
 }

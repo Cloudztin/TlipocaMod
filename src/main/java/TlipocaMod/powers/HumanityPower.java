@@ -40,7 +40,8 @@ public class HumanityPower extends AbstractTlipocaPower {
     public void onUseCard(AbstractCard card, UseCardAction action){
         if (card.cost==-1 && card.energyOnUse>0){
             flash();
-            addToBot(new GainBlockAction(this.owner, this.amount*card.energyOnUse));
+            for(int i=0; i<card.energyOnUse; i++)
+                addToBot(new GainBlockAction(this.owner, this.amount));
         }
     }
 

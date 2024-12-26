@@ -30,6 +30,7 @@ public class tlPowerUnleash extends AbstractTlipocaCard {
         super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.SELF);
 
         this.exhaust = true;
+        this.isEthereal=true;
     }
 
     @Override
@@ -42,7 +43,7 @@ public class tlPowerUnleash extends AbstractTlipocaCard {
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            this.selfRetain = true;
+            this.isEthereal = false;
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

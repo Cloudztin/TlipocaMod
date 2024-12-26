@@ -2,6 +2,7 @@ package TlipocaMod.potions;
 
 import TlipocaMod.TlipocaMod.TlipocaMod;
 import TlipocaMod.powers.BleedingPower;
+import basemod.BaseMod;
 import basemod.abstracts.CustomPotion;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -9,7 +10,9 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
+import com.megacrit.cardcrawl.helpers.GameDictionary;
 import com.megacrit.cardcrawl.helpers.PowerTip;
+import com.megacrit.cardcrawl.helpers.TipHelper;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 
@@ -21,6 +24,8 @@ public class BottledDisease extends CustomPotion {
     public static final String potionName = "BottledDisease";
     public static final String POTION_ID= TlipocaMod.getID(potionName);
     private static final PotionStrings potionStrings= CardCrawlGame.languagePack.getPotionString(POTION_ID);
+    public static final String[] TEXT =CardCrawlGame.languagePack.getUIString("PotionString").TEXT;
+
     public static Color liquidColor=Color.PINK.cpy();
     public static Color hybridColor=Color.BLACK.cpy();
     public static Color SpotsColor=null;
@@ -41,6 +46,7 @@ public class BottledDisease extends CustomPotion {
 
         this.tips.clear();
         this.tips.add(new PowerTip(this.name, this.description));
+        this.tips.add(new PowerTip(TipHelper.capitalize(BaseMod.getKeywordProper(TEXT[0])),  GameDictionary.keywords.get(TEXT[0])));
     }
 
     public void use(AbstractCreature target){

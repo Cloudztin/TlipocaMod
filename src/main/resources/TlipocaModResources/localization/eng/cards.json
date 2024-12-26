@@ -21,8 +21,7 @@
   },
   "TlipocaMod:Scarlet": {
     "NAME": "Scarlet",
-    "DESCRIPTION": "Deal !D! damage. Randomly increase the cost of a card in your hand tlipocamod:Temporarily by !M! .",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. tlipocamod:Temporarily increase the cost of a card in your hand by !M! ."
+    "DESCRIPTION": "Deal !D! damage. tlipocamod:Temporarily increase the cost of a card in your hand by !M! ."
   },
   "TlipocaMod:Pale": {
     "NAME": "Pale",
@@ -44,8 +43,8 @@
   },
   "TlipocaMod:SoulFragment": {
     "NAME": "Soul Fragment",
-    "DESCRIPTION": "Increase the cost of a card in your hand by 1 in this combat. Gain [E] [E] [E] .",
-    "UPGRADE_DESCRIPTION": "Increase the cost of a card in your hand by 2 in this combat. Gain [E] [E] [E] [E] ."
+    "DESCRIPTION": "Increase the cost of a card in your hand by 1 in this combat. Gain [E] [E] .",
+    "UPGRADE_DESCRIPTION": "Increase the cost of a card in your hand by 2 in this combat. Gain [E] [E] [E] ."
   },
   "TlipocaMod:DeathEye": {
     "NAME": "Eye Of The Death",
@@ -62,8 +61,8 @@
   },
   "TlipocaMod:PowerUnleash": {
     "NAME": "Power Unleash",
-    "DESCRIPTION": "Gain energy equal to the sum of the cost of your hand. Exhaust.",
-    "UPGRADE_DESCRIPTION":" Retain. Gain energy equal to the sum of the cost of your hand. Exhaust."
+    "DESCRIPTION": " Ethereal. Gain energy equal to the sum of the cost of your hand. Exhaust.",
+    "UPGRADE_DESCRIPTION":"Gain energy equal to the sum of the cost of your hand. Exhaust."
   },
   "TlipocaMod:Midnight": {
     "NAME": "Midnight",
@@ -131,7 +130,7 @@
   "TlipocaMod:Misery": {
     "NAME": "Misery",
     "DESCRIPTION": "Apply 3 Vulnerable. The target's next received attack damage is doubled. Exhaust.",
-    "UPGRADE_DESCRIPTION":"Apply 5 Vulnerable. The target's next !M! received attack damage is doubled. Exhaust."
+    "UPGRADE_DESCRIPTION":"Apply 3 Vulnerable. The target's next !M! received attack damage is doubled. Exhaust."
   },
   "TlipocaMod:CutDown": {
     "NAME": "Cut Down",
@@ -321,7 +320,7 @@
   },
   "TlipocaMod:Insight": {
     "NAME": "Insight",
-    "DESCRIPTION": "Apply !M! tlipocamod:Bleed. If enemy intends to attack, gain !B! block. Otherwise, deal !D! damage. Exhaust."
+    "DESCRIPTION": "Deal !D! damage. If the enemy is tlipocamod:Bleeding, gain !M! Strength then Exhaust."
   },
   "TlipocaMod:Afire": {
     "NAME": "Afire",
@@ -370,7 +369,7 @@
   },
   "TlipocaMod:Grief": {
     "NAME": "Grief",
-    "DESCRIPTION": "Cannot be removed from your deck. NL At the end of your turn or whenever you play a card, add a copy of it into your hand."
+    "DESCRIPTION": "Cannot be removed from your deck. NL Unplayable. NL When this card is drawn, discard it and lose one energy."
   },
   "TlipocaMod:Humanity": {
     "NAME": "Humanity",
@@ -391,5 +390,381 @@
   "TlipocaMod:3": {
     "NAME": "3",
     "DESCRIPTION": "Change a card's cost in this combat to 3"
+  },
+  "HaaLouLing:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "HaaLouLing:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "HaaLouLing:Firmness": {
+    "NAME": "Firmness",
+    "DESCRIPTION": "Gain !B! Block. tlipocamod:Lock a card by !M! . tlipocamod:Sheathe."
+  },
+  "HaaLouLing:Suburi": {
+    "NAME": "Suburi",
+    "DESCRIPTION": "tlipocamod:Mastery. NL Deal !D! damage. tlipocamod:Unlock a card, if so, deal an additional damage."
+  },
+  "HaaLouLing:Alert": {
+    "NAME": "Alert",
+    "DESCRIPTION": "Retain. tlipocamod:Unlock or tlipocamod:Lock a card by !M! . Gain !B! Block."
+  },
+  "HaaLouLing:AllOutSlash": {
+    "NAME": "All Out Slash",
+    "DESCRIPTION": " Exhaust the card with the most layers of tlipocamod:Lock in your hand, deal damage !M! times to the layer number.",
+    "UPGRADE_DESCRIPTION": " NL ( Deal !D! damage. )"
+  },
+  "HaaLouLing:AncientScabbard": {
+    "NAME": "Ancient Scabbard",
+    "DESCRIPTION": "Cannot upgrade. NL Gain !M! Strength."
+  },
+  "HaaLouLing:BrokenBlade": {
+    "NAME": "Broken Blade",
+    "DESCRIPTION": "Cannot upgrade. NL  tlipocamod:Lock a card by !M! . Deal !D! damage. The next Attack you play this turn will be played twice. Exhaust."
+  },
+  "HaaLouLing:RustyHilt": {
+    "NAME": "Rusty Hilt",
+    "DESCRIPTION": "Cannot upgrade. NL Gain !B! Block !M! times. Exhaust."
+  },
+  "HaaLouLing:IllusionBlade": {
+    "NAME": "Illusion Blade",
+    "DESCRIPTION": "Cannot upgrade. NL Gain !M! Strength. In this combat, your Attacks deal double damage. "
+  },
+  "HaaLouLing:Zanshin": {
+    "NAME": "Zanshin",
+    "DESCRIPTION": "Draw !M! card. Choose a card: Upgrade all other cards in your hand, each increases its tlipocamod:Lock value by 1.",
+    "UPGRADE_DESCRIPTION":"Draw !M! cards. Choose a card: Upgrade all other cards in your hand, each increases its tlipocamod:Lock value by 1."
+  },
+  "HaaLouLing:Calm": {
+    "NAME": "Calm",
+    "DESCRIPTION": "Gain !B! Block. NL Draw until your hand is full."
+  },
+  "HaaLouLing:Channel": {
+    "NAME": "Channel",
+    "DESCRIPTION": "Gain !B! Block. Change a card into a copy of this card."
+  },
+  "HaaLouLing:EnchantmentScroll": {
+    "NAME": "EnchantmentScroll",
+    "DESCRIPTION": "Increase the damage of an Attack in this combat by !M! . Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "Increase its damage by ",
+      ""
+    ]
+  },
+  "HaaLouLing:FlickOff": {
+    "NAME": "Flick Off",
+    "DESCRIPTION": "Deal !D! damage. Target loses Strength equal to the unblocked damage dealt."
+  },
+  "HaaLouLing:Massacre": {
+    "NAME": "Massacre",
+    "DESCRIPTION": "Deal !D! damage twice. Repeat on random enemy till the target is attacked again or not intending to attack."
+  },
+  "HaaLouLing:Stalemate": {
+    "NAME": "Stalemate",
+    "DESCRIPTION": "Gain !B! Block for each enemy. tlipocamod:Unlock a card. tlipocamod:Sheathe."
+  },
+  "HaaLouLing:TsubameGaeshi": {
+    "NAME": "Tsubame Gaeshi",
+    "DESCRIPTION": "Deal !D! damage. When you tlipocamod:Lock or tlipocamod:Unlock a card, return this card from the discard pile to your hand."
+  },
+  "HaaLouLing:WaveSplitter": {
+    "NAME": "Wave Splitter",
+    "DESCRIPTION": "Deal !D! damage for each card tlipocamod:Locked in your hand.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (You have ",
+      " card under tlipocamod:Lock).",
+      " cards under tlipocamod:Lock)."
+    ]
+  },
+  "HaaLouLing:Haa": {
+    "NAME": "Haa",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies twice. Draw !M! card.",
+    "UPGRADE_DESCRIPTION":"Deal !D! damage to ALL enemies twice. Draw !M! cards."
+  },
+  "HaaLouLing:HaaLouDefense": {
+    "NAME": "Haa Lou Defense",
+    "DESCRIPTION": "Unplayable. When this card is tlipocamod:Locked or tlipocamod:Unlocked. Gain !B! Block.",
+    "EXTENDED_DESCRIPTION": [
+      "#rUnplayable ."
+    ]
+  },
+  "HaaLouLing:Foresight": {
+    "NAME": "Foresight",
+    "DESCRIPTION": "If the enemy intends to attack, gain 1 Strength, Apply !M! Weak and cause the enemy to lose 99 Strength this turn. Can only be applied once per enemy. NL tlipocamod:Sheathe. "
+  },
+  "HaaLouLing:BlankCard": {
+    "NAME": "Blank Card",
+    "DESCRIPTION": "Play the last card you played in this combat. Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "I haven't played any card in this combat.",
+      "The last card played was #rBlank !"
+    ]
+  },
+  "HaaLouLing:Calamity": {
+    "NAME": "Calamity",
+    "DESCRIPTION": "tlipocamod:Lock ALL cards in your hand by 2. If the tlipocamod:Locked cards have different energy costs, randomly deal !D! damage !M! times."
+  },
+  "HaaLouLing:TheRenowned": {
+    "NAME": "The Renowned",
+    "DESCRIPTION": "Deal !D! damage X times.",
+    "EXTENDED_DESCRIPTION": [
+      "Deal !D! damage !M! times.",
+      "Deal !D! damage."
+    ]
+  },
+  "HaaLouLing:Cast": {
+    "NAME": "Cast",
+    "DESCRIPTION": "Exhaust your hand, add a *Renowned with X equal to the number of cards Exhausted into your hand. Exhaust.",
+    "UPGRADE_DESCRIPTION":"Exhaust your hand, add a *Renowned with X equal to the number of cards Exhausted into your hand, it costs 0 until played. Exhaust."
+  },
+  "HaaLouLing:CleaveSouls": {
+    "NAME": "Cleave Souls",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. If you have played Attack, Skill and Power this turn, remove ALL enemies' buffs. Exhaust."
+  },
+  "HaaLouLing:Impregnable": {
+    "NAME": "Impregnable",
+    "DESCRIPTION": " Increase the tlipocamod:Lock of your hand by 1, then gain Block !M! times to the sum of your hand's tlipocamod:Lock. Exhaust.",
+    "UPGRADE_DESCRIPTION": " NL (Gain !B! Block . )"
+  },
+  "HaaLouLing:Intro": {
+    "NAME": "Starting Move",
+    "DESCRIPTION": "tlipocamod:Mastery. NL Deal !D! damage. If this is the first card played this turn, tlipocamod:Unlock you hand, gain [E] and draw 2 cards.",
+    "UPGRADE_DESCRIPTION":"tlipocamod:Mastery. Innate. NL Deal !D! damage. If this is the first card played this turn, tlipocamod:Unlock you hand, gain [E] and draw 2 cards."
+  },
+  "HaaLouLing:Oracle": {
+    "NAME": "Oracle",
+    "DESCRIPTION": "Ethereal. NL Draw !M! cards. Shuffle this card into the draw pile and increase its cost by 1 in this combat.",
+    "UPGRADE_DESCRIPTION":"Ethereal. NL Draw !M! cards. Gain [E] .Shuffle this card into the draw pile and increase its cost by 1 in this combat."
+  },
+  "HaaLouLing:PhantomPain": {
+    "NAME": "Phantom Pain",
+    "DESCRIPTION": "Whenever target receives attack damage, ALL enemies lose HP equal to half of the unblocked damage dealt. Exhaust.",
+    "UPGRADE_DESCRIPTION":"Whenever target receives attack damage, ALL enemies lose HP equal to half of the unblocked damage dealt."
+  },
+  "HaaLouLing:Practice": {
+    "NAME": "Practice",
+    "DESCRIPTION": "Heal 5 HP. Draw 1 card. tlipocamod:Sheathe. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":"Heal 7 HP. Draw 2 cards. tlipocamod:Sheathe. NL Exhaust."
+  },
+  "HaaLouLing:Sublimation": {
+    "NAME": "Sublimation",
+    "DESCRIPTION": "Gain !M! Strength. Change an Unplayable card into a copy of it."
+  },
+  "HaaLouLing:Fetter": {
+    "NAME": "Fetter",
+    "DESCRIPTION": " Unplayable. NL Ethereal.",
+    "UPGRADE_DESCRIPTION":"#rUnplayable !"
+  },
+  "HaaLouLing:Tao": {
+    "NAME": "Tao",
+    "DESCRIPTION": "When this card is drawn, choose at most 1 card to change into tlipocamod:Fetter. Play those cards in sequence when played."
+  },
+  "HaaLouLing:DivineBook": {
+    "NAME": "Divine Book",
+    "DESCRIPTION": " Unplayable. NL When this card is tlipocamod:Unlocked, discard it and draw cards equal to the tlipocamod:Lock layer, if your hand is full due to this, gain [E] .",
+    "UPGRADE_DESCRIPTION":" Unplayable. NL When this card is tlipocamod:Unlocked, discard it, draw until your hand is full and gain [E] .",
+    "EXTENDED_DESCRIPTION": [
+      "#rUnplayable !"
+    ]
+  },
+  "HaaLouLing:TranscendentForm": {
+    "NAME": "Transcendent Form",
+    "DESCRIPTION": "Ethereal. NL You are free to HP drain and all debuffs. When Retained, add a *Miracle into your hand.",
+    "UPGRADE_DESCRIPTION":"You are free to HP drain and all debuffs. When Retained, add a *Miracle into your hand."
+  },
+  "HaaLouLing:WellPrepared": {
+    "NAME": "Well Prepared",
+    "DESCRIPTION": "If your hand is not empty at the start of your turn, draw 1 card.",
+    "UPGRADE_DESCRIPTION":"Innate. NL If your hand is not empty at the start of your turn, draw 1 card."
+  },
+  "HaaLouLing:AncientAmulet": {
+    "NAME": "Ancient Amulet",
+    "DESCRIPTION": "ALL enemies lose !M! Strength this turn. When Retained, gain 1 Strength. NL Exhaust."
+  },
+  "HaaLouLing:Parry": {
+    "NAME": "Parry",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "HaaLouLing:WindBlade": {
+    "NAME": "Wind Blade",
+    "DESCRIPTION": "Deal !D! damage. When you play an Attack this turn, randomly deal same damage to an enemy."
+  },
+  "HaaLouLing:Conceal": {
+    "NAME": "Conceal",
+    "DESCRIPTION": "tlipocamod:Lock ALL Attacks in your hand by 1, gain !B! Block for each."
+  },
+  "HaaLouLing:Converge": {
+    "NAME": "Converge",
+    "DESCRIPTION": "Choose a card to converge all cards' tlipocamod:Lock layers."
+  },
+  "HaaLouLing:CoupDeGrace": {
+    "NAME": "Coup de Grace",
+    "DESCRIPTION": "Deal !D! damage. Deal double damage to enemy affected by debuff."
+  },
+  "HaaLouLing:CrossSlash": {
+    "NAME": "Mystery: Cross Slash",
+    "DESCRIPTION": "Deal !D! damage !M! times. Each time this card is tlipocamod:Locked or tlipocamod:Unlocked, it deals an additional hit for the remainder of the combat."
+  },
+  "HaaLouLing:Disintegration": {
+    "NAME": "Disintegration",
+    "DESCRIPTION": "Choose any number of non- tlipocamod:Fetter cards to become tlipocamod:Fetter. Draw a card and gain [E] for each card changed. NL Exhaust."
+  },
+  "HaaLouLing:Adaption": {
+    "NAME": "Adaption",
+    "DESCRIPTION": "At the start of your turn, you can choose !M! cards to tlipocamod:Lock by 1 or tlipocamod:Unlock."
+  },
+  "HaaLouLing:HiddenWeapons": {
+    "NAME": "Hidden Weapons",
+    "DESCRIPTION": "When a card is tlipocamod:Unlocked , deal !M! damage to ALL enemies."
+  },
+  "HaaLouLing:IaiSlash": {
+    "NAME": "Iai Slash",
+    "DESCRIPTION": "Deal !D! damage. NL tlipocamod:Sheathed : gain !M! Strength."
+  },
+  "HaaLouLing:Flow": {
+    "NAME": "Flow",
+    "DESCRIPTION": "Ethereal. NL When the tlipocamod:Lock of a card is changed by 1, gain !M! Block. ",
+    "UPGRADE_DESCRIPTION":"When the tlipocamod:Lock of a card is changed by 1, gain !M! Block. "
+  },
+  "HaaLouLing:HelmBreaker": {
+    "NAME": "Helm Breaker",
+    "DESCRIPTION": "Deal !D! damage !M! times. Lose 1 Strength. NL tlipocamod:Sheathed : Unplayable.",
+    "UPGRADE_DESCRIPTION":"Retain. NL Deal !D! damage !M! times. Lose 1 Strength. NL tlipocamod:Sheathe. NL tlipocamod:Sheathed : Unplayable.",
+    "EXTENDED_DESCRIPTION": [
+      "I cannot play this card when #rSheathed !"
+    ]
+  },
+  "HaaLouLing:InnerForce": {
+    "NAME": "Inner Force",
+    "DESCRIPTION": "Double the tlipocamod:Lock value of a card, then gain Block equal to its tlipocamod:Lock .",
+    "EXTENDED_DESCRIPTION": [
+      "Double Lock Value"
+    ]
+  },
+  "HaaLouLing:Intimidate": {
+    "NAME": "Intimidate",
+    "DESCRIPTION": "Apply !M! Weak to ALL enemies intending to attack and !M! Vulnerable to those not. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":"Apply !M! Weak and Vulnerable to ALL enemies. NL Exhaust."
+  },
+  "HaaLouLing:Kendo": {
+    "NAME": "Kendo",
+    "DESCRIPTION": "Gain !M! temporary Strength each time you play an Attack until you play a non-Attack card this turn. NL tlipocamod:Sheath. Draw a card. NL Exhaust. "
+  },
+  "HaaLouLing:Knowledge": {
+    "NAME": "Knowledge",
+    "DESCRIPTION": "Draw !M! cards. NL tlipocamod:Lock a card by !M! ."
+  },
+  "HaaLouLing:LastBreath": {
+    "NAME": "Last Breath",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. When in your hand, each Attack played increases its damage by !M! . Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "Cannot play with cards not locked in hand!"
+    ]
+  },
+  "HaaLouLing:Lou": {
+    "NAME": "Lou",
+    "DESCRIPTION": "Gain !M! Regen. NL Gain [E] next turn."
+  },
+  "HaaLouLing:Retrace": {
+    "NAME": "Retrace",
+    "DESCRIPTION": "The fist card you play each turn will return to your hand from the discard pile."
+  },
+  "HaaLouLing:MutualDestruction": {
+    "NAME": "Mutual Destruction",
+    "DESCRIPTION": "Deal !D! damage twice. If enemy is still alive, draw a card less next turn."
+  },
+  "HaaLouLing:Unleash": {
+    "NAME": "Unleash",
+    "DESCRIPTION": "Lower the tlipocamod:Lock value of a card by !M! , each layer gain !B! Block for you.",
+    "EXTENDED_DESCRIPTION": [
+      "Lower Lock Value"
+    ]
+  },
+  "HaaLouLing:Seal": {
+    "NAME": "Seal",
+    "DESCRIPTION": "tlipocamod:Lock at most !M! cards by 2, gain [E] for each.",
+    "EXTENDED_DESCRIPTION": [
+      "Lock by 2"
+    ]
+  },
+  "HaaLouLing:ShadowBlade": {
+    "NAME": "Shadow Blade",
+    "DESCRIPTION": "Deal !D! damage. NL When in your hand, play a copy of this card when you play an Attack. NL Exhaust."
+  },
+  "HaaLouLing:SharpEdge": {
+    "NAME": "Sharp Edge",
+    "DESCRIPTION": "At the end of your turn, deal !M! damage to a random enemy for each tlipocamod:Locked card in your hand."
+  },
+  "HaaLouLing:SpiritBloom": {
+    "NAME": "Spirit Bloom",
+    "DESCRIPTION": "Reduce the tlipocamod:Lock value of all cards in your hand by !M! when a card is tlipocamod:Unlocked."
+  },
+  "HaaLouLing:TaiChi": {
+    "NAME": "TaiChi",
+    "DESCRIPTION": "Play and Exhaust a card.",
+    "EXTENDED_DESCRIPTION": [
+      "Play and Exhaust"
+    ]
+  },
+  "HaaLouLing:WineGourd": {
+    "NAME": "Wine Gourd",
+    "DESCRIPTION": "Choose a card to add into your hand from 3 cards of the type same as the last card played this combat. It costs 0 this turn. Exhaust .",
+    "EXTENDED_DESCRIPTION": [
+      "I haven't played any cards !"
+    ]
+  },
+  "HaaLouLing:HaaLouBook": {
+    "NAME": "Haa Lou Book",
+    "DESCRIPTION": "Unplayable. NL When this card is tlipocamod:Locked, apply !M! Vulnerable to ALL enemies. NL When this card is tlipocamod:Unlocked, apply !M! Weak to ALL enemies.",
+    "EXTENDED_DESCRIPTION": [
+      " #rUnplayable !"
+    ]
+  },
+  "HaaLouLing:HaaLouTreasure": {
+    "NAME": "Haa Lou Treasure",
+    "DESCRIPTION": "Deal !D! damage. NL If Fatal, permanently lower its cost by 1."
+  },
+  "HaaLouLing:Petal": {
+    "NAME": "Petal",
+    "DESCRIPTION": "tlipocamod:Mastery. NL Deal !D! damage. NL If there is no other *Petal in your hand, Exhaust and return all *Petals in discard pile to your hand."
+  },
+  "HaaLouLing:Flower": {
+    "NAME": "Flower",
+    "DESCRIPTION": "Add !M! *Petals into your discard pile. NL When Retained, add a *Petal into your discard pile.",
+    "UPGRADE_DESCRIPTION": "Add !M! *Petals+ into your discard pile. NL When Retained, add a *Petal+ into your discard pile."
+  },
+  "HaaLouLing:SpiritSlash": {
+    "NAME": "Spirit Slash",
+    "DESCRIPTION": "tlipocamod:Mastery. NL Deal !D! damage. NL tlipocamod:Sheathed : Draw a card."
+  },
+  "HaaLouLing:HaaLouCrossDouble": {
+    "NAME": "HaaLou Cross: Double",
+    "DESCRIPTION": "tlipocamod:Mastery. NL Deal !D! damage twice. NL Apply !M! Vulnerable. NL tlipocamod:Sheathed : Play twice."
+  },
+  "HaaLouLing:Ling": {
+    "NAME": "Ling",
+    "DESCRIPTION": "tlipocamod:Unlockable. NL If there is no other card can be played in your hand, deal !D! damage to ALL enemies."
+  },
+  "HaaLouLing:VanishingShadow": {
+    "NAME": "Vanishing Shadow",
+    "DESCRIPTION": "Deal !D! damage. NL tlipocamod:Unlock ALL tlipocamod:Locked cards in your hand, and draw that many cards."
+  },
+  "HaaLouLing:Ichimonji": {
+    "NAME": "Haa Lou Art: Ichimonji",
+    "DESCRIPTION": "tlipocamod:Mastery. tlipocamod:Eternity. NL Deal !D! damage. NL Return from discard pile to hand."
+  },
+  "HaaLouLing:QuickDraw": {
+    "NAME": "Quick Draw",
+    "DESCRIPTION": "Deal !D! damage. NL If this is the first Attack you play this turn, gain !M! temporary Strength , draw a card."
+  },
+  "HaaLouLing:BloodShake": {
+    "NAME": "Blood Shake",
+    "DESCRIPTION": "Gain !B! Block. NL tlipocamod:Sheathe. NL If the last card played in this combat is an Attack, draw a card and upgrade it."
+  },
+  "HaaLouLing:Flurry": {
+    "NAME": "Flurry",
+    "DESCRIPTION": "Deal !D! damage to a random enemy !M! times. NL End your turn."
   }
 }

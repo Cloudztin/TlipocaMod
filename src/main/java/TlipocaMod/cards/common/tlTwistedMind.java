@@ -43,6 +43,12 @@ public class tlTwistedMind extends AbstractTlipocaCard {
             addToBot(new GainEnergyAction(this.magicNumber));
     }
 
+    public void triggerOnGlowCheck() {
+        super.triggerOnGlowCheck();
+        if(this.costForTurn!=2 || this.freeToPlay())
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+    }
+
     @Override
     public void upgrade() {
         if(!this.upgraded) {
@@ -50,6 +56,8 @@ public class tlTwistedMind extends AbstractTlipocaCard {
             upgradeDamage(5);
         }
     }
+
+
 
     @Override
     public AbstractCard makeCopy() {

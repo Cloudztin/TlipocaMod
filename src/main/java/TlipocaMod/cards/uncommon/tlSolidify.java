@@ -28,7 +28,7 @@ public class tlSolidify extends AbstractTlipocaCard {
         super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.SELF);
 
 
-        this.magicNumber=this.baseMagicNumber=5;
+        this.magicNumber=this.baseMagicNumber=4;
         this.baseBlock=this.magicNumber;
     }
 

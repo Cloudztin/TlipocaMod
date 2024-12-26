@@ -17,7 +17,7 @@
     "NAME": "夜之冠冕",
     "FLAVOR": "夜之主的王冠。真的非常重。",
     "DESCRIPTIONS": [
-      "在每回合开始时获得 [E] ，然后选择一张手牌的耗能 #y暂时 加 #b3 。"
+      "在每回合开始时获得 [E] ，然后选择一张手牌的耗能 #ytlipocamod:暂时 加 #b3 。"
     ]
   },
   "TlipocaMod:BloodyHarvest": {
@@ -31,7 +31,7 @@
     "NAME": "龙血",
     "FLAVOR": "你从中感到了诅咒的气息。",
     "DESCRIPTIONS": [
-      "战斗开始时，随机给予一名敌人 #b2 层 #y流血 。"
+      "战斗开始时，随机给予一名敌人 #b2 层 #rtlipocamod:流血 。"
     ]
   },
   "TlipocaMod:Cryolite": {
@@ -74,6 +74,76 @@
     "FLAVOR": "近年来血液的质量越来越差了。",
     "DESCRIPTIONS": [
       "每回合首次有敌人因非 #y攻击 伤害失去生命后，抽 #b2 张牌。"
+    ]
+  },
+  "TlipocaMod:TangKnife": {
+    "NAME": "唐刀",
+    "FLAVOR": "一把趁手的武器",
+    "DESCRIPTIONS": [
+      "敌人死亡后，获得 #b1 点 #y力量 。"
+    ]
+  },
+  "TlipocaMod:HaaLouBlade": {
+    "NAME": "霞露切",
+    "FLAVOR": "天地自然，秽炁分散。洞中玄虚，晃朗太元。按行五岳，八海知闻，妖灵束首，斩灵归元。",
+    "DESCRIPTIONS": [
+      "替换 #g唐刀 ，你的回合开始时，如果你手中有牌，获得 #b2 点 #y力量 。"
+    ]
+  },
+  "TlipocaMod:SpiritSeveranceTome": {
+    "NAME": "斩灵残谱",
+    "FLAVOR": "残破的斩灵谱，有天赋的斩灵师仍然能从中获得些许力量。",
+    "DESCRIPTIONS": [
+      "战斗中首次有牌 #ytlipocamod:解锁 后，将 #b2 张 #y奇迹 加入你的手中。"
+    ]
+  },
+  "TlipocaMod:theUnknown": {
+    "NAME": "□□□□谱",
+    "FLAVOR": "刀剑名器皆存此处，知我名者无人敢前。",
+    "DESCRIPTIONS": [
+      "替换 #g斩灵残谱 ，每场战斗的前 #b3 次 #y解锁 会使该牌在本场战斗中的耗能减 #b1 。"
+    ]
+  },
+  "TlipocaMod:ShoggothBlood": {
+    "NAME": "修格斯之血",
+    "FLAVOR": "这团黑色的物质散发着骇人的恶臭，并且似乎在不断地增殖。",
+    "DESCRIPTIONS": [
+      "在回合开始时获得 [E] 。你的手牌上限减 #y2 。"
+    ]
+  },
+  "TlipocaMod:theRecipe": {
+    "NAME": "霞露零的菜谱",
+    "FLAVOR": "霞露零做厨师时的手记，记录详尽，可惜没有教刀工。",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得 #b2 层 #y再生 。"
+    ]
+  },
+  "TlipocaMod:BurrPuzzle": {
+    "NAME": "鲁班锁",
+    "FLAVOR": "孩子们喜爱的玩具，非常难解开。",
+    "DESCRIPTIONS": [
+      "每场战斗，首次有牌进入 #ytlipocamod:锁定 时，抽 #b1 张牌；首次有牌脱离 #ytlipocamod:锁定 时，获得 [E] 。"
+    ]
+  },
+  "TlipocaMod:ShackleOfDream": {
+    "NAME": "梦之枷锁",
+    "FLAVOR": "用来束缚冷原人的镣铐，让人永远陷入幻梦中，无法醒来也无法逃脱。",
+    "DESCRIPTIONS": [
+      "在回合开始时获得 [E] 。你的回合结束时，将一张 #rtlipocamod:枷锁 加入弃牌堆。"
+    ]
+  },
+  "TlipocaMod:Horoscope": {
+    "NAME": "天机图",
+    "FLAVOR": "再没有什么能束缚你的了。",
+    "DESCRIPTIONS": [
+      "你现在能打出被 #ytlipocamod:锁定 的牌；被 #ytlipocamod:锁定 的牌被 #y保留 时锁定值不再减少。"
+    ]
+  },
+  "TlipocaMod:QuetzalcoatlsFeather": {
+    "NAME": "神羽",
+    "FLAVOR": "羽蛇神是象征死亡与重生的神祇，这彩色的羽片据说是其遗留的神蜕。",
+    "DESCRIPTIONS": [
+      " #ytlipocamod:纳刀 的额外伤害提升为 #b5 ，所有 #y攻击牌 获得 #ytlipocamod:纳刀 ：抽一张牌。"
     ]
   }
 }

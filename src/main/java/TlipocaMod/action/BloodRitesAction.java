@@ -1,6 +1,7 @@
 package TlipocaMod.action;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.utility.ShowCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -10,16 +11,18 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.LocalizedStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.GameDeckGlowEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
+import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public class BloodRitesAction extends AbstractGameAction {
     public static final String[] TEXT =  CardCrawlGame.languagePack.getUIString("BloodRites").TEXT;
-    private AbstractPlayer p;
-    private AbstractCard c;
-    private AbstractMonster m;
+    private final AbstractPlayer p;
+    private final AbstractCard c;
+    private final AbstractMonster m;
     public boolean cardSelected = true;
 
     public BloodRitesAction(AbstractPlayer p, AbstractCard c, AbstractMonster m) {
@@ -93,16 +96,16 @@ public class BloodRitesAction extends AbstractGameAction {
 
             if (AbstractDungeon.screen != AbstractDungeon.CurrentScreen.TRANSFORM && AbstractDungeon.transformedCard != null) {
 
-                AbstractDungeon.topLevelEffectsQueue.add(new ShowCardAndObtainEffect(
+                AbstractCard c=AbstractDungeon.getTransformedCard();
+                AbstractDungeon.topLevelEffectsQueue.add(new ShowCardBrieflyEffect(c.makeSameInstanceOf()));
 
-                        AbstractDungeon.getTransformedCard(), Settings.WIDTH / 3.0F + displayCount, Settings.HEIGHT / 2.0F, false));
-
+                AbstractDungeon.topLevelEffectsQueue.add(new ShowCardAndObtainEffect(c, Settings.WIDTH / 3.0F + displayCount, Settings.HEIGHT / 2.0F, false));
 
                 displayCount += Settings.WIDTH / 6.0F;
             }
         }
         AbstractDungeon.gridSelectScreen.selectedCards.clear();
-        (AbstractDungeon.getCurrRoom()).rewardPopOutTimer = 0.25F;
+        (AbstractDungeon.getCurrRoom()).rewardPopOutTimer = 2.0f;
     }
 
 }

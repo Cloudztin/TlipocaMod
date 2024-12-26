@@ -27,7 +27,7 @@ public class tlHeartPierceStrike extends AbstractTlipocaCard {
         super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
 
         this.tags.add(CardTags.STRIKE);
-        this.baseDamage=7;
+        this.baseDamage=6;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class tlHeartPierceStrike extends AbstractTlipocaCard {
     public void upgrade() {
         if(!this.upgraded){
             this.upgradeName();
-            this.upgradeDamage(3);
+            this.upgradeDamage(2);
         }
     }
 

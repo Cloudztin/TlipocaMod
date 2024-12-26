@@ -42,7 +42,7 @@ public class InfinityPower extends AbstractTlipocaPower{
     public void onRefreshHand() {
         if (AbstractDungeon.actionManager.actions.isEmpty() && AbstractDungeon.player.hand.size()<8 && !AbstractDungeon.actionManager.turnHasEnded  && !AbstractDungeon.player.hasPower("No Draw") && !AbstractDungeon.isScreenUp && AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && (!AbstractDungeon.player.discardPile.isEmpty() || !AbstractDungeon.player.drawPile.isEmpty())) {
             this.flash();
-            addToBot(new DrawCardAction(AbstractDungeon.player, max(8-AbstractDungeon.player.hand.size(),0)));
+            addToBot(new DrawCardAction(1));
         }
     }
 

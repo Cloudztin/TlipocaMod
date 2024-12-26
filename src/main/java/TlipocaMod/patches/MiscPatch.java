@@ -2,6 +2,7 @@ package TlipocaMod.patches;
 
 import TlipocaMod.cards.rare.tlExecution;
 import TlipocaMod.cards.rare.tlJustitia;
+import TlipocaMod.cards.uncommon.hllHaaLouTreasure;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
@@ -15,6 +16,10 @@ public class MiscPatch {
             if (retVal.cardID.equals(tlExecution.ID) && misc!=0) {
                 retVal.baseMagicNumber+=misc;
                 retVal.magicNumber+=misc;
+            }
+            if (retVal.cardID.equals(hllHaaLouTreasure.ID) && misc != 0) {
+                retVal.updateCost(-misc);
+                retVal.initializeDescription();
             }
         }
 

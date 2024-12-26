@@ -13,25 +13,25 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 public class PlayHandAction extends AbstractGameAction {
 
-    private boolean exhaustCards;
-    private AbstractCard card;
+    private final boolean exhaustCards;
+    private final AbstractCard card;
 
-    public PlayHandAction(AbstractCard card, AbstractCreature target, boolean exhausts) {
+    public PlayHandAction(AbstractCard card, AbstractCreature target, boolean exhaust) {
         this.card = card;
         this.duration = Settings.ACTION_DUR_FAST;
         this.actionType = ActionType.WAIT;
         this.source =  AbstractDungeon.player;
         this.target = target;
-        this.exhaustCards = exhausts;
+        this.exhaustCards = exhaust;
     }
 
-    public PlayHandAction(AbstractCard card, boolean exhausts) {
+    public PlayHandAction(AbstractCard card, boolean exhaust) {
         this.card = card;
         this.duration = Settings.ACTION_DUR_FAST;
         this.actionType = ActionType.WAIT;
         this.source =  AbstractDungeon.player;
         this.target = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-        this.exhaustCards = exhausts;
+        this.exhaustCards = exhaust;
     }
 
     public void update() {

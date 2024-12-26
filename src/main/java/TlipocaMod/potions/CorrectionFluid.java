@@ -25,9 +25,6 @@ public class CorrectionFluid extends CustomPotion {
     public static final String potionName = "CorrectionFluid";
     public static final String POTION_ID= TlipocaMod.getID(potionName);
     private static final PotionStrings potionStrings= CardCrawlGame.languagePack.getPotionString(POTION_ID);
-    public static Color liquidColor= CardHelper.getColor(255, 255, 255);
-    public static Color hybridColor=CardHelper.getColor(255, 255, 255);
-    public static Color SpotsColor=CardHelper.getColor(255, 255, 255);
 
     public CorrectionFluid() {
         super(potionStrings.NAME, POTION_ID, PotionRarity.UNCOMMON, PotionSize.EYE, PotionColor.WHITE);

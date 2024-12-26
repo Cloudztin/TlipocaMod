@@ -3,6 +3,7 @@ package TlipocaMod.relics;
 import TlipocaMod.TlipocaMod.TlipocaMod;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
@@ -32,5 +33,13 @@ public class AbstractTlipocaRelic extends CustomRelic {
 
     public void onMonsterDamaged(){
     }
+
+    public void onLock(AbstractCard c) {
+    }
+
+    public void onUnlock(AbstractCard c) {
+    }
+
+
 
 }

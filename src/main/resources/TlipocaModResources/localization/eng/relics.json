@@ -17,7 +17,7 @@
     "NAME": "Night Crown",
     "FLAVOR": "The crown of the Death. ",
     "DESCRIPTIONS": [
-      "At the start of your turn, gain [E] , then #yTemporarily increase the cost of a card in your hand by #b3 ."
+      "At the start of your turn, gain [E] , then #ytlipocamod:Temporarily increase the cost of a card in your hand by #b3 ."
     ]
   },
   "TlipocaMod:BloodyHarvest": {
@@ -31,7 +31,7 @@
     "NAME": "Dragon Blood",
     "FLAVOR": "Seems cursed...",
     "DESCRIPTIONS": [
-      "At the start of combat, apply #b2 #yBleed to a random enemy."
+      "At the start of combat, apply #b2 #rtlipocamod:Bleed to a random enemy."
     ]
   },
   "TlipocaMod:Cryolite": {
@@ -74,6 +74,76 @@
     "FLAVOR": "The quality of blood is worsening each year.",
     "DESCRIPTIONS": [
       "Once for each turn, when an enemy loses life due to a cause other than #yAttack damage, draw #b2 cards."
+    ]
+  },
+  "TlipocaMod:TangKnife": {
+    "NAME": "Tang Knife",
+    "FLAVOR": "A handy blade.",
+    "DESCRIPTIONS": [
+      "Gain 1 #yStrength when enemy dies."
+    ]
+  },
+  "TlipocaMod:HaaLouBlade": {
+    "NAME": "Haa Lou Cutter",
+    "FLAVOR": "My dear dancing with blade, may your fervor can eternally stay. ",
+    "DESCRIPTIONS": [
+      "Replace #gTang #gKnife , If your hand is not empty at the start of your turn, gain #b2 #yStrength ."
+    ]
+  },
+  "TlipocaMod:SpiritSeveranceTome": {
+    "NAME": "Spirit Severance Tome",
+    "FLAVOR": "Broken manual from which a talented man can still find wisdom.",
+    "DESCRIPTIONS": [
+      "Add #b2 #yMiracles to your hand after you #ytlipocamod:Unlock your first card in a combat."
+    ]
+  },
+  "TlipocaMod:theUnknown": {
+    "NAME": "the Unknown",
+    "FLAVOR": "Here keeps all blades and swords, but no one dares to step forward.",
+    "DESCRIPTIONS": [
+      "Replace #gRemnant #gOf #gGhost #gKiller, the first #b3 #ytlipocamod:Unlock make that card cost #b1 less in the combat."
+    ]
+  },
+  "TlipocaMod:ShoggothBlood": {
+    "NAME": "Shoggoth's Blood",
+    "FLAVOR": "A mass of black substance emitting a horrible, overpowering stench and never stops proliferation.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Decrease your hand limit by #y2 ."
+    ]
+  },
+  "TlipocaMod:theRecipe": {
+    "NAME": "the Recipe",
+    "FLAVOR": "The handset of Haa Lou Ling as a chef, comes with full details except cutting techniques.",
+    "DESCRIPTIONS": [
+      "Start each combat with #b2 #yRegen ."
+    ]
+  },
+  "TlipocaMod:BurrPuzzle": {
+    "NAME": "Burr Puzzle",
+    "FLAVOR": "Toy loved by kids, some are really hard to solve.",
+    "DESCRIPTIONS": [
+      "In each combat, draw #b1 card after you #yLock your first card, gain [E] after you #ytlipocamod:Unlock your first card. "
+    ]
+  },
+  "TlipocaMod:ShackleOfDream": {
+    "NAME": "Shackle Of Dream",
+    "FLAVOR": "This shackle can lock people in illusionary dreams that can nether wake up nor escape.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. At the end of your turn, add a #rtlipocamod:Fetter into your discard pile."
+    ]
+  },
+  "TlipocaMod:Horoscope": {
+    "NAME": "Horoscope",
+    "FLAVOR": "There is nothing enchaining you now.",
+    "DESCRIPTIONS": [
+      "You can play #ytlipocamod:Locked cards now, the layer of #ytlipocamod:Lock will not decrease when #yRetained ."
+    ]
+  },
+  "TlipocaMod:QuetzalcoatlsFeather": {
+    "NAME": "Quetzalcoatl'sFeather",
+    "FLAVOR": "Quetzalcoatl is a deity symbolizing death and rebirth. This colorful feather is said to be a divine remnant left behind in this world.",
+    "DESCRIPTIONS": [
+      "The additional damage of #ytlipocamod:Sheathe increases to #b5 , ALL #yAttacks gain \" #ytlipocamod:Sheathed : Draw a card.\""
     ]
   }
 }

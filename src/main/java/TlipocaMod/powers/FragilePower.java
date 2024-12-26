@@ -28,10 +28,7 @@ public class FragilePower extends AbstractTlipocaPower{
 
     @Override
     public void updateDescription() {
-        if(amount == 1)
-            description=DESCRIPTIONS[0];
-        if(amount > 1)
-            description=DESCRIPTIONS[1]+amount+DESCRIPTIONS[2];
+            description=DESCRIPTIONS[0]+amount+DESCRIPTIONS[1];
     }
 
 
@@ -39,9 +36,9 @@ public class FragilePower extends AbstractTlipocaPower{
     public int onAttacked(DamageInfo info, int damageAmount) {
         if(info.type == DamageInfo.DamageType.NORMAL && damageAmount > 0){
             if(this.amount ==1)
-                addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+                addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, this));
             if(this.amount>1)
-                addToBot(new ReducePowerAction(this.owner, this.owner, this, 1));
+                addToTop(new ReducePowerAction(this.owner, this.owner, this, 1));
         }
         return damageAmount;
     }

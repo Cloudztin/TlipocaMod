@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 
 
 import static TlipocaMod.TlipocaMod.TlipocaMod.getID;
@@ -32,20 +33,20 @@ public class tlInsight extends AbstractTlipocaCard {
         super(ID, cardStrings.NAME,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.ENEMY);
 
 
-        this.magicNumber=this.baseMagicNumber=2;
-        this.baseDamage=8;
-        this.baseBlock=8;
-        this.exhaust=true;
+        this.magicNumber=this.baseMagicNumber=3;
+        this.baseDamage=6;
+        this.exhaust=false;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.exhaust=false;
         if(m!=null){
-            addToBot(new ApplyPowerAction(m, p, new BleedingPower(m, this.magicNumber), this.magicNumber));
-            if(m.getIntentBaseDmg()>=0)
-                addToBot(new GainBlockAction(p, this.baseBlock));
-            else
-                addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+            addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+            if(m.hasPower(BleedingPower.ID)){
+                this.exhaust=true;
+                addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber)));
+            }
         }
     }
 
@@ -54,8 +55,7 @@ public class tlInsight extends AbstractTlipocaCard {
         if(!this.upgraded){
             this.upgradeName();
             this.upgradeMagicNumber(1);
-            upgradeBlock(3);
-            upgradeDamage(3);
+            upgradeDamage(2);
         }
     }
 

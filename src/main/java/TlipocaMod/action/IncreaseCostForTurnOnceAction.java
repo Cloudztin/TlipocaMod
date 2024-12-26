@@ -15,7 +15,7 @@ import java.util.List;
 public class IncreaseCostForTurnOnceAction extends AbstractGameAction {
 
     public static final String[] TEXT =  CardCrawlGame.languagePack.getUIString("IncreaseHandCostForTurn").TEXT;
-    private List<AbstractCard> cannotChange=new ArrayList<>();
+    private final List<AbstractCard> cannotChange=new ArrayList<>();
     private final AbstractPlayer p= AbstractDungeon.player;
     private final boolean isRandom;
     public int cost;

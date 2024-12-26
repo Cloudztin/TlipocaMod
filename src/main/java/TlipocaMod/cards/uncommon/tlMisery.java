@@ -34,10 +34,7 @@ public class tlMisery extends AbstractTlipocaCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(!upgraded)
-            addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, 3, false), 3));
-        else
-            addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, 5, false), 5));
+        addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, 3, false), 3));
         addToBot(new ApplyPowerAction(m, p, new FragilePower(m, this.magicNumber), this.magicNumber));
     }
 

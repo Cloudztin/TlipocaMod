@@ -46,7 +46,7 @@
       "( no card played this this turn.)"
     ]
   },
-  "TlipocaMod:Bleeding": {
+  "TlipocaMod:Bleed": {
     "NAME": "Bleed",
     "DESCRIPTIONS": [
       "Upon receiving unblocked attack damage, lose #r",
@@ -143,9 +143,132 @@
   "TlipocaMod:Fragile": {
     "NAME": "Fragile",
     "DESCRIPTIONS": [
-      "The next #yAttack damage received will be doubled.",
-      "The next #b",
-      " #yAttack damage received will be doubled."
+      " #yAttack damage received will be doubled. Cancel after taking #b",
+      " #yAttack damage."
     ]
-  }
+  },
+  "TlipocaMod:Sheathed": {
+    "NAME": "Sheathed",
+    "DESCRIPTIONS": [
+      "If the next card you play is #yAttack , it deals an additional #b2 damage.",
+      "If the next card you play is #yAttack , it deals an additional #b5 damage."
+    ]
+  },
+  "TlipocaMod:IllusionBlade": {
+    "NAME": "Illusion Blade",
+    "DESCRIPTIONS": [
+      "Your #yAttacks deal double damage."
+    ]
+  },
+  "TlipocaMod:Detected": {
+    "NAME": "Detected",
+    "DESCRIPTIONS": [
+      "This enemy's attack has been detected once."
+    ]
+  },
+  "TlipocaMod:PhantomPain": {
+    "NAME": "PhantomPain",
+    "DESCRIPTIONS": [
+      "Upon receiving #yAttack damage, ALL enemies lose HP equal to #b",
+      "% of the unblocked damage dealt."
+    ]
+  },
+  "TlipocaMod:Transcendent": {
+    "NAME": "Transcendence",
+    "DESCRIPTIONS": [
+      "You are immune to HP drain and debuffs."
+    ]
+  },
+  "TlipocaMod:WellPrepared": {
+    "NAME": "Well Prepared",
+    "DESCRIPTIONS": [
+      "At the start of your turn, if your hand is not empty, draw #b1 card.",
+      "At the start of your turn, if your hand is not empty, draw #b",
+      " cards."
+    ]
+  },
+  "TlipocaMod:WindBlade": {
+    "NAME": "Wind Blade",
+    "DESCRIPTIONS": [
+      "When you play an Attack this turn, deal #b",
+      " damage to a random enemy."
+    ]
+  },
+  "TlipocaMod:Adaption": {
+    "NAME": "Adaption",
+    "DESCRIPTIONS": [
+      "At the start of your turn, you can choose #b1 card to #yUnlock or #yLock by 1.",
+      "At the start of your turn, you can choose #b",
+      " cards to #yUnlock or #yLock by 1."
+    ]
+  },
+  "TlipocaMod:HiddenWeapons": {
+    "NAME": "Hidden Weapons",
+    "DESCRIPTIONS": [
+      "When a card is #yUnlocked , deal #b",
+      " damage to ALL enemies."
+    ]
+  },
+  "TlipocaMod:Kendo": {
+    "NAME": "Kendo",
+    "DESCRIPTIONS": [
+      "When you play an #yAttack this turn, gain #b",
+      " temporary #yStrength , cancel if you play any non-Attack card."
+    ]
+  },
+  "TlipocaMod:Flow": {
+    "NAME": "Flow",
+    "DESCRIPTIONS": [
+      "When the #yLock of a card is changed by #y1, gain #b",
+      " #yBlock ."
+    ]
+  },
+  "TlipocaMod:Retrace": {
+    "NAME": "Retrace",
+    "DESCRIPTIONS": [
+      "The first card played each turn will return to your hand from the discard pile.",
+      "The first #b",
+      " cards played each turn will return to your hand from the discard pile."
+    ]
+  },
+  "TlipocaMod:SharpEdge": {
+    "NAME": "Sharp Edge",
+    "DESCRIPTIONS": [
+      "At the end of your turn. deal #b",
+      " damage to a random enemy for each #yLocked card in your hand."
+    ]
+  },
+  "TlipocaMod:SpiritBloom": {
+    "NAME": "Spirit Bloom",
+    "DESCRIPTIONS": [
+      "When a card is #yUnlocked , reduce the #yLock of all cards in your hand by #b",
+      " ."
+    ]
+  },
+  "TlipocaMod:VanishingShadow": {
+    "NAME": "Vanishing Shadow",
+    "DESCRIPTIONS": [
+      "When you play an #yAttack cost more than #y0 , return ",
+      " from the discard pile to your hand. ( #b",
+      " card remain )",
+      " from the discard pile to your hand. ( #b",
+      " cards remain )"
+    ]
+  },
+  "TlipocaMod:Mastery": {
+    "NAME": "Mastery",
+    "DESCRIPTIONS": [
+      "In this turn, your #ySheathe will not be cancelled.",
+      "In #b",
+      " turns, your #ySheathe will not be cancelled."
+    ]
+  },
+  "TlipocaMod:TripleDamage": {
+  "NAME": "Triple Damage",
+  "DESCRIPTIONS": [
+    "Your next #yAttack deals triple damage.",
+    "Your next #b",
+    " #yAttacks deals triple damage."
+  ]
+ }
 }

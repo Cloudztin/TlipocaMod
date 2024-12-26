@@ -25,7 +25,7 @@ public class tlSoulFragment extends AbstractTlipocaCard {
     public tlSoulFragment() {
         super(ID, cardStrings.NAME ,img_path, cost, cardStrings.DESCRIPTION, type, rarity, CardTarget.SELF);
 
-        this.magicNumber=this.baseMagicNumber=3;
+        this.magicNumber=this.baseMagicNumber=2;
     }
 
     @Override

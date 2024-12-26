@@ -1,15 +1,10 @@
 package TlipocaMod.TlipocaMod;
 
 
-import TlipocaMod.cards.AbstractTlipocaCard;
+import TlipocaMod.characters.HaaLouLing;
 import TlipocaMod.characters.Tlipoca;
-import TlipocaMod.enums.CardEnum;
-import TlipocaMod.enums.CharacterEnum;
-import TlipocaMod.enums.ModClassEnum;
 import TlipocaMod.patches.CardPatch;
-import TlipocaMod.potions.BottledDisease;
-import TlipocaMod.potions.CorrectionFluid;
-import TlipocaMod.potions.InfinityPotion;
+import TlipocaMod.potions.*;
 import TlipocaMod.relics.*;
 import basemod.AutoAdd;
 import basemod.BaseMod;
@@ -23,7 +18,6 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -40,6 +34,7 @@ import java.util.Properties;
 public class TlipocaMod implements PostInitializeSubscriber, EditCharactersSubscriber, EditCardsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, EditKeywordsSubscriber, AddAudioSubscriber {
 
     public static final Color Tlipoca_Color = CardHelper.getColor(255, 13, 102);
+    public static final Color HaaLouLing_Color = CardHelper.getColor(34, 176, 133);
     public static final String ModID = "TlipocaMod";
     public static String lang;
     private final String[] langSupported = {"zhs", "eng"};
@@ -48,11 +43,16 @@ public class TlipocaMod implements PostInitializeSubscriber, EditCharactersSubsc
 
     public TlipocaMod() {
         BaseMod.subscribe( this);
-        BaseMod.addColor(CardEnum.Tlipoca_Color, Tlipoca_Color, Tlipoca_Color, Tlipoca_Color, Tlipoca_Color, Tlipoca_Color, Tlipoca_Color, Tlipoca_Color, "TlipocaModResources/img/basic/512/attack.png", "TlipocaModResources/img/basic/512/skill.png", "TlipocaModResources/img/basic/512/power.png", "TlipocaModResources/img/basic/512/orb.png", "TlipocaModResources/img/basic/1024/attack.png", "TlipocaModResources/img/basic/1024/skill.png", "TlipocaModResources/img/basic/1024/power.png", "TlipocaModResources/img/basic/1024/orb.png", "TlipocaModResources/img/basic/ORB.png");
+        BaseMod.addColor(Tlipoca.PlayerClass.Tlipoca_Color, Tlipoca_Color, Tlipoca_Color, Tlipoca_Color, Tlipoca_Color, Tlipoca_Color, Tlipoca_Color, Tlipoca_Color, "TlipocaModResources/img/basic/512/attack.png", "TlipocaModResources/img/basic/512/skill.png", "TlipocaModResources/img/basic/512/power.png", "TlipocaModResources/img/basic/512/orb.png", "TlipocaModResources/img/basic/1024/attack.png", "TlipocaModResources/img/basic/1024/skill.png", "TlipocaModResources/img/basic/1024/power.png", "TlipocaModResources/img/basic/1024/orb.png", "TlipocaModResources/img/basic/ORB.png");
+        BaseMod.addColor(HaaLouLing.PlayerClass.HaaLouLing_Color, HaaLouLing_Color, HaaLouLing_Color, HaaLouLing_Color, HaaLouLing_Color, HaaLouLing_Color, HaaLouLing_Color, HaaLouLing_Color, "TlipocaModResources/img/basic/512/attackHLL.png", "TlipocaModResources/img/basic/512/skillHLL.png", "TlipocaModResources/img/basic/512/powerHLL.png", "TlipocaModResources/img/basic/512/orbHLL.png", "TlipocaModResources/img/basic/1024/attackHLL.png", "TlipocaModResources/img/basic/1024/skillHLL.png", "TlipocaModResources/img/basic/1024/powerHLL.png", "TlipocaModResources/img/basic/1024/HaaLouLingOrb.png", "TlipocaModResources/img/basic/orbHLL.png");
     }
 
     public static String getID(String id) {
         return "TlipocaMod:" + id;
+    }
+
+    public static String getHLLID(String id) {
+        return "HaaLouLing:" + id;
     }
 
     public static void initialize() {
@@ -81,23 +81,35 @@ public class TlipocaMod implements PostInitializeSubscriber, EditCharactersSubsc
     }
 
     public void receiveEditCharacters() {
-        BaseMod.addCharacter((AbstractPlayer) new Tlipoca("Tlipoca"), "TlipocaModResources/img/others/TlipocaButton.png", "TlipocaModResources/img/others/TlipocaStartBG.png", ModClassEnum.Tlipoca_Color);
+        BaseMod.addCharacter( new Tlipoca("Tlipoca"), "TlipocaModResources/img/others/TlipocaButton.png", "TlipocaModResources/img/others/TlipocaStartBG.png", Tlipoca.PlayerClass.Tlipoca);
+        BaseMod.addCharacter(new HaaLouLing("HaaLouLing"), "TlipocaModResources/img/others/HaaLouLingButton.png", "TlipocaModResources/img/others/HaaLouLingStartBG.png", HaaLouLing.PlayerClass.HaaLouLing);
     }
 
     public void receiveEditRelics() {
 
-        BaseMod.addRelicToCustomPool(new LittleRed(), CardEnum.Tlipoca_Color);
-        BaseMod.addRelicToCustomPool(new NightCrown(), CardEnum.Tlipoca_Color);
-        BaseMod.addRelicToCustomPool(new BloodyHarvest(), CardEnum.Tlipoca_Color);
-        BaseMod.addRelicToCustomPool(new CassildasSong(), CardEnum.Tlipoca_Color);
-        BaseMod.addRelicToCustomPool(new DragonBlood(), CardEnum.Tlipoca_Color);
-        BaseMod.addRelicToCustomPool(new Cryolite(), CardEnum.Tlipoca_Color);
-        BaseMod.addRelicToCustomPool(new SoulStone(), CardEnum.Tlipoca_Color);
-        BaseMod.addRelicToCustomPool(new AlchemyFlask(), CardEnum.Tlipoca_Color);
-        BaseMod.addRelicToCustomPool(new SealofthePast(), CardEnum.Tlipoca_Color);
-        BaseMod.addRelicToCustomPool(new Schistosome(), CardEnum.Tlipoca_Color);
+        BaseMod.addRelicToCustomPool(new LittleRed(), Tlipoca.PlayerClass.Tlipoca_Color);
+        BaseMod.addRelicToCustomPool(new NightCrown(), Tlipoca.PlayerClass.Tlipoca_Color);
+        BaseMod.addRelicToCustomPool(new BloodyHarvest(), Tlipoca.PlayerClass.Tlipoca_Color);
+        BaseMod.addRelicToCustomPool(new CassildasSong(), Tlipoca.PlayerClass.Tlipoca_Color);
+        BaseMod.addRelicToCustomPool(new DragonBlood(), Tlipoca.PlayerClass.Tlipoca_Color);
+        BaseMod.addRelicToCustomPool(new Cryolite(), Tlipoca.PlayerClass.Tlipoca_Color);
+        BaseMod.addRelicToCustomPool(new SoulStone(), Tlipoca.PlayerClass.Tlipoca_Color);
+        BaseMod.addRelicToCustomPool(new AlchemyFlask(), Tlipoca.PlayerClass.Tlipoca_Color);
+        BaseMod.addRelicToCustomPool(new SealofthePast(), Tlipoca.PlayerClass.Tlipoca_Color);
+        BaseMod.addRelicToCustomPool(new Schistosome(), Tlipoca.PlayerClass.Tlipoca_Color);
+
+        BaseMod.addRelicToCustomPool(new BurrPuzzle(), HaaLouLing.PlayerClass.HaaLouLing_Color);
+        BaseMod.addRelicToCustomPool(new HaaLouBlade(), HaaLouLing.PlayerClass.HaaLouLing_Color);
+        BaseMod.addRelicToCustomPool(new Horoscope(), HaaLouLing.PlayerClass.HaaLouLing_Color);
+        BaseMod.addRelicToCustomPool(new ShackleOfDream(), HaaLouLing.PlayerClass.HaaLouLing_Color);
+        BaseMod.addRelicToCustomPool(new SpiritSeveranceTome(), HaaLouLing.PlayerClass.HaaLouLing_Color);
+        BaseMod.addRelicToCustomPool(new TangKnife(), HaaLouLing.PlayerClass.HaaLouLing_Color);
+        BaseMod.addRelicToCustomPool(new theRecipe(), HaaLouLing.PlayerClass.HaaLouLing_Color);
+        BaseMod.addRelicToCustomPool(new theUnknown(), HaaLouLing.PlayerClass.HaaLouLing_Color);
+        BaseMod.addRelicToCustomPool(new QuetzalcoatlsFeather(), HaaLouLing.PlayerClass.HaaLouLing_Color);
 
         BaseMod.addRelic(new Revelation(), RelicType.SHARED);
+        BaseMod.addRelic(new ShoggothBlood(), RelicType.SHARED);
 
         UnlockTracker.markRelicAsSeen(LittleRed.ID);
         UnlockTracker.markRelicAsSeen(NightCrown.ID);
@@ -110,17 +122,32 @@ public class TlipocaMod implements PostInitializeSubscriber, EditCharactersSubsc
         UnlockTracker.markRelicAsSeen(SealofthePast.ID);
         UnlockTracker.markRelicAsSeen(Schistosome.ID);
         UnlockTracker.markRelicAsSeen(Revelation.ID);
+        UnlockTracker.markRelicAsSeen(BurrPuzzle.ID);
+        UnlockTracker.markRelicAsSeen(HaaLouBlade.ID);
+        UnlockTracker.markRelicAsSeen(Horoscope.ID);
+        UnlockTracker.markRelicAsSeen(ShoggothBlood.ID);
+        UnlockTracker.markRelicAsSeen(ShackleOfDream.ID);
+        UnlockTracker.markRelicAsSeen(SpiritSeveranceTome.ID);
+        UnlockTracker.markRelicAsSeen(TangKnife.ID);
+        UnlockTracker.markRelicAsSeen(theRecipe.ID);
+        UnlockTracker.markRelicAsSeen(theUnknown.ID);
+        UnlockTracker.markRelicAsSeen(QuetzalcoatlsFeather.ID);
     }
 
     public void receiveEditPotions() {
-        BaseMod.addPotion(CorrectionFluid.class, null, null, null, CorrectionFluid.POTION_ID, CharacterEnum.Tlipoca);
-        BaseMod.addPotion(BottledDisease.class,BottledDisease.liquidColor, BottledDisease.hybridColor, BottledDisease.SpotsColor, BottledDisease.POTION_ID, CharacterEnum.Tlipoca);
-        BaseMod.addPotion(InfinityPotion.class, InfinityPotion.liquidColor, InfinityPotion.hybridColor, InfinityPotion.SpotsColor, InfinityPotion.POTION_ID, CharacterEnum.Tlipoca);
+        BaseMod.addPotion(CorrectionFluid.class, null, null, null, CorrectionFluid.POTION_ID, Tlipoca.PlayerClass.Tlipoca);
+        BaseMod.addPotion(BottledDisease.class,BottledDisease.liquidColor, BottledDisease.hybridColor, BottledDisease.SpotsColor, BottledDisease.POTION_ID, Tlipoca.PlayerClass.Tlipoca);
+        BaseMod.addPotion(InfinityPotion.class, InfinityPotion.liquidColor, InfinityPotion.hybridColor, InfinityPotion.SpotsColor, InfinityPotion.POTION_ID, Tlipoca.PlayerClass.Tlipoca);
+        BaseMod.addPotion(MasterPotion.class, MasterPotion.liquidColor, MasterPotion.hybridColor, MasterPotion.SpotsColor, MasterPotion.POTION_ID, HaaLouLing.PlayerClass.HaaLouLing);
+        BaseMod.addPotion(IngeniousPotion.class, IngeniousPotion.liquidColor, IngeniousPotion.hybridColor, IngeniousPotion.SpotsColor, IngeniousPotion.POTION_ID, HaaLouLing.PlayerClass.HaaLouLing);
+        BaseMod.addPotion(SpringWater.class, Color.CLEAR.cpy(),  Color.CLEAR.cpy(), Color.CLEAR.cpy(), SpringWater.POTION_ID, HaaLouLing.PlayerClass.HaaLouLing);
+
     }
 
     public void receiveEditCards() {
         System.out.println("Adding cards");
-        new AutoAdd("TlipocaMod").packageFilter(AbstractTlipocaCard.class).notPackageFilter("TlipocaMod.cards.deprecated").notPackageFilter("TlipocaMod.cards.choices").setDefaultSeen(true).cards();
+        new AutoAdd("TlipocaMod").packageFilter("TlipocaMod.cards").notPackageFilter("TlipocaMod.cards.deprecated").notPackageFilter("TlipocaMod.cards.choices").notPackageFilter("TlipocaMod.cards.special").setDefaultSeen(true).cards();
+        new AutoAdd("TlipocaMod").packageFilter("TlipocaMod.cards.special").cards();
     }
 
     @Override

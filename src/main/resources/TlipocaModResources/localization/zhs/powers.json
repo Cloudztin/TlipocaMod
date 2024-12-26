@@ -46,7 +46,7 @@
       "（本回合还未打出过）"
     ]
   },
-  "TlipocaMod:Bleeding": {
+  "TlipocaMod:Bleed": {
     "NAME": "流血",
     "DESCRIPTIONS": [
       "受到未被格挡的攻击伤害时，失去 #r",
@@ -86,8 +86,8 @@
   "TlipocaMod:Humanity": {
     "NAME": "人性",
     "DESCRIPTIONS": [
-      "当你打出耗能为 #yX 的牌后，获得相当于耗能 #b",
-      " 倍的 #y格挡 。"
+      "当你打出耗能为 #yX 的牌后，每点耗能都使你获得 #b",
+      " 点 #y格挡 。"
     ]
   },
   "TlipocaMod:CannotAttack": {
@@ -143,9 +143,132 @@
   "TlipocaMod:Fragile": {
     "NAME": "易碎",
     "DESCRIPTIONS": [
-      "翻倍下次受到的 #y攻击 伤害。",
-      "翻倍下 #b",
-      " 次受到的 #y攻击 伤害。"
+      "受到的 #y攻击 伤害翻倍，再受到 #b",
+      " 次 #y攻击 伤害后取消。"
+    ]
+  },
+  "TlipocaMod:Sheathed": {
+    "NAME": "纳刀",
+    "DESCRIPTIONS": [
+      "如果你打出的下一张牌是 #y攻击牌 ，额外造成 #b2 点伤害。",
+      "如果你打出的下一张牌是 #y攻击牌 ，额外造成 #b5 点伤害。"
+    ]
+  },
+  "TlipocaMod:IllusionBlade": {
+    "NAME": "幻切",
+    "DESCRIPTIONS": [
+      "你的 #y攻击 造成双倍伤害。"
+    ]
+  },
+  "TlipocaMod:Detected": {
+    "NAME": "看破",
+    "DESCRIPTIONS": [
+      "这个敌人的攻击已经被识破过了。"
+    ]
+  },
+  "TlipocaMod:PhantomPain": {
+    "NAME": "幻痛",
+    "DESCRIPTIONS": [
+      "受到 #y攻击 伤害时，所有敌人失去等同于未被格挡的伤害值 #b",
+      "% 的生命。"
+    ]
+  },
+  "TlipocaMod:Transcendent": {
+    "NAME": "超然",
+    "DESCRIPTIONS": [
+      "免疫生命流失和负面效果。"
+    ]
+  },
+  "TlipocaMod:WellPrepared": {
+    "NAME": "万事俱备",
+    "DESCRIPTIONS": [
+      "你的回合开始时，如果你手中有牌，抽 #b1 张牌。",
+      "你的回合开始时，如果你手中有牌，抽 #b",
+      " 张牌。"
+    ]
+  },
+  "TlipocaMod:WindBlade": {
+    "NAME": "剑风",
+    "DESCRIPTIONS": [
+      "本回合当你打出 #y攻击 牌后，对随机敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "TlipocaMod:Adaption": {
+    "NAME": "应变",
+    "DESCRIPTIONS": [
+      "你的回合开始后，你可以选择 #b1 张牌 #y锁定 1 或 #y解锁 。",
+      "你的回合开始后，你可以选择 #b",
+      " 张牌 #y锁定 1 或 #y解锁 。"
+    ]
+  },
+  "TlipocaMod:HiddenWeapons": {
+    "NAME": "暗器",
+    "DESCRIPTIONS": [
+      "当一张牌被 #y解锁 时，对所有敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "TlipocaMod:Kendo": {
+    "NAME": "剑道",
+    "DESCRIPTIONS": [
+      "本回合内，你每打出一张攻击牌，就获得 #b",
+      " 点临时 #y力量 ，打出非攻击牌后取消。"
+    ]
+  },
+  "TlipocaMod:Flow": {
+    "NAME": "流转",
+    "DESCRIPTIONS": [
+      "当你的手牌的 #y锁定 变化 #y1 后，获得 #b",
+      " 点 #y格挡 。"
+    ]
+  },
+  "TlipocaMod:Retrace": {
+    "NAME": "折回",
+    "DESCRIPTIONS": [
+      "你每回合打出的首张牌将从弃牌堆返回手中。",
+      "你每回合打出的前 #b",
+      " 张牌将从弃牌堆返回手中。"
+    ]
+  },
+  "TlipocaMod:SharpEdge": {
+    "NAME": "利刃",
+    "DESCRIPTIONS": [
+      "你的回合结束时，手中的每张被 #y锁定 的牌会对随机敌人造成 #b",
+      " 点伤害"
+    ]
+  },
+  "TlipocaMod:SpiritBloom": {
+    "NAME": "心灵绽放",
+    "DESCRIPTIONS": [
+      "当一张牌被 #y解锁 时，将所有手牌的 #y锁定 值降低 #b",
+      " 。"
+    ]
+  },
+  "TlipocaMod:VanishingShadow": {
+    "NAME": "绝影",
+    "DESCRIPTIONS": [
+      "当你打出耗能大于0的 #y攻击 牌后，将",
+      "从你的弃牌堆返回手中。（再出 #b",
+      " 张牌后失效。）",
+      "从你的弃牌堆返回手中。（再出 #b",
+      " 张牌后失效。）"
+    ]
+  },
+  "TlipocaMod:Mastery": {
+    "NAME": "极意",
+    "DESCRIPTIONS": [
+      "本回合内你不会取消 #y纳刀 。",
+      "在 #b",
+      " 回合内，你不会取消 #y纳刀 。"
+    ]
+  },
+  "TlipocaMod:TripleDamage": {
+    "NAME": "巧劲",
+    "DESCRIPTIONS": [
+      "你的下一张 #y攻击牌 造成三倍伤害。",
+      "你的下 #b",
+      " 张 #y攻击牌 造成三倍伤害。"
     ]
   }
 }

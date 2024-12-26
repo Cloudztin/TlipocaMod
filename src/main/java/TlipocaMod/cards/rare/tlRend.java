@@ -45,6 +45,16 @@ public class tlRend extends AbstractTlipocaCard {
     }
 
     @Override
+    public void triggerOnGlowCheck() {
+        super.triggerOnGlowCheck();
+        for(AbstractMonster m:AbstractDungeon.getCurrRoom().monsters.monsters)
+            if(m.hasPower(BleedingPower.ID)){
+                this.glowColor=GOLD_BORDER_GLOW_COLOR.cpy();
+                break;
+            }
+    }
+
+    @Override
     public void calculateCardDamage(AbstractMonster mo) {
         this.applyPowersToBlock();
         AbstractPlayer player = AbstractDungeon.player;

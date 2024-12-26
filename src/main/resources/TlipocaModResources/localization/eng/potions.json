@@ -20,5 +20,26 @@
       "In this turn, when your hand is less than #y8 , draw until 8.",
       "In #b2 turns, when your hand is less than #y8 , draw until 8."
     ]
+  },
+  "TlipocaMod:MasterPotion": {
+    "NAME": "Master Potion",
+    "DESCRIPTIONS": [
+      " #ySheathe , you cannot cancel #ySheathe in this turn.",
+      " #ySheathe , you cannot cancel #ySheathe in #b2 turns."
+    ]
+  },
+  "TlipocaMod:IngeniousPotion": {
+    "NAME": "Ingenious Potion",
+    "DESCRIPTIONS": [
+      "The next #yAttack you play deals triple damage.",
+      "The next #b2 #yAttacks you play deals triple damage."
+    ]
+  },
+  "TlipocaMod:SpringWater": {
+    "NAME": "Clear Spring",
+    "DESCRIPTIONS": [
+      "Remove ALL your debuffs, heal #b5 HP. #yExhaust ALL #yUnplayable cards in your hand and draw that many cards.",
+      "Remove ALL your debuffs, heal #b10 HP. #yExhaust ALL #yUnplayable cards in your hand and draw that many cards."
+    ]
   }
 }
